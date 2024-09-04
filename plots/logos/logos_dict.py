@@ -1,0 +1,22 @@
+logos_dict = {
+    "Arsenal": r"plots\logos\arsenal.png",
+    "Aston Villa": r"plots\logos\aston-villa.png",
+    "Bournemouth": r"plots\logos\bournemouth.png",
+    "Brentford": r"plots\logos\brentford.png",
+    "Brighton": r"plots\logos\brighton.png",
+    "Chelsea": r"plots\logos\chelsea.png",
+    "Crystal Palace": r"plots\logos\crystal-palace.png",
+    "Everton": r"plots\logos\everton.png",
+    "Nott'm Forest": r"plots\logos\forest.png",
+    "Fulham": r"plots\logos\fulham.png",
+    "Ipswich": r"plots\logos\ipswich.png",
+    "Leicester": r"plots\logos\leicester.png",
+    "Liverpool": r"plots\logos\liverpool.png",
+    "Man City": r"plots\logos\man-city.png",
+    "Man United": r"plots\logos\man-utd.png",
+    "Newcastle": r"plots\logos\newcastle.png",
+    "Southampton": r"plots\logos\southampton.png",
+    "Tottenham": r"plots\logos\tottenham.png",
+    "West Ham": r"plots\logos\west-ham.png",
+    "Wolves": r"plots\logos\wolves.png"
+}
