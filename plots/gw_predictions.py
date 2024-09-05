@@ -8,6 +8,7 @@ import matplotlib.image as mpimg
 
 def primary_pred(df):
     fig, ax = plt.subplots(figsize=(10, 8))
+    plt.rcParams['font.family'] = 'arial'
 
     # Set background color and dark theme
     fig.patch.set_facecolor('#2E2E2E')
@@ -109,6 +110,7 @@ def primary_pred(df):
 
 def secondary_pred(df):
     fig, ax = plt.subplots(figsize=(10, 8))
+    plt.rcParams['font.family'] = 'arial'
 
     # Set background color and dark theme
     fig.patch.set_facecolor('#2E2E2E')
