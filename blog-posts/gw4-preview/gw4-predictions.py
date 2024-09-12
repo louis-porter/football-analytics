@@ -6,7 +6,8 @@ sys.path.append(os.path.join(project_root, 'plots'))
 from gw_predictions import primary_pred, secondary_pred
 
 
-df = pd.read_csv(r"models\team-strength-models\predictions\ensmeble_gw4_preds.csv")
+file_path = os.path.join("models", "team-strength-models", "predictions", "ensmeble_gw4_preds.csv")
+df = pd.read_csv(file_path)
 df = df.to_dict(orient="records")
 
 primary_pred(df)
