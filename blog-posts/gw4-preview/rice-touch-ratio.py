@@ -35,8 +35,8 @@ fig, ax = plt.subplots(figsize=(10,6))
 plt.subplots_adjust(left=0.1, right=0.9, top=0.85, bottom=0.15)
 
 # Plotting the data and trend line
-ax.plot(df.index, df["Def 90 roll"], label="Def 1/3 Touches per 90 Mins", color="#063672") 
-ax.plot(x, def_p(x), color="#063672", linestyle="--", label="_nolegend_", alpha=.8) 
+ax.plot(df.index, df["Def 90 roll"], label="Def 1/3 Touches per 90 Mins", color="#0C6FE9") 
+ax.plot(x, def_p(x), color="#0C6FE9", linestyle="--", label="_nolegend_", alpha=.8) 
 
 ax.plot(df.index, df["Att /90 roll"], label="Att 1/3 Touches per 90 Mins", color="#EF0107") 
 ax.plot(x, att_p(x), color="#EF0107", linestyle="--", label="_nolegend_", alpha=.8) 
@@ -62,11 +62,11 @@ ax.set_ylabel("Touches per 90 Mins", color="white")
 # Titles
 ax.set_title("Declan Rice has been less involved in build-up over time", x=0.30, pad=40, fontdict={"fontsize": 14, "fontweight": "bold"})
 subtitle = ("<span style='color:#EF0107'>Att 1/3 Touches per 90</span> & "
-            "<span style='color:#063672'>Def 1/3 Touches per 90</span> | "
+            "<span style='color:#0C6FE9'>Def 1/3 Touches per 90</span> | "
             "Premier League & Champions League")
 fig.text(0.03, 0.90, "Att 1/3 Touches per 90", color="#EF0107", fontsize=10, weight="bold", alpha=0.76)
 fig.text(0.215, 0.90, "&", color="white", fontsize=10, weight="bold", alpha=0.76)
-fig.text(0.237, 0.90, "Def 1/3 Touches per 90", color="#063672", fontsize=10, weight="bold", alpha=0.76)
+fig.text(0.237, 0.90, "Def 1/3 Touches per 90", color="#0C6FE9", fontsize=10, weight="bold", alpha=0.76)
 fig.text(0.42, 0.90, "| Premier League & Champions League", color="white", fontsize=10, weight="bold", alpha=0.76)
 
 prem_logo = OffsetImage(plt.imread(logo), zoom=0.25)
