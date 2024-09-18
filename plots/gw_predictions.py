@@ -98,7 +98,7 @@ def primary_pred(df):
     ax.axis('off')
 
     ax.set_title(
-        'GW 4: Predictions',
+        'GW 5: Predictions',
         loc='left',
         fontsize=18,
         weight='bold',
@@ -204,7 +204,7 @@ def secondary_pred(df):
     ax.axis('off')
 
     ax.set_title(
-        'GW 4: Predictions',
+        'GW 5: Predictions',
         loc='left',
         fontsize=18,
         weight='bold',
