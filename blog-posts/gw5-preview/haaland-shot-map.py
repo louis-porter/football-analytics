@@ -3,6 +3,11 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import matplotlib.pyplot as plt
 from mplsoccer import VerticalPitch
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import matplotlib.image as mpimg
+
+haaland_img_path = "blog-posts\gw5-preview\haaland.png"
+mancity_img_path = "plots\logos\man-city.png"
 
 
 shots = pd.read_csv("blog-posts\gw5-preview\HaalandShots.csv")
@@ -60,87 +65,28 @@ ax1.set_ylim(0, 1)
 
 
 ax1.text(
-    x=0.5, 
-    y=.85, 
-    s='Erling Haaland', 
-    fontsize=20, 
+    x=0.06, 
+    y=.55, 
+    s='Erling Haaland has exceeded his xG by 4.46 goals', 
+    fontsize=15, 
     fontweight='bold', 
     color='white', 
-    ha='center'
+    ha='left'
 )
 ax1.text(
-    x=0.5, 
-    y=.7, 
-    s=f'All shots in the Premier League 2022-23', 
-    fontsize=14,
+    x=0.06, 
+    y=.4, 
+    s=f'Shots | Premier League 2024-25', 
+    fontsize=12,
     fontweight='bold',
     color='white', 
-    ha='center'
+    ha='left',
+    alpha=0.8
 )
-ax1.text(
-    x=0.25, 
-    y=0.5, 
-    s=f'Low Quality Chance', 
-    fontsize=12,
-    color='white', 
-    ha='center'
-)
-
-# add a scatter point between the two texts
-ax1.scatter(
-    x=0.37, 
-    y=0.53, 
-    s=100, 
-    color=background_color, 
-    edgecolor='white', 
-    linewidth=.8
-)
-ax1.scatter(
-    x=0.42, 
-    y=0.53, 
-    s=200, 
-    color=background_color, 
-    edgecolor='white', 
-    linewidth=.8
-)
-ax1.scatter(
-    x=0.48, 
-    y=0.53, 
-    s=300, 
-    color=background_color, 
-    edgecolor='white', 
-    linewidth=.8
-)
-ax1.scatter(
-    x=0.54, 
-    y=0.53, 
-    s=400, 
-    color=background_color, 
-    edgecolor='white', 
-    linewidth=.8
-)
-ax1.scatter(
-    x=0.6, 
-    y=0.53, 
-    s=500, 
-    color=background_color, 
-    edgecolor='white', 
-    linewidth=.8
-)
-
-ax1.text(
-    x=0.75, 
-    y=0.5, 
-    s=f'High Quality Chance', 
-    fontsize=12,
-    color='white', 
-    ha='center'
-)
-
 
 ax1.text(
     x=0.45, 
-    y=0.27, 
+    y=0.2, 
     s=f'Goal', 
     fontsize=10,
     color='white', 
@@ -148,9 +94,9 @@ ax1.text(
 )
 ax1.scatter(
     x=0.47, 
-    y=0.3, 
+    y=0.23, 
     s=100, 
-    color='red', 
+    color='#6CABDD', 
     edgecolor='white', 
     linewidth=.8,
     alpha=.7
@@ -159,7 +105,7 @@ ax1.scatter(
 
 ax1.scatter(
     x=0.53, 
-    y=0.3, 
+    y=0.23, 
     s=100, 
     color=background_color, 
     edgecolor='white', 
@@ -168,7 +114,7 @@ ax1.scatter(
 
 ax1.text(
     x=0.55, 
-    y=0.27, 
+    y=0.2, 
     s=f'No Goal', 
     fontsize=10,
     color='white', 
@@ -216,7 +162,7 @@ for x in shots.to_dict(orient='records'):
         (x["x"]), 
         (x["y"]), 
         s=300 * x['xG'], 
-        color='red' if x['result'] == 'Goal' else background_color, 
+        color='#6CABDD' if x['result'] == 'Goal' else background_color, 
         ax=ax2,
         alpha=.7,
         linewidth=.8,
@@ -235,7 +181,7 @@ ax3.text(
     x=0.25, 
     y=.5, 
     s='Shots', 
-    fontsize=20,
+    fontsize=15,
     fontweight='bold', 
     color='white', 
     ha='left'
@@ -245,8 +191,8 @@ ax3.text(
     x=0.25, 
     y=0, 
     s=f'{total_shots}', 
-    fontsize=16,
-    color='red', 
+    fontsize=13,
+    color='#6CABDD', 
     ha='left'
 )
 
@@ -254,7 +200,7 @@ ax3.text(
     x=0.38, 
     y=.5, 
     s='Goals', 
-    fontsize=20,
+    fontsize=15,
     fontweight='bold', 
     color='white', 
     ha='left'
@@ -264,8 +210,8 @@ ax3.text(
     x=0.38, 
     y=0, 
     s=f'{total_goals}', 
-    fontsize=16,
-    color='red', 
+    fontsize=13,
+    color='#6CABDD', 
     ha='left'
 )
 
@@ -273,7 +219,7 @@ ax3.text(
     x=0.53, 
     y=.5, 
     s='xG', 
-    fontsize=20,
+    fontsize=15,
     fontweight='bold', 
     color='white', 
     ha='left'
@@ -283,8 +229,8 @@ ax3.text(
     x=0.53, 
     y=0, 
     s=f'{total_xG:.2f}', 
-    fontsize=16,
-    color='red', 
+    fontsize=13,
+    color='#6CABDD', 
     ha='left'
 )
 
@@ -292,7 +238,7 @@ ax3.text(
     x=0.63, 
     y=.5, 
     s='xG/Shot', 
-    fontsize=20,
+    fontsize=15,
     fontweight='bold', 
     color='white', 
     ha='left'
@@ -302,11 +248,25 @@ ax3.text(
     x=0.63, 
     y=0, 
     s=f'{xG_per_shot:.2f}', 
-    fontsize=16,
-    color='red', 
+    fontsize=13,
+    color='#6CABDD', 
     ha='left'
 )
 
 ax3.set_axis_off()
+
+# Add Haaland Image
+
+haaland_img = mpimg.imread(haaland_img_path)
+imagebox = OffsetImage(haaland_img, zoom=0.1) 
+image_ab = AnnotationBbox(imagebox, (20, 63.5), frameon=False)
+ax2.add_artist(image_ab)
+
+mancity_img = mpimg.imread(mancity_img_path)
+imagebox = OffsetImage(mancity_img, zoom=0.3) 
+image_ab = AnnotationBbox(imagebox, (0.9, 0.49), frameon=False)
+ax1.add_artist(image_ab)
+
+
 
 plt.show()
