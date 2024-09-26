@@ -27,6 +27,32 @@ def primary_pred(df):
     draw_probs = np.array([d['draw_prob'] for d in df])
     away_win_probs = np.array([d['away_win_prob'] for d in df])
 
+    # Normalize the probabilities so that they add up to 1
+    total_probs = home_win_probs + draw_probs + away_win_probs
+    home_win_probs = home_win_probs / total_probs
+    draw_probs = draw_probs / total_probs
+    away_win_probs = away_win_probs / total_probs
+
+    # Function to adjust the rounded percentages so they sum to 100%
+    def adjust_probabilities_to_100(home_win, draw, away_win):
+        rounded_home = round(home_win * 100)
+        rounded_draw = round(draw * 100)
+        rounded_away = round(away_win * 100)
+        
+        total_rounded = rounded_home + rounded_draw + rounded_away
+        diff = 100 - total_rounded
+        
+        # Adjust the largest value to ensure the total is exactly 100%
+        if diff != 0:
+            if max(rounded_home, rounded_draw, rounded_away) == rounded_home:
+                rounded_home += diff
+            elif max(rounded_home, rounded_draw, rounded_away) == rounded_draw:
+                rounded_draw += diff
+            else:
+                rounded_away += diff
+        
+        return rounded_home, rounded_draw, rounded_away
+
     # Normalize the probabilities to range [0, 1] for gradient
     norm = plt.Normalize(0, 1)
 
@@ -46,6 +72,9 @@ def primary_pred(df):
         home_win_val = home_win_probs[-(row + 1)]
         draw_val = draw_probs[-(row + 1)]
         away_win_val = away_win_probs[-(row + 1)]
+
+        # Adjust the rounded percentages to sum to 100%
+        rounded_home_win, rounded_draw, rounded_away_win = adjust_probabilities_to_100(home_win_val, draw_val, away_win_val)
         
         ax.imshow([[home_win_probs[-(row + 1)]]], aspect='auto', cmap=cmap, norm=norm, extent=[6.25, 7.75, row-0.5, row+0.49])
         ax.imshow([[draw_probs[-(row + 1)]]], aspect='auto', cmap=cmap, norm=norm, extent=[8.25, 9.75, row-0.5, row+0.49])
@@ -68,9 +97,9 @@ def primary_pred(df):
 
         ax.text(x=.25, y=row, s=f"{d['home_team']}", va="center", ha="left", color=text_color) 
         ax.text(x=5, y=row, s=f"{d['home_goal_expectation']:.2f}", va="center", ha="center", color=text_color)  
-        ax.text(x=7, y=row, s=f"{d['home_win_prob']:.0%}", va="center", ha="center", color=home_text_color)  
-        ax.text(x=9, y=row, s=f"{d['draw_prob']:.0%}", va="center", ha="center", color=draw_text_color)  
-        ax.text(x=11, y=row, s=f"{d['away_win_prob']:.0%}", va="center", ha="center", color=away_text_color)  
+        ax.text(x=7, y=row, s=f"{rounded_home_win}%", va="center", ha="center", color=home_text_color)  
+        ax.text(x=9, y=row, s=f"{rounded_draw}%", va="center", ha="center", color=draw_text_color)  
+        ax.text(x=11, y=row, s=f"{rounded_away_win}%", va="center", ha="center", color=away_text_color)  
         ax.text(x=13, y=row, s=f"{d['away_goal_expectation']:.2f}", va="center", ha="center", color=text_color)  
         ax.text(x=17.75, y=row, s=f"{d['away_team']}", va="center", ha="right", color=text_color)
 
@@ -98,7 +127,7 @@ def primary_pred(df):
     ax.axis('off')
 
     ax.set_title(
-        'GW 5: Predictions',
+        'GW 6: Predictions',
         loc='left',
         fontsize=18,
         weight='bold',
