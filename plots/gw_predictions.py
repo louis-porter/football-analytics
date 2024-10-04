@@ -11,8 +11,8 @@ def primary_pred(df):
     plt.rcParams['font.family'] = 'arial'
 
     # Set background color and dark theme
-    fig.patch.set_facecolor('#2E2E2E')
-    ax.set_facecolor('#2E2E2E')
+    fig.patch.set_facecolor('#161314')
+    ax.set_facecolor('#161314')
 
     rows = 10
     cols = 17.5
@@ -127,7 +127,7 @@ def primary_pred(df):
     ax.axis('off')
 
     ax.set_title(
-        'GW 6: Predictions',
+        'GW 7: Predictions',
         loc='left',
         fontsize=18,
         weight='bold',

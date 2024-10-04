@@ -1,0 +1,36 @@
+Minute,Team,xG,PSxG,Distance,Outcome
+22,Manchester Utd,0.25,0.22,12,Saved
+26,Manchester Utd,0.02,0.06,46,Saved
+37,Manchester Utd,0.08,0,8,Woodwork
+60,Manchester Utd,0.01,0,11,Blocked
+60,Manchester Utd,0.04,0,14,Off Target
+63,Manchester Utd,0.09,0,9,Off Target
+69,Manchester Utd,0.09,0,11,Off Target
+72,Manchester Utd,0.18,0,16,Blocked
+72,Manchester Utd,0.04,0,19,Blocked
+89,Manchester Utd,0.03,0,13,Blocked
+92,Manchester Utd,0.17,0,8,Off Target
+3,Tottenham,0.91,0.97,4,Goal
+11,Tottenham,0.3,0.31,9,Saved
+12,Tottenham,0.04,0,15,Off Target
+20,Tottenham,0.04,0,15,Woodwork
+30,Tottenham,0.04,0.02,26,Saved
+31,Tottenham,0.05,0,23,Blocked
+32,Tottenham,0.05,0,14,Blocked
+33,Tottenham,0.08,0,11,Off Target
+39,Tottenham,0.3,0.31,20,Saved
+40,Tottenham,0.04,0,17,Blocked
+40,Tottenham,0.02,0,17,Blocked
+41,Tottenham,0.05,0,10,Off Target
+47,Tottenham,0.35,0.33,5,Goal
+53,Tottenham,0.12,0.08,14,Saved
+56,Tottenham,0.25,0.18,17,Saved
+56,Tottenham,0.1,0.13,15,Saved
+75,Tottenham,0.07,0,11,Blocked
+76,Tottenham,0.04,0,23,Blocked
+77,Tottenham,0.15,0,6,Blocked
+77,Tottenham,0.8,0.85,3,Goal
+87,Tottenham,0.02,0,32,Off Target
+91,Tottenham,0.3,0.28,13,Saved
+91,Tottenham,0.24,0,9,Off Target
+96,Tottenham,0.04,0,23,Off Target
