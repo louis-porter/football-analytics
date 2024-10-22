@@ -7,7 +7,7 @@ from gw_predictions import primary_pred, secondary_pred
 from gw_handicap_bar import twoway_expected_goals
 
 
-file_path = os.path.join("models", "team-strength-models", "predictions", "ensmeble_gw8_preds.csv")
+file_path = os.path.join("models", "team-strength-models", "predictions", "ensmeble_gw9_preds.csv")
 df = pd.read_csv(file_path)
 df = df.to_dict(orient="records")
 

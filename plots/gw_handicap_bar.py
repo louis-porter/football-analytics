@@ -1,0 +1,107 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+def twoway_expected_goals(df):
+    fig, ax = plt.subplots(figsize=(14, 10))
+    plt.rcParams['font.family'] = 'arial'
+
+    # Set background color and dark theme
+    fig.patch.set_facecolor('#161314')
+    ax.set_facecolor('#161314')
+    
+    rows = len(df)
+    y_pos = np.arange(rows)
+    ax.set_ylim(-1, rows)
+
+    # Extract home and away goal expectations
+    home_goals = [d['home_goal_expectation'] for d in df]
+    away_goals = [d['away_goal_expectation'] for d in df]
+    home_teams = [d['home_team'] for d in df]
+    away_teams = [d['away_team'] for d in df]
+
+    # Calculate xG differences
+    xg_diffs = [home - away for home, away in zip(home_goals, away_goals)]
+
+    # Determine colors based on favorite/underdog
+    favorite_color = '#FF4500'
+    underdog_color = '#1E90FF'
+    home_colors = [favorite_color if home > away else underdog_color for home, away in zip(home_goals, away_goals)]
+    away_colors = [favorite_color if away > home else underdog_color for home, away in zip(home_goals, away_goals)]
+
+    # Calculate the maximum xG to set the x-axis limits
+    max_xg = max(max(home_goals), max(away_goals))
+    ax.set_xlim(-max_xg * 1.1, max_xg * 1.1)  # Symmetric limits
+
+    # Create horizontal bar chart
+    bar_height = 0.35
+    ax.barh(y_pos, [-g for g in home_goals], align='center', color=home_colors, height=bar_height, label='Favorite' if home_colors[0] == favorite_color else 'Underdog')
+    ax.barh(y_pos, away_goals, align='center', color=away_colors, height=bar_height, label='Favorite' if away_colors[0] == favorite_color else 'Underdog')
+
+    # Customize the plot
+    ax.set_yticks([])
+    ax.set_yticklabels([])
+    ax.invert_yaxis()  # Labels read top-to-bottom
+
+    ax.set_xlabel('Expected Goals', color='white')
+    ax.set_title('GW 8 Predictions: Handicaps', color='white', fontsize=16, fontweight='bold', pad=20)
+
+    plt.subplots_adjust(top=0.93, bottom=0.1)
+
+    # Add "Home" and "Away" labels
+    ax.text(0.02, 1, 'Home', transform=ax.transAxes, color='white', fontsize=14, fontweight='bold', ha='left', va='top')
+    ax.text(0.98, 1, 'Away', transform=ax.transAxes, color='white', fontsize=14, fontweight='bold', ha='right', va='top')
+
+    # Add team names, value labels, and xG difference on the bars
+    for i, (home_v, away_v, home_team, away_team, xg_diff) in enumerate(zip(home_goals, away_goals, home_teams, away_teams, xg_diffs)):
+        # Home team
+        ax.text(-min(home_v, 0.3), i, f'{home_team}', va='center', ha='right', color='white', fontweight='bold')
+        ax.text(-home_v, i, f'{home_v:.2f} ', va='center', ha='right', color='white')
+        
+        # Away team
+        ax.text(min(away_v, 0.3), i, f'{away_team}', va='center', ha='left', color='white', fontweight='bold')
+        ax.text(away_v, i, f' {away_v:.2f}', va='center', ha='left', color='white')
+        
+        # xG difference line and label
+        diff_color = 'yellow' if abs(xg_diff) > 0.1 else 'gray'
+
+        # Calculate the position for the difference line and label
+        if home_v > away_v:
+            line_x = -away_v
+            if xg_diff > 0.5 * (home_v - away_v):  # If difference is more than half the bar width
+                label_x = line_x + 0.05
+                align = 'left'
+            else:
+                label_x = line_x - 0.05
+                align = 'right'
+        else:
+            line_x = home_v
+            if xg_diff < -0.5 * (away_v - home_v):  # If difference is more than half the bar width
+                label_x = line_x - 0.05
+                align = 'right'
+            else:
+                label_x = line_x + 0.05
+                align = 'left'
+
+        # Draw the difference line
+        ax.plot([line_x, line_x], [i-0.15, i+0.15], color='yellow', linewidth=2)
+        
+        # Add the difference label
+        ax.text(label_x, i, f'{(-1*abs(xg_diff)):+.2f}', va='center', ha=align, color=diff_color, fontweight='bold')
+
+    # Customize grid, spines, and ticks
+    ax.grid(color='gray', linestyle=':', alpha=0.5)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['bottom'].set_color('white')
+    ax.spines['left'].set_visible(False)
+    ax.tick_params(axis='x', colors='white')
+
+    # Add a vertical line at x=0
+    ax.axvline(x=0, color='white', linewidth=0.8)
+
+    # Customize legend
+    ax.legend(loc='lower right', facecolor='#161314', edgecolor='white', labelcolor='white')
+
+    # Adjust layout and display
+    plt.tight_layout()
+    plt.show()
