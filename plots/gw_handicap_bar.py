@@ -30,7 +30,7 @@ def twoway_expected_goals(df):
 
     # Calculate the maximum xG to set the x-axis limits
     max_xg = max(max(home_goals), max(away_goals))
-    ax.set_xlim(-max_xg * 1.1, max_xg * 1.1)  # Symmetric limits
+    ax.set_xlim(-max_xg * 1.2, max_xg * 1.2)  # Increased margin for labels
 
     # Create horizontal bar chart
     bar_height = 0.35
@@ -43,7 +43,7 @@ def twoway_expected_goals(df):
     ax.invert_yaxis()  # Labels read top-to-bottom
 
     ax.set_xlabel('Expected Goals', color='white')
-    ax.set_title('GW 8 Predictions: Handicaps', color='white', fontsize=16, fontweight='bold', pad=20)
+    ax.set_title('GW 9 Predictions: Handicaps', color='white', fontsize=16, fontweight='bold', pad=20)
 
     plt.subplots_adjust(top=0.93, bottom=0.1)
 
@@ -53,13 +53,13 @@ def twoway_expected_goals(df):
 
     # Add team names, value labels, and xG difference on the bars
     for i, (home_v, away_v, home_team, away_team, xg_diff) in enumerate(zip(home_goals, away_goals, home_teams, away_teams, xg_diffs)):
-        # Home team
-        ax.text(-min(home_v, 0.3), i, f'{home_team}', va='center', ha='right', color='white', fontweight='bold')
-        ax.text(-home_v, i, f'{home_v:.2f} ', va='center', ha='right', color='white')
+        # Home team - adjusted position
+        ax.text(-max_xg * 1.15, i, f'{home_team}', va='center', ha='right', color='white', fontweight='bold')
+        ax.text(-home_v - 0.1, i, f'{home_v:.2f}', va='center', ha='right', color='white')
         
-        # Away team
-        ax.text(min(away_v, 0.3), i, f'{away_team}', va='center', ha='left', color='white', fontweight='bold')
-        ax.text(away_v, i, f' {away_v:.2f}', va='center', ha='left', color='white')
+        # Away team - adjusted position
+        ax.text(max_xg * 1.15, i, f'{away_team}', va='center', ha='left', color='white', fontweight='bold')
+        ax.text(away_v + 0.1, i, f'{away_v:.2f}', va='center', ha='left', color='white')
         
         # xG difference line and label
         diff_color = 'yellow' if abs(xg_diff) > 0.1 else 'gray'
@@ -67,25 +67,16 @@ def twoway_expected_goals(df):
         # Calculate the position for the difference line and label
         if home_v > away_v:
             line_x = -away_v
-            if xg_diff > 0.5 * (home_v - away_v):  # If difference is more than half the bar width
-                label_x = line_x + 0.05
-                align = 'left'
-            else:
-                label_x = line_x - 0.05
-                align = 'right'
+            label_x = line_x + 0.1  # Moved slightly right
         else:
             line_x = home_v
-            if xg_diff < -0.5 * (away_v - home_v):  # If difference is more than half the bar width
-                label_x = line_x - 0.05
-                align = 'right'
-            else:
-                label_x = line_x + 0.05
-                align = 'left'
+            label_x = line_x - 0.1  # Moved slightly left
 
         # Draw the difference line
         ax.plot([line_x, line_x], [i-0.15, i+0.15], color='yellow', linewidth=2)
         
-        # Add the difference label
+        # Add the difference label with adjusted position
+        align = 'left' if home_v > away_v else 'right'
         ax.text(label_x, i, f'{(-1*abs(xg_diff)):+.2f}', va='center', ha=align, color=diff_color, fontweight='bold')
 
     # Customize grid, spines, and ticks

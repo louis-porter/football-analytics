@@ -63,7 +63,7 @@ def primary_pred(df):
         # Return white if dark background, black if light background
         return 'white' if luminance < 0.5 else 'black'
 
-    # Create a colormap for gradient (from green for low to red for high)
+    # Create a colormap for gradient (from green to red)
     cmap = plt.cm.Reds
 
     for row in range(rows):
@@ -93,7 +93,8 @@ def primary_pred(df):
         if d['away_team'] in logos_dict:
             away_logo_path = logos_dict[d['away_team']]
             away_logo_img = mpimg.imread(away_logo_path)
-            ax.imshow(away_logo_img, extent=[15, 14.25, row-0.25, row+0.35], aspect='auto')
+            # Fixed the extent coordinates for away team logos
+            ax.imshow(away_logo_img, extent=[14.25, 15, row-0.35, row+0.35], aspect='auto')
 
         ax.text(x=.25, y=row, s=f"{d['home_team']}", va="center", ha="left", color=text_color) 
         ax.text(x=5, y=row, s=f"{d['home_goal_expectation']:.2f}", va="center", ha="center", color=text_color)  
@@ -127,7 +128,7 @@ def primary_pred(df):
     ax.axis('off')
 
     ax.set_title(
-        'GW 8: Predictions',
+        'GW 9: Predictions',
         loc='left',
         fontsize=18,
         weight='bold',
@@ -135,7 +136,6 @@ def primary_pred(df):
     )
 
     plt.show()
-
 
 def secondary_pred(df):
     fig, ax = plt.subplots(figsize=(10, 8))
