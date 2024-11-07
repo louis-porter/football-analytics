@@ -43,7 +43,7 @@ def twoway_expected_goals(df):
     ax.invert_yaxis()  # Labels read top-to-bottom
 
     ax.set_xlabel('Expected Goals', color='white')
-    ax.set_title('GW 10 Predictions: Handicaps', color='white', fontsize=16, fontweight='bold', pad=20)
+    ax.set_title('GW 11 Predictions: Handicaps', color='white', fontsize=16, fontweight='bold', pad=20)
 
     plt.subplots_adjust(top=0.93, bottom=0.1)
 
