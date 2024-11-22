@@ -128,7 +128,7 @@ def primary_pred(df):
     ax.axis('off')
 
     ax.set_title(
-        'GW 11: Predictions',
+        'GW 12: Predictions',
         loc='left',
         fontsize=18,
         weight='bold',
