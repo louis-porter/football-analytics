@@ -3,7 +3,7 @@ import sys
 import os
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append(os.path.join(project_root, 'plots'))
-from gw_predictions import primary_pred, secondary_pred
+from gw_predictions import primary_pred
 from gw_handicap_bar import twoway_expected_goals
 
 

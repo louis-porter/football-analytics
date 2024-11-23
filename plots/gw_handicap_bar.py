@@ -1,9 +1,57 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from datetime import datetime
+
+# Gameweek dictionary
+gw_dict = {
+    "GW12": "2024-11-18",  # Confirmed as current date
+    "GW13": "2024-11-26",
+    "GW14": "2024-12-03",
+    "GW15": "2024-12-06",
+    "GW16": "2024-12-10",
+    "GW17": "2024-12-17",  # Boxing Day
+    "GW18": "2024-12-23",  # Midweek
+    "GW19": "2025-12-28",  # New Year's Day
+    "GW20": "2025-01-02",
+    "GW21": "2025-01-07",
+    "GW22": "2025-01-17",  # After FA Cup break
+    "GW23": "2025-01-21",
+    "GW24": "2025-01-27",
+    "GW25": "2025-02-03",  # After international break
+    "GW26": "2025-02-19",
+}
+
+def get_current_gameweek(gw_dict):
+    """
+    Determines the current gameweek based on the current date.
+    Returns the most recent gameweek that has occurred.
+    """
+    current_date = datetime.now()
+    
+    # Convert all dates in dictionary to datetime objects for comparison
+    date_objects = {gw: datetime.strptime(date, '%Y-%m-%d') 
+                   for gw, date in gw_dict.items()}
+    
+    # Sort gameweeks by date
+    sorted_gws = sorted(date_objects.items(), key=lambda x: x[1])
+    
+    # Find the most recent gameweek
+    current_gw = sorted_gws[0][0]  # Default to first GW
+    
+    for gw, date in sorted_gws:
+        if current_date >= date:
+            current_gw = gw
+        else:
+            break
+            
+    return current_gw
 
 def twoway_expected_goals(df):
     fig, ax = plt.subplots(figsize=(14, 10))
     plt.rcParams['font.family'] = 'arial'
+
+    # Get current gameweek
+    current_gw = get_current_gameweek(gw_dict)
 
     # Set background color and dark theme
     fig.patch.set_facecolor('#161314')
@@ -43,7 +91,7 @@ def twoway_expected_goals(df):
     ax.invert_yaxis()  # Labels read top-to-bottom
 
     ax.set_xlabel('Expected Goals', color='white')
-    ax.set_title('GW 12 Predictions: Handicaps', color='white', fontsize=16, fontweight='bold', pad=20)
+    ax.set_title(f'{current_gw} Predictions: Handicaps', color='white', fontsize=16, fontweight='bold', pad=20)
 
     plt.subplots_adjust(top=0.93, bottom=0.1)
 
