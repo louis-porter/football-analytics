@@ -6,7 +6,7 @@ import re
 from sklearn.linear_model import LinearRegression
 
 
-def prepare_football_data(file_path, is_my_squad=False):
+def prepare_html_data(file_path, is_my_squad=False):
     """
     Read and preprocess Football Manager HTML data file into a pandas DataFrame
     
@@ -47,8 +47,8 @@ def prepare_football_data(file_path, is_my_squad=False):
     position_features = {
         "is_gk": r"GK",
         "is_cb": r"D \((?:C|LC|RC|RLC)\)",
-        "is_lfb": r"D \(L[C]?\)|WB \(L\)|LWB",  # Left full back/wing back
-        "is_rfb": r"D \(R[C]?\)|WB \(R\)|RWB",  # Right full back/wing back
+        "is_lfb": r"D \(L\)$|WB \(L\)$|LWB$",  # Left full back/wing back only
+        "is_rfb": r"D \(R\)$|WB \(R\)$|RWB$",  # Right full back/wing back only
         "is_cm": r"(?:DM|M) \([LR]*C[LR]*\)",   # Central midfielders
         "is_am": r"AM \([LRC]*\)|M\/AM \([LR]\)",  # Attacking midfielders
         "is_st": r"ST|ST \([LRC]\)"  # Strikers
@@ -126,18 +126,121 @@ def prepare_football_data(file_path, is_my_squad=False):
     
     return df
 
-df_palace_squad = prepare_football_data(r"optimisation\multi-season-squad-planning-fm24\palace_squad.html", is_my_squad=True)
-df_transfer_targets = prepare_football_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets.html")
+def prepare_csv_data(file_path):
+    """
+    Read and preprocess Football Manager squad data from CSV file into a pandas DataFrame
+    
+    Parameters:
+    file_path (str): Path to the CSV file containing squad data
+    
+    Returns:
+    pandas.DataFrame: Preprocessed DataFrame with cleaned attributes and encoded positions
+    """
+    # Read the CSV file
+    df = pd.read_csv(file_path)
+    
+    # Convert wage column to numeric if present
+    if 'Wage' in df.columns:
+        df['Wage'] = df['Wage'].str.replace('£', '').str.replace(' p/w', '').str.replace(',', '')
+        df['Wage'] = pd.to_numeric(df['Wage'], errors='coerce')
+    
+    # Convert numeric attribute columns
+    numeric_columns = ['Age', 'Com', 'Ecc', 'Pun', '1v1', 'Acc', 'Aer', 'Agg', 'Agi', 'Ant', 
+                      'Bal', 'Bra', 'Cmd', 'Cnt', 'Cmp', 'Cro', 'Dec', 'Det', 'Dri', 'Fin',
+                      'Fir', 'Fla', 'Han', 'Hea', 'Jum', 'Kic', 'Ldr', 'Lon', 'Mar', 'OtB',
+                      'Pac', 'Pas', 'Pos', 'Ref', 'Sta', 'Str', 'Tck', 'Tea', 'Tec', 'Thr',
+                      'TRO', 'Vis', 'Wor', 'Cor', 'Fre', 'L Th', 'Pen']
+    
+    for col in numeric_columns:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+    
+    # Map Act Pos to position flags
+    df['is_gk'] = (df['Act Pos'] == 'GK').astype(int)
+    df['is_cb'] = (df['Act Pos'] == 'DC').astype(int)
+    df['is_lfb'] = (df['Act Pos'] == 'LB').astype(int)
+    df['is_rfb'] = (df['Act Pos'] == 'RB').astype(int)
+    df['is_cm'] = (df['Act Pos'] == 'CM').astype(int)
+    df['is_am'] = (df['Act Pos'] == 'AM').astype(int)
+    df['is_st'] = (df['Act Pos'] == 'ST').astype(int)
+    
+    # Create Position column for compatibility with rest of the code
+    position_mapping = {
+        'GK': 'GK',
+        'DC': 'D (C)',
+        'LB': 'D (L)',
+        'RB': 'D (R)',
+        'CM': 'M (C)',
+        'AM': 'AM (C)',
+        'ST': 'ST'
+    }
+    df['Position'] = df['Act Pos'].apply(lambda x: position_mapping.get(x, 'Unknown'))
+    
+    if all(col in df.columns for col in ['Min Value', 'Max Value']):
+        df['Min Value'] = pd.to_numeric(df['Min Value'], errors='coerce')
+        df['Max Value'] = pd.to_numeric(df['Max Value'], errors='coerce')
+        df['Avg Value'] = df['Min Value'] + (df['Max Value'] - df['Min Value']) * 0.05
+    elif 'Value' in df.columns:  # If there's a single Value column
+        df['Avg Value'] = pd.to_numeric(df['Value'], errors='coerce')
+    else:  # If no value columns exist, estimate from wages
+        print("Warning: No value columns found. Estimating values from wages.")
+        if 'Wage' in df.columns:
+            # Use a simple multiplier as fallback (e.g., 52 weeks * 2 years)
+            df['Avg Value'] = df['Wage'] * 52 * 2
+        else:
+            # If no wage data either, use a default value
+            print("Warning: No wage data found. Using default values.")
+            df['Avg Value'] = 1000000  # Default value, adjust as needed
 
-df_palace_squad= df_palace_squad.drop(0)
-df_palace_squad= df_palace_squad[:23]
+    # Now handle missing values using wages if available
+    if 'Wage' in df.columns:
+        mask = ~df['Avg Value'].isna() & ~df['Wage'].isna()
+        if mask.sum() >= 2:
+            X = df.loc[mask, 'Wage'].values.reshape(-1, 1)
+            y = df.loc[mask, 'Avg Value'].values
+            
+            model = LinearRegression()
+            model.fit(X, y)
+            
+            value_to_wage_ratio = y / X.flatten()
+            median_ratio = np.median(value_to_wage_ratio)
+            print(f"Median value-to-wage ratio: {median_ratio:.2f}")
+            print(f"R² score: {model.score(X, y):.3f}")
+            
+            missing_mask = df['Avg Value'].isna() & ~df['Wage'].isna()
+            if missing_mask.any():
+                X_missing = df.loc[missing_mask, 'Wage'].values.reshape(-1, 1)
+                df.loc[missing_mask, 'Avg Value'] = model.predict(X_missing)
+                
+                df.loc[missing_mask, 'Avg Value'] = df.loc[missing_mask, 'Avg Value'].clip(
+                    lower=df.loc[mask, 'Avg Value'].min(),
+                    upper=df.loc[mask, 'Avg Value'].max()
+                )
+                print(f"Estimated {missing_mask.sum()} missing values")
+
+    # Handle any remaining NaN values using position-based medians
+    remaining_nans = df['Avg Value'].isna().sum()
+    if remaining_nans > 0:
+        print(f"Warning: {remaining_nans} rows still have NaN values for Avg Value")
+        for pos in ['is_gk', 'is_cb', 'is_lfb', 'is_rfb', 'is_cm', 'is_am', 'is_st']:
+            pos_mask = (df[pos] == 1) & (df['Avg Value'].isna())
+            if pos_mask.any():
+                median_value = df.loc[(df[pos] == 1) & (~df['Avg Value'].isna()), 'Avg Value'].median()
+                if pd.isna(median_value):  # If no median available for position
+                    median_value = df['Avg Value'].median()  # Use overall median
+                if pd.isna(median_value):  # If still no median available
+                    median_value = 1000000  # Default value
+                df.loc[pos_mask, 'Avg Value'] = median_value
+        
+    return df
+
+df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets.html", is_my_squad=True)
+df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm24\palace_squad.csv")
+
+
+#df_palace_squad = df_palace_squad.drop(0)
+print(df_palace_squad)
 df_transfer_targets = df_transfer_targets.drop(0)
-
-print(df_palace_squad.head())
-
-
-
-
 
 class PlayerAttributeWeights:
     """Define position-specific attribute weights"""
@@ -215,11 +318,11 @@ class FMTransferOptimizer:
         [Previous calculate_player_score method remains exactly the same]
         """
         # Get relevant attribute weights based on position
-        if position.startswith('GK'):
+        if re.search(r"GK", position):
             weights = self.attribute_weights.goalkeeper_weights()
         elif re.search(r"D \((C|LC|RC|RLC)\)", position):
             weights = self.attribute_weights.center_back_weights()
-        elif re.search(r"D \([LR]+[C]?\)|WB", position):
+        elif re.search(r"D \(L\)$|D \(R\)$|WB \([LR]\)$|[LR]WB$", position):
             weights = self.attribute_weights.wingback_weights()
         elif re.search(r"[DMA]M \([LR]*C[LR]*\)", position):
             weights = self.attribute_weights.midfielder_weights()
@@ -256,22 +359,13 @@ class FMTransferOptimizer:
         
         return score * age_factor
 
-    def optimise_transfers(self, current_squad, available_players, required_positions, max_transfers=1):
+
+    def optimise_transfers(self, current_squad, available_players, required_positions, max_transfers=2):
         """
-        Optimize transfer decisions
-        
-        Args:
-            current_squad (pd.DataFrame): Current squad with attributes and info
-            available_players (pd.DataFrame): Available transfers with attributes
-            required_positions (dict): Position requirements
-            max_transfers (int): Maximum number of transfers allowed (both in and out)
-        
-        Returns:
-            tuple: (players_to_buy, players_to_sell, optimization_metrics)
+        Optimize transfer decisions based on player attributes with core constraints only
         """
-        # Create new optimization problem
         self.problem = pulp.LpProblem("FM_Transfer_Optimization", pulp.LpMaximize)
-        
+
         # Calculate player scores
         current_squad['player_score'] = current_squad.apply(
             lambda x: self.calculate_player_score(x, x["Position"]),
@@ -284,39 +378,59 @@ class FMTransferOptimizer:
 
         # Create binary decision variables
         buy_vars = pulp.LpVariable.dicts("buy",
-                                    ((i) for i in available_players.index),
-                                    cat='Binary')
+                                        ((i) for i in available_players.index),
+                                        cat='Binary')
         
         sell_vars = pulp.LpVariable.dicts("sell",
                                         ((i) for i in current_squad.index),
                                         cat='Binary')
+        
+        # Protect third-choice goalkeeper
+        current_gks = current_squad[current_squad['is_gk'] == 1].copy()
+        if len(current_gks) >= 3:
+            # Sort goalkeepers by score and protect the lowest-rated one
+            worst_gk_idx = current_gks.nsmallest(1, 'player_score').index[0]
+            self.problem += sell_vars[worst_gk_idx] == 0, "Protect_Third_GK"
 
-        # Strict transfer limits - exactly max_transfers in and out
-        self.problem += pulp.lpSum(buy_vars[i] for i in available_players.index) <= max_transfers, "Buy_Limit"
-        self.problem += pulp.lpSum(sell_vars[i] for i in current_squad.index) <= max_transfers, "Sell_Limit"
+        # Start with current squad total score
+        base_score = current_squad['player_score'].sum()
 
-        # Objective: Maximize squad improvement
-        objective = pulp.lpSum(
+        # Calculate score changes from transfers
+        score_from_sales = pulp.lpSum(
+            -sell_vars[i] * current_squad.loc[i, 'player_score']
+            for i in current_squad.index
+        )
+
+        score_from_purchases = pulp.lpSum(
             buy_vars[i] * available_players.loc[i, 'player_score']
             for i in available_players.index
-        ) - pulp.lpSum(
-            sell_vars[i] * current_squad.loc[i, 'player_score']
-            for i in current_squad.index
         )
-        self.problem += objective
 
-        # Squad size constraint (maximum 25 players)
-        current_squad_size = len(current_squad) - pulp.lpSum(
-            sell_vars[i]
-            for i in current_squad.index
-        )
-        new_players = pulp.lpSum(
-            buy_vars[i]
-            for i in available_players.index
-        )
-        self.problem += current_squad_size + new_players <= 25
+        # Objective: Maximize final score
+        self.problem += base_score + score_from_sales + score_from_purchases, "Total_Squad_Quality"
 
-        # Budget constraints
+        # Core Constraints:
+        
+        # 1. Maximum transfers constraint
+        # Core transfer limits first
+        incoming_transfers = pulp.lpSum(buy_vars[i] for i in available_players.index)
+        outgoing_transfers = pulp.lpSum(sell_vars[i] for i in current_squad.index)
+
+        # Enforce max transfers as our primary constraint
+        self.problem += incoming_transfers <= max_transfers, "Max_Incoming_Transfers"
+        self.problem += outgoing_transfers <= max_transfers, "Max_Outgoing_Transfers"
+
+        # 2. Squad size constraints (20-25 players)
+        initial_squad_size = len(current_squad)
+        self.problem += (initial_squad_size - 
+                        pulp.lpSum(sell_vars[i] for i in current_squad.index) +
+                        pulp.lpSum(buy_vars[i] for i in available_players.index) <= 25), "Max_Squad_Size"
+        
+        self.problem += (initial_squad_size - 
+                        pulp.lpSum(sell_vars[i] for i in current_squad.index) +
+                        pulp.lpSum(buy_vars[i] for i in available_players.index) >= 20), "Min_Squad_Size"
+
+        # 3. Budget constraints
         sales_income = pulp.lpSum(
             sell_vars[i] * current_squad.loc[i, 'Avg Value']
             for i in current_squad.index
@@ -325,9 +439,9 @@ class FMTransferOptimizer:
             buy_vars[i] * available_players.loc[i, 'Avg Value']
             for i in available_players.index
         )
-        self.problem += purchase_costs - sales_income <= self.transfer_budget
+        self.problem += purchase_costs - sales_income <= self.transfer_budget, "Transfer_Budget"
 
-        # Wage budget constraints
+        # 4. Wage budget constraints
         current_wages = pulp.lpSum(
             (1 - sell_vars[i]) * current_squad.loc[i, 'Wage']
             for i in current_squad.index
@@ -336,9 +450,10 @@ class FMTransferOptimizer:
             buy_vars[i] * available_players.loc[i, 'Wage']
             for i in available_players.index
         )
-        self.problem += current_wages + new_wages <= self.wage_budget
+        self.problem += current_wages + new_wages <= self.wage_budget, "Wage_Budget"
 
-        # Position requirements
+        # 5. Position constraints
+        # Position constraints
         for position_flag, (min_players, max_players) in required_positions.items():
             current_position_count = pulp.lpSum(
                 1 - sell_vars[i]
@@ -348,8 +463,22 @@ class FMTransferOptimizer:
                 buy_vars[i]
                 for i in available_players[available_players[position_flag] == 1].index
             )
-            self.problem += current_position_count + new_position_count >= min_players
-            self.problem += current_position_count + new_position_count <= max_players
+            
+            # Get current number of players in this position
+            current_pos_players = len(current_squad[current_squad[position_flag] == 1])
+            
+            if current_pos_players > max_players:
+                # If we're over the maximum:
+                # 1. Prevent any purchases for this position
+                self.problem += new_position_count == 0, f"No_Buys_{position_flag}"
+                
+                # 2. Limit how many we can sell based on max_transfers
+                min_allowed = current_pos_players - max_transfers
+                self.problem += current_position_count >= min_allowed, f"Max_Reduction_{position_flag}"
+            else:
+                # Normal case - enforce minimum and maximum requirements
+                self.problem += current_position_count + new_position_count >= min_players, f"Min_{position_flag}"
+                self.problem += current_position_count + new_position_count <= max_players, f"Max_{position_flag}"
 
         # Solve optimization
         self.problem.solve()
@@ -365,13 +494,8 @@ class FMTransferOptimizer:
 
         # Calculate metrics
         metrics = self._calculate_metrics(current_squad, players_to_buy, players_to_sell)
-        
-        # Debug print
-        print(f"\nDebug - Transfer Counts:")
-        print(f"Buys: {len(players_to_buy)}")
-        print(f"Sells: {len(players_to_sell)}")
-        
         return players_to_buy, players_to_sell, metrics
+
 
     def _calculate_metrics(self, current_squad, players_to_buy, players_to_sell):
         """Calculate improvement metrics after transfer decisions"""
@@ -401,10 +525,10 @@ class FMTransferOptimizer:
 required_positions = {
     'is_gk': (3, 3),
     'is_cb': (5, 6),
-    'is_lfb': (2, 3),
-    'is_rfb': (2, 3),
-    'is_cm': (4, 5),
-    'is_am': (4, 5),
+    'is_lfb': (2, 2),
+    'is_rfb': (2, 2),
+    'is_cm': (3, 4),
+    'is_am': (3, 4),
     'is_st': (2, 3)
 }
 
