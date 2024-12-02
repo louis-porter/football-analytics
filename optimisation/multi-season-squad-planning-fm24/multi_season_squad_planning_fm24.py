@@ -234,8 +234,8 @@ def prepare_csv_data(file_path):
         
     return df
 
-df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets.html", is_my_squad=True)
-df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm24\palace_squad.csv")
+df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets_jan24.html", is_my_squad=True)
+df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm24\palace_squad_jan24.csv")
 
 
 #df_palace_squad = df_palace_squad.drop(0)
@@ -312,10 +312,39 @@ class FMTransferOptimizer:
         self.transfer_budget = current_budget
         self.wage_budget = wage_budget
         self.attribute_weights = PlayerAttributeWeights()
-    
-    def calculate_player_score(self, player_data, position):
+
+    def get_rating_multiplier(self, avg_rating):
         """
-        [Previous calculate_player_score method remains exactly the same]
+        Calculate performance multiplier based on average rating
+        
+        Args:
+            avg_rating (float): Player's average rating
+            
+        Returns:
+            float: Performance multiplier
+        """
+        if pd.isna(avg_rating):
+            return 1.0
+            
+        base_rating = 6.8
+        
+        if avg_rating >= base_rating:
+            # For ratings above 6.8: Each 0.1 increase = 2.5% boost
+            rating_diff = avg_rating - base_rating
+            return 1 + (rating_diff * 0.25)
+        else:
+            # For ratings below 6.8: More aggressive penalty
+            rating_diff = base_rating - avg_rating
+            return 1 - (rating_diff * 0.5)  # Each 0.1 decrease = 5% penalty
+    
+    def calculate_player_score(self, player_data, position, is_transfer_target=False):
+        """
+        Calculate player score, applying rating multiplier only for transfer targets
+        
+        Args:
+            player_data: Row of player attributes
+            position: Player's position
+            is_transfer_target: Whether this is a potential transfer target
         """
         # Get relevant attribute weights based on position
         if re.search(r"GK", position):
@@ -333,9 +362,9 @@ class FMTransferOptimizer:
         else:
             weights = self.attribute_weights.midfielder_weights()
         
-        # Calculate weighted score
-        score = sum(player_data[attr] * weight 
-                   for attr, weight in weights.items())
+        # Calculate base score from attributes
+        base_score = sum(player_data[attr] * weight 
+                        for attr, weight in weights.items())
         
         # Apply age factor
         age = player_data['Age']
@@ -353,11 +382,18 @@ class FMTransferOptimizer:
             elif age >= 27:
                 age_factor = 0.97
             elif age >= 30:
-                age_factor = 0.8
+                age_factor = 0.87
             elif age > 32:
                 age_factor = 0.8
         
-        return score * age_factor
+        score = base_score * age_factor
+        
+        # Apply rating multiplier only for transfer targets
+        if is_transfer_target and 'Av Rat' in player_data:
+            rating_multiplier = self.get_rating_multiplier(player_data['Av Rat'])
+            score *= rating_multiplier
+        
+        return score
 
 
     def optimise_transfers(self, current_squad, available_players, required_positions, 
@@ -397,7 +433,7 @@ class FMTransferOptimizer:
                                         ((i) for i in current_squad.index),
                                         cat='Binary')
         
-        # Add constraints for locked and banned players
+        # constraints for locked and banned players
         for player_name in locked_players:
             locked_indices = current_squad[current_squad['Name'] == player_name].index
             for idx in locked_indices:
@@ -551,22 +587,21 @@ def print_squad_composition(squad_df, required_positions):
         status = "OK" if min_req <= count <= max_req else "NEED MORE" if count < min_req else "TOO MANY"
         print(f"{pos}: {count} players (Required: {min_req}-{max_req}) - {status}")
 
-# Add this after loading the squad data:
 print_squad_composition(df_palace_squad, required_positions)
 
-locked_players = []  # Players that cannot be sold
+locked_players = ["Ismaïla Sarr"] 
 banned_players = []
 
 optimiser = FMTransferOptimizer(
-    current_budget= 50000000,
-    wage_budget=1600000
+    current_budget= 600000,
+    wage_budget=1605000
 )
 
 players_to_buy, players_to_sell, metrics = optimiser.optimise_transfers(
     current_squad=df_palace_squad,
     available_players=df_transfer_targets,
     required_positions=required_positions,
-    max_transfers=5,
+    max_transfers=2,
     locked_players=locked_players,
     banned_players=banned_players
 )
@@ -585,7 +620,6 @@ def format_currency(value):
         return f"£{value:.0f}"
 
 def print_transfer_results(players_to_buy, players_to_sell, metrics):
-    # Print players to buy
     print("\nPLAYERS TO BUY:")
     buy_data = []
     for _, player in players_to_buy.iterrows():
@@ -602,7 +636,6 @@ def print_transfer_results(players_to_buy, players_to_sell, metrics):
     else:
         print("None")
 
-    # Print players to sell
     print("\nPLAYERS TO SELL:")
     sell_data = []
     for _, player in players_to_sell.iterrows():
@@ -619,12 +652,10 @@ def print_transfer_results(players_to_buy, players_to_sell, metrics):
     else:
         print("None")
 
-    # Print financial summary
     print("\nFINANCIAL SUMMARY:")
     print(f"Total spend: {format_currency(metrics['financial']['total_spend'])}")
     print(f"Total income: {format_currency(metrics['financial']['total_income'])}")
     print(f"Net spend: {format_currency(metrics['financial']['net_spend'])}")
     print(f"Weekly wage change: {format_currency(metrics['financial']['wage_change'])}/w")
 
-# Use it
 print_transfer_results(players_to_buy, players_to_sell, metrics)
