@@ -348,22 +348,34 @@ class FMTransferOptimizer:
         else:
             if age < 21:
                 age_factor = 1.07 
-            elif age <= 23:
+            elif age <= 24:
                 age_factor = 1.05
-            elif age >= 28:
-                age_factor = 0.97  
+            elif age >= 27:
+                age_factor = 0.97
             elif age >= 30:
-                age_factor = 0.85
+                age_factor = 0.8
             elif age > 32:
                 age_factor = 0.8
         
         return score * age_factor
 
 
-    def optimise_transfers(self, current_squad, available_players, required_positions, max_transfers=2):
+    def optimise_transfers(self, current_squad, available_players, required_positions, 
+                         max_transfers=2, locked_players=None, banned_players=None):
         """
-        Optimize transfer decisions based on player attributes with core constraints only
+        Optimize transfer decisions based on player attributes
+        
+        Args:
+            current_squad (pd.DataFrame): Current squad data
+            available_players (pd.DataFrame): Available transfer targets
+            required_positions (dict): Position requirements {position: (min, max)}
+            max_transfers (int): Maximum number of transfers allowed
+            locked_players (list): List of player names that cannot be sold
+            banned_players (list): List of player names that cannot be bought
         """
+        locked_players = locked_players or []
+        banned_players = banned_players or []
+        
         self.problem = pulp.LpProblem("FM_Transfer_Optimization", pulp.LpMaximize)
 
         # Calculate player scores
@@ -385,17 +397,25 @@ class FMTransferOptimizer:
                                         ((i) for i in current_squad.index),
                                         cat='Binary')
         
+        # Add constraints for locked and banned players
+        for player_name in locked_players:
+            locked_indices = current_squad[current_squad['Name'] == player_name].index
+            for idx in locked_indices:
+                self.problem += sell_vars[idx] == 0, f"Lock_Player_{player_name}"
+                
+        for player_name in banned_players:
+            banned_indices = available_players[available_players['Name'] == player_name].index
+            for idx in banned_indices:
+                self.problem += buy_vars[idx] == 0, f"Ban_Player_{player_name}"
+
         # Protect third-choice goalkeeper
         current_gks = current_squad[current_squad['is_gk'] == 1].copy()
         if len(current_gks) >= 3:
-            # Sort goalkeepers by score and protect the lowest-rated one
             worst_gk_idx = current_gks.nsmallest(1, 'player_score').index[0]
             self.problem += sell_vars[worst_gk_idx] == 0, "Protect_Third_GK"
 
-        # Start with current squad total score
         base_score = current_squad['player_score'].sum()
 
-        # Calculate score changes from transfers
         score_from_sales = pulp.lpSum(
             -sell_vars[i] * current_squad.loc[i, 'player_score']
             for i in current_squad.index
@@ -406,21 +426,14 @@ class FMTransferOptimizer:
             for i in available_players.index
         )
 
-        # Objective: Maximize final score
         self.problem += base_score + score_from_sales + score_from_purchases, "Total_Squad_Quality"
 
-        # Core Constraints:
-        
-        # 1. Maximum transfers constraint
-        # Core transfer limits first
         incoming_transfers = pulp.lpSum(buy_vars[i] for i in available_players.index)
         outgoing_transfers = pulp.lpSum(sell_vars[i] for i in current_squad.index)
 
-        # Enforce max transfers as our primary constraint
         self.problem += incoming_transfers <= max_transfers, "Max_Incoming_Transfers"
         self.problem += outgoing_transfers <= max_transfers, "Max_Outgoing_Transfers"
 
-        # 2. Squad size constraints (20-25 players)
         initial_squad_size = len(current_squad)
         self.problem += (initial_squad_size - 
                         pulp.lpSum(sell_vars[i] for i in current_squad.index) +
@@ -430,7 +443,6 @@ class FMTransferOptimizer:
                         pulp.lpSum(sell_vars[i] for i in current_squad.index) +
                         pulp.lpSum(buy_vars[i] for i in available_players.index) >= 20), "Min_Squad_Size"
 
-        # 3. Budget constraints
         sales_income = pulp.lpSum(
             sell_vars[i] * current_squad.loc[i, 'Avg Value']
             for i in current_squad.index
@@ -441,7 +453,6 @@ class FMTransferOptimizer:
         )
         self.problem += purchase_costs - sales_income <= self.transfer_budget, "Transfer_Budget"
 
-        # 4. Wage budget constraints
         current_wages = pulp.lpSum(
             (1 - sell_vars[i]) * current_squad.loc[i, 'Wage']
             for i in current_squad.index
@@ -452,8 +463,6 @@ class FMTransferOptimizer:
         )
         self.problem += current_wages + new_wages <= self.wage_budget, "Wage_Budget"
 
-        # 5. Position constraints
-        # Position constraints
         for position_flag, (min_players, max_players) in required_positions.items():
             current_position_count = pulp.lpSum(
                 1 - sell_vars[i]
@@ -464,26 +473,18 @@ class FMTransferOptimizer:
                 for i in available_players[available_players[position_flag] == 1].index
             )
             
-            # Get current number of players in this position
             current_pos_players = len(current_squad[current_squad[position_flag] == 1])
             
             if current_pos_players > max_players:
-                # If we're over the maximum:
-                # 1. Prevent any purchases for this position
                 self.problem += new_position_count == 0, f"No_Buys_{position_flag}"
-                
-                # 2. Limit how many we can sell based on max_transfers
                 min_allowed = current_pos_players - max_transfers
                 self.problem += current_position_count >= min_allowed, f"Max_Reduction_{position_flag}"
             else:
-                # Normal case - enforce minimum and maximum requirements
                 self.problem += current_position_count + new_position_count >= min_players, f"Min_{position_flag}"
                 self.problem += current_position_count + new_position_count <= max_players, f"Max_{position_flag}"
 
-        # Solve optimization
         self.problem.solve()
 
-        # Get results
         players_to_buy = available_players[
             [buy_vars[i].value() > 0.5 for i in available_players.index]
         ].copy()
@@ -492,10 +493,8 @@ class FMTransferOptimizer:
             [sell_vars[i].value() > 0.5 for i in current_squad.index]
         ].copy()
 
-        # Calculate metrics
         metrics = self._calculate_metrics(current_squad, players_to_buy, players_to_sell)
         return players_to_buy, players_to_sell, metrics
-
 
     def _calculate_metrics(self, current_squad, players_to_buy, players_to_sell):
         """Calculate improvement metrics after transfer decisions"""
@@ -521,7 +520,7 @@ class FMTransferOptimizer:
             }
         }
         return metrics
-
+    
 required_positions = {
     'is_gk': (3, 3),
     'is_cb': (5, 6),
@@ -555,6 +554,9 @@ def print_squad_composition(squad_df, required_positions):
 # Add this after loading the squad data:
 print_squad_composition(df_palace_squad, required_positions)
 
+locked_players = []  # Players that cannot be sold
+banned_players = []
+
 optimiser = FMTransferOptimizer(
     current_budget= 50000000,
     wage_budget=1600000
@@ -564,7 +566,9 @@ players_to_buy, players_to_sell, metrics = optimiser.optimise_transfers(
     current_squad=df_palace_squad,
     available_players=df_transfer_targets,
     required_positions=required_positions,
-    max_transfers=5
+    max_transfers=5,
+    locked_players=locked_players,
+    banned_players=banned_players
 )
 
 
