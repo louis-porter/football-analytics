@@ -6,12 +6,35 @@ import re
 from sklearn.linear_model import LinearRegression
 
 
+def convert_value_string(value_str):
+    """Convert a value string like '£18.5M' or '£300K' to numeric"""
+    if pd.isna(value_str) or value_str == '' or value_str == 'Not for Sale':
+        return np.nan
+    
+    # Remove £ and any whitespace
+    value_str = value_str.strip().replace('£', '').replace(' ', '')
+    
+    # Convert K/M to actual numbers
+    multiplier = 1
+    if value_str.endswith('K'):
+        multiplier = 1_000
+        value_str = value_str[:-1]
+    elif value_str.endswith('M'):
+        multiplier = 1_000_000
+        value_str = value_str[:-1]
+    
+    try:
+        return float(value_str) * multiplier
+    except ValueError:
+        return np.nan
+
 def prepare_html_data(file_path, is_my_squad=False):
     """
     Read and preprocess Football Manager HTML data file into a pandas DataFrame
     
     Parameters:
     file_path (str): Path to the HTML file
+    is_my_squad (bool): If True, uses more conservative valuation (closer to min value)
     
     Returns:
     pandas.DataFrame: Preprocessed DataFrame with cleaned attributes and encoded positions
@@ -47,74 +70,73 @@ def prepare_html_data(file_path, is_my_squad=False):
     position_features = {
         "is_gk": r"GK",
         "is_cb": r"D \((?:C|LC|RC|RLC)\)",
-        "is_lfb": r"D \(L\)$|WB \(L\)$|LWB$",  # Left full back/wing back only
-        "is_rfb": r"D \(R\)$|WB \(R\)$|RWB$",  # Right full back/wing back only
-        "is_cm": r"(?:DM|M) \([LR]*C[LR]*\)",   # Central midfielders
-        "is_am": r"AM \([LRC]*\)|M\/AM \([LR]\)",  # Attacking midfielders
-        "is_st": r"ST|ST \([LRC]\)"  # Strikers
+        "is_lfb": r"D \(L\)$|WB \(L\)$|LWB$",
+        "is_rfb": r"D \(R\)$|WB \(R\)$|RWB$",
+        "is_cm": r"(?:DM|M) \([LR]*C[LR]*\)",
+        "is_am": r"AM \([LRC]*\)|M\/AM \([LR]\)",
+        "is_st": r"ST|ST \([LRC]\)"
     }
     
     df["Position"] = df["Position"].fillna("")
     for feature, pattern in position_features.items():
         df[feature] = df["Position"].str.contains(pattern, regex=True).astype(int)
     
-    # Clean and process transfer values
-    df[["Min Value", "Max Value"]] = df["Transfer Value"].str.split(" - ", expand=True)
-    df["Min Value"] = df["Min Value"].str.strip().str.replace("£", "")
-    df["Min Value"] = df["Min Value"].replace("Not for Sale", np.nan)
-    df["Max Value"] = df["Max Value"].str.strip().str.replace("£", "")
-    
-    def convert_values(value):
-        if pd.isna(value):
-            return np.nan
-        elif "M" in value:
-            return float(value.replace("M", "")) * 1000000
-        elif "K" in value:
-            return float(value.replace("K", "")) * 1000
-        else:
-            return float(value)
-    
-    df["Min Value"] = df["Min Value"].apply(convert_values)
-    df["Max Value"] = df["Max Value"].apply(convert_values)
-
-    if is_my_squad:
-        # For squad, use 25th percentile (conservative valuation)
-        df["Avg Value"] = df["Min Value"] + (df["Max Value"] - df["Min Value"]) * 0.05
-    else:
-        # For transfer targets, use 75th percentile (higher valuation)
-        df["Avg Value"] = df["Min Value"] + (df["Max Value"] - df["Min Value"]) * 0.9
-    
-    # Estimate missing values based on wages
-    mask = ~df['Avg Value'].isna() & ~df['Wage'].isna()
-    if mask.sum() >= 2:  # Need at least 2 points for regression
-        # Prepare data for regression
-        X = df.loc[mask, 'Wage'].values.reshape(-1, 1)
-        y = df.loc[mask, 'Avg Value'].values
-        
-        # Fit regression model
-        model = LinearRegression()
-        model.fit(X, y)
-        
-        # Print relationship stats
-        value_to_wage_ratio = y / X.flatten()
-        median_ratio = np.median(value_to_wage_ratio)
-        print(f"Median value-to-wage ratio: {median_ratio:.2f}")
-        print(f"R² score: {model.score(X, y):.3f}")
-        
-        # Estimate missing values
-        missing_mask = df['Avg Value'].isna() & ~df['Wage'].isna()
-        if missing_mask.any():
-            X_missing = df.loc[missing_mask, 'Wage'].values.reshape(-1, 1)
-            df.loc[missing_mask, 'Avg Value'] = model.predict(X_missing)
+    # Handle Transfer Value
+    if 'Transfer Value' in df.columns:
+        # Check if the value contains ranges
+        if df['Transfer Value'].str.contains(' - ').any():
+            # Split ranges and convert
+            df[['Min Value', 'Max Value']] = df['Transfer Value'].str.split(' - ', expand=True)
+            df['Min Value'] = df['Min Value'].apply(convert_value_string)
+            df['Max Value'] = df['Max Value'].apply(convert_value_string)
             
-            # Apply constraints to estimated values
-            df.loc[missing_mask, 'Avg Value'] = df.loc[missing_mask, 'Avg Value'].clip(
-                lower=df.loc[mask, 'Avg Value'].min(),
-                upper=df.loc[mask, 'Avg Value'].max()
-            )
-            print(f"Estimated {missing_mask.sum()} missing values")
+            # Calculate average value based on squad type
+            weight = 0.9
+            df['Avg Value'] = df['Min Value'] + (df['Max Value'] - df['Min Value']) * weight
+        else:
+            # Single values
+            df['Avg Value'] = df['Transfer Value'].apply(convert_value_string)
+            df['Min Value'] = df['Avg Value']
+            df['Max Value'] = df['Avg Value']
+
+    # Handle missing values using regression for transfer targets
+    if not is_my_squad and 'Avg Value' in df.columns and df['Avg Value'].isna().any():
+        # Prepare features for regression
+        feature_cols = [col for col in numeric_columns if col in df.columns]
+        if 'Wage' in df.columns:
+            feature_cols.append('Wage')
+        
+        # Add position dummy variables
+        for pos in position_features.keys():
+            if pos in df.columns:
+                feature_cols.append(pos)
+        
+        # Remove rows with NaN in features
+        features_df = df[feature_cols].copy()
+        mask = ~features_df.isna().any(axis=1) & ~df['Avg Value'].isna()
+        
+        if mask.sum() >= 5:  # Only use regression if we have enough complete samples
+            # Prepare data for regression
+            X = features_df.loc[mask]
+            y = df.loc[mask, 'Avg Value']
+            
+            # Fit regression model
+            model = LinearRegression()
+            model.fit(X, y)
+            
+            # Print relationship stats
+            r2_score = model.score(X, y)
+            print(f"Value estimation R² score: {r2_score:.3f}")
+            
+            # Predict missing values
+            missing_mask = df['Avg Value'].isna() & ~features_df.isna().any(axis=1)
+            if missing_mask.any():
+                X_missing = features_df.loc[missing_mask]
+                predicted_values = model.predict(X_missing)
+                df.loc[missing_mask, 'Avg Value'] = predicted_values
+                print(f"Estimated {missing_mask.sum()} missing values using regression")
     
-    # Handle any remaining NaN values using position-based medians
+    # Fill remaining missing values using position-based medians
     remaining_nans = df['Avg Value'].isna().sum()
     if remaining_nans > 0:
         print(f"Warning: {remaining_nans} rows still have NaN values for Avg Value")
@@ -122,16 +144,25 @@ def prepare_html_data(file_path, is_my_squad=False):
             pos_mask = (df[pos] == 1) & (df['Avg Value'].isna())
             if pos_mask.any():
                 median_value = df.loc[(df[pos] == 1) & (~df['Avg Value'].isna()), 'Avg Value'].median()
+                if pd.isna(median_value):  # If no median available for position
+                    median_value = df['Avg Value'].median()  # Use overall median
+                if pd.isna(median_value):  # If still no median available
+                    median_value = 1000000  # Default value
                 df.loc[pos_mask, 'Avg Value'] = median_value
+    
+    # Ensure no NaN or negative values in final output
+    df['Avg Value'] = df['Avg Value'].fillna(1000000).clip(lower=0)
+    df['Min Value'] = df['Min Value'].fillna(df['Avg Value']).clip(lower=0)
+    df['Max Value'] = df['Max Value'].fillna(df['Avg Value']).clip(lower=0)
     
     return df
 
 def prepare_csv_data(file_path):
     """
-    Read and preprocess Football Manager squad data from CSV file into a pandas DataFrame
+    Read and preprocess Football Manager CSV data file into a pandas DataFrame
     
     Parameters:
-    file_path (str): Path to the CSV file containing squad data
+    file_path (str): Path to the CSV file
     
     Returns:
     pandas.DataFrame: Preprocessed DataFrame with cleaned attributes and encoded positions
@@ -164,7 +195,7 @@ def prepare_csv_data(file_path):
     df['is_am'] = (df['Act Pos'] == 'AM').astype(int)
     df['is_st'] = (df['Act Pos'] == 'ST').astype(int)
     
-    # Create Position column for compatibility with rest of the code
+    # Create Position column for compatibility
     position_mapping = {
         'GK': 'GK',
         'DC': 'D (C)',
@@ -176,62 +207,43 @@ def prepare_csv_data(file_path):
     }
     df['Position'] = df['Act Pos'].apply(lambda x: position_mapping.get(x, 'Unknown'))
     
-    if all(col in df.columns for col in ['Min Value', 'Max Value']):
-        df['Min Value'] = pd.to_numeric(df['Min Value'], errors='coerce')
-        df['Max Value'] = pd.to_numeric(df['Max Value'], errors='coerce')
-        df['Avg Value'] = df['Min Value'] + (df['Max Value'] - df['Min Value']) * 0.05
-    elif 'Value' in df.columns:  # If there's a single Value column
-        df['Avg Value'] = pd.to_numeric(df['Value'], errors='coerce')
-    else:  # If no value columns exist, estimate from wages
-        print("Warning: No value columns found. Estimating values from wages.")
-        if 'Wage' in df.columns:
-            # Use a simple multiplier as fallback (e.g., 52 weeks * 2 years)
-            df['Avg Value'] = df['Wage'] * 52 * 2
+    # Handle Transfer Value
+    if 'Transfer Value' in df.columns:
+        # Check if the value contains ranges
+        if df['Transfer Value'].str.contains(' - ').any():
+            # Split ranges and convert
+            df[['Min Value', 'Max Value']] = df['Transfer Value'].str.split(' - ', expand=True)
+            df['Min Value'] = df['Min Value'].apply(convert_value_string)
+            df['Max Value'] = df['Max Value'].apply(convert_value_string)
+            
+            # Calculate average value (using conservative 5% weight for club's own players)
+            df['Avg Value'] = df['Min Value'] + (df['Max Value'] - df['Min Value']) * 0.05
         else:
-            # If no wage data either, use a default value
-            print("Warning: No wage data found. Using default values.")
-            df['Avg Value'] = 1000000  # Default value, adjust as needed
-
-    # Now handle missing values using wages if available
-    if 'Wage' in df.columns:
-        mask = ~df['Avg Value'].isna() & ~df['Wage'].isna()
-        if mask.sum() >= 2:
-            X = df.loc[mask, 'Wage'].values.reshape(-1, 1)
-            y = df.loc[mask, 'Avg Value'].values
-            
-            model = LinearRegression()
-            model.fit(X, y)
-            
-            value_to_wage_ratio = y / X.flatten()
-            median_ratio = np.median(value_to_wage_ratio)
-            print(f"Median value-to-wage ratio: {median_ratio:.2f}")
-            print(f"R² score: {model.score(X, y):.3f}")
-            
-            missing_mask = df['Avg Value'].isna() & ~df['Wage'].isna()
-            if missing_mask.any():
-                X_missing = df.loc[missing_mask, 'Wage'].values.reshape(-1, 1)
-                df.loc[missing_mask, 'Avg Value'] = model.predict(X_missing)
-                
-                df.loc[missing_mask, 'Avg Value'] = df.loc[missing_mask, 'Avg Value'].clip(
-                    lower=df.loc[mask, 'Avg Value'].min(),
-                    upper=df.loc[mask, 'Avg Value'].max()
-                )
-                print(f"Estimated {missing_mask.sum()} missing values")
-
-    # Handle any remaining NaN values using position-based medians
-    remaining_nans = df['Avg Value'].isna().sum()
-    if remaining_nans > 0:
-        print(f"Warning: {remaining_nans} rows still have NaN values for Avg Value")
-        for pos in ['is_gk', 'is_cb', 'is_lfb', 'is_rfb', 'is_cm', 'is_am', 'is_st']:
-            pos_mask = (df[pos] == 1) & (df['Avg Value'].isna())
-            if pos_mask.any():
-                median_value = df.loc[(df[pos] == 1) & (~df['Avg Value'].isna()), 'Avg Value'].median()
-                if pd.isna(median_value):  # If no median available for position
-                    median_value = df['Avg Value'].median()  # Use overall median
-                if pd.isna(median_value):  # If still no median available
-                    median_value = 1000000  # Default value
-                df.loc[pos_mask, 'Avg Value'] = median_value
-        
+            # Single values
+            df['Avg Value'] = df['Transfer Value'].apply(convert_value_string)
+            df['Min Value'] = df['Avg Value']
+            df['Max Value'] = df['Avg Value']
+    elif 'Value' in df.columns:
+        # If there's a single Value column
+        df['Avg Value'] = df['Value'].apply(convert_value_string)
+        df['Min Value'] = df['Avg Value']
+        df['Max Value'] = df['Avg Value']
+    
+    # Handle missing values
+    if 'Avg Value' in df.columns:
+        remaining_nans = df['Avg Value'].isna().sum()
+        if remaining_nans > 0:
+            print(f"Warning: {remaining_nans} rows have NaN values for Avg Value")
+            for pos in ['is_gk', 'is_cb', 'is_lfb', 'is_rfb', 'is_cm', 'is_am', 'is_st']:
+                pos_mask = (df[pos] == 1) & (df['Avg Value'].isna())
+                if pos_mask.any():
+                    median_value = df.loc[(df[pos] == 1) & (~df['Avg Value'].isna()), 'Avg Value'].median()
+                    if pd.isna(median_value):  # If no median available for position
+                        median_value = df['Avg Value'].median()  # Use overall median
+                    if pd.isna(median_value):  # If still no median available
+                        median_value = 1000000  # Default value
+                    df.loc[pos_mask, 'Avg Value'] = median_value
+    
     return df
 
 df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets_jan24.html", is_my_squad=True)
@@ -239,7 +251,8 @@ df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm
 
 
 #df_palace_squad = df_palace_squad.drop(0)
-print(df_palace_squad)
+print(df_palace_squad[["Name", "Transfer Value", "Avg Value"]])
+
 df_transfer_targets = df_transfer_targets.drop(0)
 
 class PlayerAttributeWeights:
@@ -489,15 +502,17 @@ class FMTransferOptimizer:
         )
         self.problem += purchase_costs - sales_income <= self.transfer_budget, "Transfer_Budget"
 
-        current_wages = pulp.lpSum(
-            (1 - sell_vars[i]) * current_squad.loc[i, 'Wage']
-            for i in current_squad.index
-        )
-        new_wages = pulp.lpSum(
+        wage_change = pulp.lpSum(
             buy_vars[i] * available_players.loc[i, 'Wage']
             for i in available_players.index
+        ) - pulp.lpSum(
+            sell_vars[i] * current_squad.loc[i, 'Wage']
+            for i in current_squad.index
         )
-        self.problem += current_wages + new_wages <= self.wage_budget, "Wage_Budget"
+        
+        # Net wage change cannot exceed spare wage budget
+        self.problem += wage_change <= self.wage_budget, "Wage_Budget"
+
 
         for position_flag, (min_players, max_players) in required_positions.items():
             current_position_count = pulp.lpSum(
@@ -589,12 +604,12 @@ def print_squad_composition(squad_df, required_positions):
 
 print_squad_composition(df_palace_squad, required_positions)
 
-locked_players = ["Ismaïla Sarr"] 
-banned_players = []
+locked_players = ["Ismaïla Sarr", "Daichi Kamada", "Jefferson Lerma"] 
+banned_players = ["Ante Budimir"]
 
 optimiser = FMTransferOptimizer(
     current_budget= 600000,
-    wage_budget=1605000
+    wage_budget=16000
 )
 
 players_to_buy, players_to_sell, metrics = optimiser.optimise_transfers(
@@ -619,7 +634,13 @@ def format_currency(value):
     else:
         return f"£{value:.0f}"
 
-def print_transfer_results(players_to_buy, players_to_sell, metrics):
+def print_transfer_results(players_to_buy, players_to_sell, metrics, current_squad):
+    # Calculate current wage bill
+    current_wage_bill = current_squad['Wage'].sum()
+    
+    # Calculate new wage bill
+    new_wage_bill = current_wage_bill + metrics['financial']['wage_change']
+    
     print("\nPLAYERS TO BUY:")
     buy_data = []
     for _, player in players_to_buy.iterrows():
@@ -635,7 +656,7 @@ def print_transfer_results(players_to_buy, players_to_sell, metrics):
         print(pd.DataFrame(buy_data).to_string(index=False))
     else:
         print("None")
-
+    
     print("\nPLAYERS TO SELL:")
     sell_data = []
     for _, player in players_to_sell.iterrows():
@@ -651,11 +672,15 @@ def print_transfer_results(players_to_buy, players_to_sell, metrics):
         print(pd.DataFrame(sell_data).to_string(index=False))
     else:
         print("None")
-
+    
+    print("\nWAGE SUMMARY:")
+    print(f"Current weekly wage bill: {format_currency(current_wage_bill)}/w")
+    print(f"New weekly wage bill: {format_currency(new_wage_bill)}/w")
+    print(f"Weekly wage change: {format_currency(metrics['financial']['wage_change'])}/w")
+    
     print("\nFINANCIAL SUMMARY:")
     print(f"Total spend: {format_currency(metrics['financial']['total_spend'])}")
     print(f"Total income: {format_currency(metrics['financial']['total_income'])}")
     print(f"Net spend: {format_currency(metrics['financial']['net_spend'])}")
-    print(f"Weekly wage change: {format_currency(metrics['financial']['wage_change'])}/w")
 
-print_transfer_results(players_to_buy, players_to_sell, metrics)
+print_transfer_results(players_to_buy, players_to_sell, metrics, df_palace_squad)
