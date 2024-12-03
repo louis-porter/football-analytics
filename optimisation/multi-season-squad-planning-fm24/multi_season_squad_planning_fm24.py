@@ -11,22 +11,23 @@ def convert_value_string(value_str):
     if pd.isna(value_str) or value_str == '' or value_str == 'Not for Sale':
         return np.nan
     
-    # Remove £ and any whitespace
-    value_str = value_str.strip().replace('£', '').replace(' ', '')
-    
-    # Convert K/M to actual numbers
-    multiplier = 1
-    if value_str.endswith('K'):
-        multiplier = 1_000
-        value_str = value_str[:-1]
-    elif value_str.endswith('M'):
-        multiplier = 1_000_000
-        value_str = value_str[:-1]
+    # Clean string and extract number
+    cleaned = str(value_str).replace('£', '').replace(',', '').strip()
     
     try:
-        return float(value_str) * multiplier
-    except ValueError:
+        # Handle K/M suffix
+        if 'M' in cleaned:
+            # Remove M and convert to millions
+            number = float(cleaned.replace('M', '')) * 1_000_000
+        elif 'K' in cleaned:
+            # Remove K and convert to thousands
+            number = float(cleaned.replace('K', '')) * 1_000
+        else:
+            number = float(cleaned)
+        return number
+    except (ValueError, AttributeError):
         return np.nan
+
 
 def prepare_html_data(file_path, is_my_squad=False):
     """
@@ -81,23 +82,38 @@ def prepare_html_data(file_path, is_my_squad=False):
     for feature, pattern in position_features.items():
         df[feature] = df["Position"].str.contains(pattern, regex=True).astype(int)
     
-    # Handle Transfer Value
+    # Handle transfer values
     if 'Transfer Value' in df.columns:
-        # Check if the value contains ranges
-        if df['Transfer Value'].str.contains(' - ').any():
-            # Split ranges and convert
-            df[['Min Value', 'Max Value']] = df['Transfer Value'].str.split(' - ', expand=True)
-            df['Min Value'] = df['Min Value'].apply(convert_value_string)
-            df['Max Value'] = df['Max Value'].apply(convert_value_string)
+        print("\nDebug Transfer Values:")
+        print(df['Transfer Value'].head())
+        
+        # First convert all values to numeric regardless of whether they're ranges
+        df['Transfer Value'] = df['Transfer Value'].fillna('')
+        
+        # Identify which rows contain ranges
+        has_range = df['Transfer Value'].str.contains(' - ', na=False)
+        
+        # Handle range values
+        range_df = df[has_range].copy()
+        if not range_df.empty:
+            range_df[['Min Value', 'Max Value']] = range_df['Transfer Value'].str.split(' - ', expand=True)
+            range_df['Min Value'] = range_df['Min Value'].apply(convert_value_string)
+            range_df['Max Value'] = range_df['Max Value'].apply(convert_value_string)
+            range_df['Avg Value'] = range_df['Min Value'] + (range_df['Max Value'] - range_df['Min Value']) * 0.9
+        
+        # Handle single values
+        single_df = df[~has_range].copy()
+        if not single_df.empty:
+            single_df['Avg Value'] = single_df['Transfer Value'].apply(convert_value_string)
+            single_df['Min Value'] = single_df['Avg Value']
+            single_df['Max Value'] = single_df['Avg Value']
+        
+        # Combine the results back
+        if not range_df.empty:
+            df.loc[range_df.index, ['Min Value', 'Max Value', 'Avg Value']] = range_df[['Min Value', 'Max Value', 'Avg Value']]
+        if not single_df.empty:
+            df.loc[single_df.index, ['Min Value', 'Max Value', 'Avg Value']] = single_df[['Min Value', 'Max Value', 'Avg Value']]
             
-            # Calculate average value based on squad type
-            weight = 0.9
-            df['Avg Value'] = df['Min Value'] + (df['Max Value'] - df['Min Value']) * weight
-        else:
-            # Single values
-            df['Avg Value'] = df['Transfer Value'].apply(convert_value_string)
-            df['Min Value'] = df['Avg Value']
-            df['Max Value'] = df['Avg Value']
 
     # Handle missing values using regression for transfer targets
     if not is_my_squad and 'Avg Value' in df.columns and df['Avg Value'].isna().any():
@@ -209,22 +225,41 @@ def prepare_csv_data(file_path):
     
     # Handle Transfer Value
     if 'Transfer Value' in df.columns:
-        # Check if the value contains ranges
-        if df['Transfer Value'].str.contains(' - ').any():
-            # Split ranges and convert
-            df[['Min Value', 'Max Value']] = df['Transfer Value'].str.split(' - ', expand=True)
-            df['Min Value'] = df['Min Value'].apply(convert_value_string)
-            df['Max Value'] = df['Max Value'].apply(convert_value_string)
-            
-            # Calculate average value (using conservative 5% weight for club's own players)
-            df['Avg Value'] = df['Min Value'] + (df['Max Value'] - df['Min Value']) * 0.05
-        else:
-            # Single values
-            df['Avg Value'] = df['Transfer Value'].apply(convert_value_string)
-            df['Min Value'] = df['Avg Value']
-            df['Max Value'] = df['Avg Value']
+        print("\nDebug Transfer Values:")
+        print(df['Transfer Value'].head())
+        
+        # First convert all values to numeric regardless of whether they're ranges
+        df['Transfer Value'] = df['Transfer Value'].fillna('')
+        
+        # Identify which rows contain ranges
+        has_range = df['Transfer Value'].str.contains(' - ', na=False)
+        
+        # Handle range values
+        range_df = df[has_range].copy()
+        if not range_df.empty:
+            range_df[['Min Value', 'Max Value']] = range_df['Transfer Value'].str.split(' - ', expand=True)
+            range_df['Min Value'] = range_df['Min Value'].apply(convert_value_string)
+            range_df['Max Value'] = range_df['Max Value'].apply(convert_value_string)
+            # Use conservative 5% weight for club's own players
+            range_df['Avg Value'] = range_df['Min Value'] + (range_df['Max Value'] - range_df['Min Value']) * 0.05
+        
+        # Handle single values
+        single_df = df[~has_range].copy()
+        if not single_df.empty:
+            single_df['Avg Value'] = single_df['Transfer Value'].apply(convert_value_string)
+            single_df['Min Value'] = single_df['Avg Value']
+            single_df['Max Value'] = single_df['Avg Value']
+
+        
+        # Combine the results back
+        if not range_df.empty:
+            df.loc[range_df.index, ['Min Value', 'Max Value', 'Avg Value']] = range_df[['Min Value', 'Max Value', 'Avg Value']]
+        if not single_df.empty:
+            df.loc[single_df.index, ['Min Value', 'Max Value', 'Avg Value']] = single_df[['Min Value', 'Max Value', 'Avg Value']]
+    
     elif 'Value' in df.columns:
-        # If there's a single Value column
+        # If there's a single Value column, use the same improved logic
+        df['Value'] = df['Value'].fillna('')
         df['Avg Value'] = df['Value'].apply(convert_value_string)
         df['Min Value'] = df['Avg Value']
         df['Max Value'] = df['Avg Value']
@@ -255,9 +290,19 @@ print(df_palace_squad[["Name", "Transfer Value", "Avg Value"]])
 
 df_transfer_targets = df_transfer_targets.drop(0)
 
+print(df_transfer_targets[df_transfer_targets['Name'] == 'Fran Pérez'][["Name", "Transfer Value"]])
+
 class PlayerAttributeWeights:
-    """Define position-specific attribute weights"""
+    """Define position-specific and DNA attribute weights"""
     
+    @staticmethod
+    def dna_weights():
+        return {
+        'Ant': 0.15, 'Tea': 0.15, 'Wor': 0.15, 'Sta': 0.15,
+        'Mar': 0.05, 'Dec': 0.11, 'Det': 0.11, 'Acc': 0.08,
+        'Agg': 0.05
+    }
+
     @staticmethod
     def goalkeeper_weights():
         return {
@@ -359,6 +404,8 @@ class FMTransferOptimizer:
             position: Player's position
             is_transfer_target: Whether this is a potential transfer target
         """
+        dna_weights = self.attribute_weights.dna_weights()
+
         # Get relevant attribute weights based on position
         if re.search(r"GK", position):
             weights = self.attribute_weights.goalkeeper_weights()
@@ -375,36 +422,39 @@ class FMTransferOptimizer:
         else:
             weights = self.attribute_weights.midfielder_weights()
         
-        # Calculate base score from attributes
-        base_score = sum(player_data[attr] * weight 
-                        for attr, weight in weights.items())
+        # Calculate base score from regular attributes (80%)
+        attribute_score = sum(player_data[attr] * weight 
+                            for attr, weight in weights.items()) * 0.8
+
+        # Calculate DNA score (20%)
+        dna_score = sum(player_data[attr] * weight 
+                        for attr, weight in dna_weights.items()) * 0.2      
+
+        # Combine scores
+        base_score = attribute_score + dna_score
         
-        # Apply age factor
+        # Debug age factor
         age = player_data['Age']
         age_factor = 1.0
-        if position.startswith('GK'):
+        
+        if player_data['is_gk'] == 1:
             if age > 33:
                 age_factor = 0.9
             elif age < 25:
                 age_factor = 1.1
         else:
-            if age < 21:
-                age_factor = 1.07 
-            elif age <= 24:
-                age_factor = 1.05
-            elif age >= 27:
-                age_factor = 0.97
+            if age > 32:
+                age_factor = 0.7
             elif age >= 30:
                 age_factor = 0.87
-            elif age > 32:
-                age_factor = 0.8
+            elif age >= 27:
+                age_factor = 0.97
+            elif age <= 24:
+                age_factor = 1.05
+            elif age < 21:
+                age_factor = 1.07
         
         score = base_score * age_factor
-        
-        # Apply rating multiplier only for transfer targets
-        if is_transfer_target and 'Av Rat' in player_data:
-            rating_multiplier = self.get_rating_multiplier(player_data['Av Rat'])
-            score *= rating_multiplier
         
         return score
 
@@ -579,7 +629,7 @@ required_positions = {
     'is_rfb': (2, 2),
     'is_cm': (3, 4),
     'is_am': (3, 4),
-    'is_st': (2, 3)
+    'is_st': (2, 2)
 }
 
 def print_squad_composition(squad_df, required_positions):
@@ -605,7 +655,7 @@ def print_squad_composition(squad_df, required_positions):
 print_squad_composition(df_palace_squad, required_positions)
 
 locked_players = ["Ismaïla Sarr", "Daichi Kamada", "Jefferson Lerma"] 
-banned_players = ["Ante Budimir"]
+banned_players = ["Ante Budimir", "Diego Moreno", "Nathan Ngoumou"]
 
 optimiser = FMTransferOptimizer(
     current_budget= 600000,
@@ -616,7 +666,7 @@ players_to_buy, players_to_sell, metrics = optimiser.optimise_transfers(
     current_squad=df_palace_squad,
     available_players=df_transfer_targets,
     required_positions=required_positions,
-    max_transfers=2,
+    max_transfers=1,
     locked_players=locked_players,
     banned_players=banned_players
 )
