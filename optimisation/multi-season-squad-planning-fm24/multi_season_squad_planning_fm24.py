@@ -170,6 +170,9 @@ def prepare_html_data(file_path, is_my_squad=False):
     df['Avg Value'] = df['Avg Value'].fillna(1000000).clip(lower=0)
     df['Min Value'] = df['Min Value'].fillna(df['Avg Value']).clip(lower=0)
     df['Max Value'] = df['Max Value'].fillna(df['Avg Value']).clip(lower=0)
+
+    if 'Av Rat' in df.columns:
+        df['Av Rat'] = pd.to_numeric(df['Av Rat'].astype(str).str.replace(',', '.'), errors='coerce')
     
     return df
 
@@ -279,6 +282,9 @@ def prepare_csv_data(file_path):
                         median_value = 1000000  # Default value
                     df.loc[pos_mask, 'Avg Value'] = median_value
     
+    if 'Av Rat' in df.columns:
+        df['Av Rat'] = pd.to_numeric(df['Av Rat'].astype(str).str.replace(',', '.'), errors='coerce')
+
     return df
 
 df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets_jan24.html", is_my_squad=True)
@@ -373,7 +379,7 @@ class FMTransferOptimizer:
 
     def get_rating_multiplier(self, avg_rating):
         """
-        Calculate performance multiplier based on average rating
+        Calculate performance multiplier based on average rating, capped at 7.5
         
         Args:
             avg_rating (float): Player's average rating
@@ -385,46 +391,27 @@ class FMTransferOptimizer:
             return 1.0
             
         base_rating = 6.8
+        max_rating = 7.5
+        
+        # Cap the rating at max_rating
+        avg_rating = min(float(avg_rating), max_rating)
         
         if avg_rating >= base_rating:
-            # For ratings above 6.8: Each 0.1 increase = 2.5% boost
+            # For ratings above 6.8: Each 0.1 increase = 1% boost
             rating_diff = avg_rating - base_rating
-            return 1 + (rating_diff * 0.25)
+            return 1 + (rating_diff * 0.1)
         else:
             # For ratings below 6.8: More aggressive penalty
             rating_diff = base_rating - avg_rating
             return 1 - (rating_diff * 0.5)  # Each 0.1 decrease = 5% penalty
     
-    def calculate_player_score(self, player_data, position, is_transfer_target=False):
-        """
-        Calculate player score, applying rating multiplier only for transfer targets
-        
-        Args:
-            player_data: Row of player attributes
-            position: Player's position
-            is_transfer_target: Whether this is a potential transfer target
-        """
+    def calculate_position_specific_score(self, player_data, position_weights, age, is_goalkeeper=False):
+        """Calculate score for a specific position including DNA and age factors"""
         dna_weights = self.attribute_weights.dna_weights()
-
-        # Get relevant attribute weights based on position
-        if re.search(r"GK", position):
-            weights = self.attribute_weights.goalkeeper_weights()
-        elif re.search(r"D \((C|LC|RC|RLC)\)", position):
-            weights = self.attribute_weights.center_back_weights()
-        elif re.search(r"D \(L\)$|D \(R\)$|WB \([LR]\)$|[LR]WB$", position):
-            weights = self.attribute_weights.wingback_weights()
-        elif re.search(r"[DMA]M \([LR]*C[LR]*\)", position):
-            weights = self.attribute_weights.midfielder_weights()
-        elif re.search(r"(M|AM|M/AM) \([LR]+\)|AM \([LR]*C[LR]*\)", position): 
-            weights = self.attribute_weights.winger_weights()
-        elif re.search(r"ST", position):
-            weights = self.attribute_weights.striker_weights()
-        else:
-            weights = self.attribute_weights.midfielder_weights()
         
-        # Calculate base score from regular attributes (80%)
+        # Calculate base score from position-specific attributes (80%)
         attribute_score = sum(player_data[attr] * weight 
-                            for attr, weight in weights.items()) * 0.8
+                            for attr, weight in position_weights.items()) * 0.8
 
         # Calculate DNA score (20%)
         dna_score = sum(player_data[attr] * weight 
@@ -433,18 +420,17 @@ class FMTransferOptimizer:
         # Combine scores
         base_score = attribute_score + dna_score
         
-        # Debug age factor
-        age = player_data['Age']
-        age_factor = 1.0
-        
-        if player_data['is_gk'] == 1:
+        # Apply age factor
+        if is_goalkeeper:
             if age > 33:
                 age_factor = 0.9
             elif age < 25:
                 age_factor = 1.1
+            else:
+                age_factor = 1.0
         else:
             if age > 32:
-                age_factor = 0.7
+                age_factor = 0.75
             elif age >= 30:
                 age_factor = 0.87
             elif age >= 27:
@@ -453,16 +439,109 @@ class FMTransferOptimizer:
                 age_factor = 1.05
             elif age < 21:
                 age_factor = 1.07
+            else:
+                age_factor = 1.0
         
         score = base_score * age_factor
         
+        # Apply rating multiplier if available
+        if 'Av Rat' in player_data:
+            rating_multiplier = self.get_rating_multiplier(player_data['Av Rat'])
+            score *= rating_multiplier
+        
         return score
+
+    def calculate_position_scores(self, row):
+        """Calculate scores for all positions a player can play"""
+        position_scores = {}
+        
+        if row['is_gk'] == 1:
+            position_scores['is_gk'] = self.calculate_position_specific_score(
+                row,
+                self.attribute_weights.goalkeeper_weights(),
+                row['Age'],
+                is_goalkeeper=True
+            )
+        
+        if row['is_cb'] == 1:
+            position_scores['is_cb'] = self.calculate_position_specific_score(
+                row,
+                self.attribute_weights.center_back_weights(),
+                row['Age']
+            )
+        
+        if row['is_lfb'] == 1:
+            position_scores['is_lfb'] = self.calculate_position_specific_score(
+                row,
+                self.attribute_weights.wingback_weights(),
+                row['Age']
+            )
+            
+        if row['is_rfb'] == 1:
+            position_scores['is_rfb'] = self.calculate_position_specific_score(
+                row,
+                self.attribute_weights.wingback_weights(),
+                row['Age']
+            )
+            
+        if row['is_cm'] == 1:
+            position_scores['is_cm'] = self.calculate_position_specific_score(
+                row,
+                self.attribute_weights.midfielder_weights(),
+                row['Age']
+            )
+            
+        if row['is_am'] == 1:
+            position_scores['is_am'] = self.calculate_position_specific_score(
+                row,
+                self.attribute_weights.winger_weights(),
+                row['Age']
+            )
+            
+        if row['is_st'] == 1:
+            position_scores['is_st'] = self.calculate_position_specific_score(
+                row,
+                self.attribute_weights.striker_weights(),
+                row['Age']
+            )
+        
+        return position_scores
+    
+    def _calculate_metrics(self, current_squad, players_to_buy, players_to_sell):
+        """Calculate improvement metrics after transfer decisions"""
+        metrics = {
+            'financial': {
+                'total_spend': players_to_buy['Avg Value'].sum() if not players_to_buy.empty else 0,
+                'total_income': players_to_sell['Avg Value'].sum() if not players_to_sell.empty else 0,
+                'wage_change': (players_to_buy['Wage'].sum() if not players_to_buy.empty else 0) - 
+                            (players_to_sell['Wage'].sum() if not players_to_sell.empty else 0)
+            },
+            'squad': {
+                'avg_age_change': (players_to_buy['Age'].mean() if not players_to_buy.empty else 0) -
+                                (players_to_sell['Age'].mean() if not players_to_sell.empty else 0),
+                'total_score_change': (players_to_buy['position_score'].sum() if not players_to_buy.empty else 0) -
+                                    (players_to_sell['position_score'].sum() if not players_to_sell.empty else 0)
+            },
+            'position_changes': {
+                pos: {
+                    'incoming': len(players_to_buy[players_to_buy['assigned_position'] == pos]) if not players_to_buy.empty else 0,
+                    'outgoing': len(players_to_sell[players_to_sell['assigned_position'] == pos]) if not players_to_sell.empty else 0
+                }
+                for pos in set(current_squad['Position'].unique())
+            }
+        }
+        
+        # Calculate net spend
+        metrics['financial']['net_spend'] = (metrics['financial']['total_spend'] - 
+                                        metrics['financial']['total_income'])
+        
+        return metrics
 
 
     def optimise_transfers(self, current_squad, available_players, required_positions, 
-                         max_transfers=2, locked_players=None, banned_players=None):
+                        max_transfers=2, locked_players=None, banned_players=None):
         """
-        Optimize transfer decisions based on player attributes
+        Optimize transfer decisions based on player attributes and multiple positions
         
         Args:
             current_squad (pd.DataFrame): Current squad data
@@ -475,103 +554,177 @@ class FMTransferOptimizer:
         locked_players = locked_players or []
         banned_players = banned_players or []
         
+        # Calculate position scores for all players
+        current_squad_scores = current_squad.apply(self.calculate_position_scores, axis=1)
+        available_players_scores = available_players.apply(self.calculate_position_scores, axis=1)
+        
         self.problem = pulp.LpProblem("FM_Transfer_Optimization", pulp.LpMaximize)
-
-        # Calculate player scores
-        current_squad['player_score'] = current_squad.apply(
-            lambda x: self.calculate_player_score(x, x["Position"]),
-            axis=1
-        )
-        available_players['player_score'] = available_players.apply(
-            lambda x: self.calculate_player_score(x, x["Position"]),
-            axis=1
-        )
-
-        # Create binary decision variables
-        buy_vars = pulp.LpVariable.dicts("buy",
-                                        ((i) for i in available_players.index),
-                                        cat='Binary')
         
-        sell_vars = pulp.LpVariable.dicts("sell",
-                                        ((i) for i in current_squad.index),
-                                        cat='Binary')
+        # Create position-specific binary variables for buying and selling
+        buy_vars = {}
+        sell_vars = {}
         
-        # constraints for locked and banned players
+        # Create variables for each position a player can play
+        for pos in required_positions.keys():
+            for idx in available_players.index:
+                if pos in available_players_scores[idx]:
+                    buy_vars[(idx, pos)] = pulp.LpVariable(f"buy_{idx}_{pos}", cat='Binary')
+            
+            for idx in current_squad.index:
+                if pos in current_squad_scores[idx]:
+                    sell_vars[(idx, pos)] = pulp.LpVariable(f"sell_{idx}_{pos}", cat='Binary')
+        
+        # Ensure a player is only bought/sold for one position
+        for idx in available_players.index:
+            player_positions = [pos for pos in required_positions.keys() 
+                            if pos in available_players_scores[idx]]
+            if player_positions:
+                self.problem += (
+                    pulp.lpSum(buy_vars.get((idx, pos), 0) for pos in player_positions) <= 1,
+                    f"Single_Position_Buy_{idx}"
+                )
+        
+        for idx in current_squad.index:
+            player_positions = [pos for pos in required_positions.keys() 
+                            if pos in current_squad_scores[idx]]
+            if player_positions:
+                self.problem += (
+                    pulp.lpSum(sell_vars.get((idx, pos), 0) for pos in player_positions) <= 1,
+                    f"Single_Position_Sell_{idx}"
+                )
+        
+        # Constraints for locked and banned players
         for player_name in locked_players:
             locked_indices = current_squad[current_squad['Name'] == player_name].index
             for idx in locked_indices:
-                self.problem += sell_vars[idx] == 0, f"Lock_Player_{player_name}"
-                
+                for pos in required_positions.keys():
+                    if (idx, pos) in sell_vars:
+                        self.problem += sell_vars[(idx, pos)] == 0, f"Lock_Player_{player_name}_{pos}"
+        
         for player_name in banned_players:
             banned_indices = available_players[available_players['Name'] == player_name].index
             for idx in banned_indices:
-                self.problem += buy_vars[idx] == 0, f"Ban_Player_{player_name}"
-
+                for pos in required_positions.keys():
+                    if (idx, pos) in buy_vars:
+                        self.problem += buy_vars[(idx, pos)] == 0, f"Ban_Player_{player_name}_{pos}"
+        
         # Protect third-choice goalkeeper
         current_gks = current_squad[current_squad['is_gk'] == 1].copy()
         if len(current_gks) >= 3:
-            worst_gk_idx = current_gks.nsmallest(1, 'player_score').index[0]
-            self.problem += sell_vars[worst_gk_idx] == 0, "Protect_Third_GK"
-
-        base_score = current_squad['player_score'].sum()
+            # Calculate scores for goalkeepers
+            gk_scores = []
+            for idx, gk in current_gks.iterrows():
+                gk_score = self.calculate_position_specific_score(
+                    gk, 
+                    self.attribute_weights.goalkeeper_weights(),
+                    gk['Age'],
+                    is_goalkeeper=True
+                )
+                gk_scores.append({'index': idx, 'score': gk_score})
+            
+            # Convert to DataFrame and find worst goalkeeper
+            gk_scores_df = pd.DataFrame(gk_scores)
+            worst_gk_idx = gk_scores_df.nsmallest(1, 'score')['index'].iloc[0]
+            
+            if (worst_gk_idx, 'is_gk') in sell_vars:
+                self.problem += sell_vars[(worst_gk_idx, 'is_gk')] == 0, "Protect_Third_GK"
+        
+        # Calculate total squad quality using position-specific scores
+        base_score = 0
+        for scores in current_squad_scores:
+            if scores:  # Check if the dictionary has any scores
+                base_score += max(scores.values())
+            else:
+                base_score += 0  # Or some minimum value if a player has no positions
 
         score_from_sales = pulp.lpSum(
-            -sell_vars[i] * current_squad.loc[i, 'player_score']
+            -sell_vars.get((i, pos), 0) * current_squad_scores[i].get(pos, 0)
             for i in current_squad.index
+            for pos in required_positions.keys()
+            if pos in current_squad_scores[i]
         )
 
         score_from_purchases = pulp.lpSum(
-            buy_vars[i] * available_players.loc[i, 'player_score']
+            buy_vars.get((i, pos), 0) * available_players_scores[i].get(pos, 0)
             for i in available_players.index
+            for pos in required_positions.keys()
+            if pos in available_players_scores[i]
         )
 
         self.problem += base_score + score_from_sales + score_from_purchases, "Total_Squad_Quality"
-
-        incoming_transfers = pulp.lpSum(buy_vars[i] for i in available_players.index)
-        outgoing_transfers = pulp.lpSum(sell_vars[i] for i in current_squad.index)
-
+        
+        # Transfer limits
+        incoming_transfers = pulp.lpSum(
+            buy_vars.get((i, pos), 0)
+            for i in available_players.index
+            for pos in required_positions.keys()
+            if (i, pos) in buy_vars
+        )
+        
+        outgoing_transfers = pulp.lpSum(
+            sell_vars.get((i, pos), 0)
+            for i in current_squad.index
+            for pos in required_positions.keys()
+            if (i, pos) in sell_vars
+        )
+        
         self.problem += incoming_transfers <= max_transfers, "Max_Incoming_Transfers"
         self.problem += outgoing_transfers <= max_transfers, "Max_Outgoing_Transfers"
-
+        
+        # Squad size constraints
         initial_squad_size = len(current_squad)
-        self.problem += (initial_squad_size - 
-                        pulp.lpSum(sell_vars[i] for i in current_squad.index) +
-                        pulp.lpSum(buy_vars[i] for i in available_players.index) <= 25), "Max_Squad_Size"
+        self.problem += (
+            initial_squad_size - outgoing_transfers + incoming_transfers <= 25
+        ), "Max_Squad_Size"
         
-        self.problem += (initial_squad_size - 
-                        pulp.lpSum(sell_vars[i] for i in current_squad.index) +
-                        pulp.lpSum(buy_vars[i] for i in available_players.index) >= 20), "Min_Squad_Size"
-
+        self.problem += (
+            initial_squad_size - outgoing_transfers + incoming_transfers >= 20
+        ), "Min_Squad_Size"
+        
+        # Financial constraints
         sales_income = pulp.lpSum(
-            sell_vars[i] * current_squad.loc[i, 'Avg Value']
+            sell_vars.get((i, pos), 0) * current_squad.loc[i, 'Avg Value']
             for i in current_squad.index
-        )
-        purchase_costs = pulp.lpSum(
-            buy_vars[i] * available_players.loc[i, 'Avg Value']
-            for i in available_players.index
-        )
-        self.problem += purchase_costs - sales_income <= self.transfer_budget, "Transfer_Budget"
-
-        wage_change = pulp.lpSum(
-            buy_vars[i] * available_players.loc[i, 'Wage']
-            for i in available_players.index
-        ) - pulp.lpSum(
-            sell_vars[i] * current_squad.loc[i, 'Wage']
-            for i in current_squad.index
+            for pos in required_positions.keys()
+            if (i, pos) in sell_vars
         )
         
-        # Net wage change cannot exceed spare wage budget
+        purchase_costs = pulp.lpSum(
+            buy_vars.get((i, pos), 0) * available_players.loc[i, 'Avg Value']
+            for i in available_players.index
+            for pos in required_positions.keys()
+            if (i, pos) in buy_vars
+        )
+        
+        self.problem += purchase_costs - sales_income <= self.transfer_budget, "Transfer_Budget"
+        
+        # Wage budget constraints
+        wage_change = pulp.lpSum(
+            buy_vars.get((i, pos), 0) * available_players.loc[i, 'Wage']
+            for i in available_players.index
+            for pos in required_positions.keys()
+            if (i, pos) in buy_vars
+        ) - pulp.lpSum(
+            sell_vars.get((i, pos), 0) * current_squad.loc[i, 'Wage']
+            for i in current_squad.index
+            for pos in required_positions.keys()
+            if (i, pos) in sell_vars
+        )
+        
         self.problem += wage_change <= self.wage_budget, "Wage_Budget"
-
-
+        
+        # Position-specific constraints
         for position_flag, (min_players, max_players) in required_positions.items():
             current_position_count = pulp.lpSum(
-                1 - sell_vars[i]
+                1 - sell_vars.get((i, position_flag), 0)
                 for i in current_squad[current_squad[position_flag] == 1].index
+                if (i, position_flag) in sell_vars
             )
+            
             new_position_count = pulp.lpSum(
-                buy_vars[i]
+                buy_vars.get((i, position_flag), 0)
                 for i in available_players[available_players[position_flag] == 1].index
+                if (i, position_flag) in buy_vars
             )
             
             current_pos_players = len(current_squad[current_squad[position_flag] == 1])
@@ -581,47 +734,46 @@ class FMTransferOptimizer:
                 min_allowed = current_pos_players - max_transfers
                 self.problem += current_position_count >= min_allowed, f"Max_Reduction_{position_flag}"
             else:
-                self.problem += current_position_count + new_position_count >= min_players, f"Min_{position_flag}"
-                self.problem += current_position_count + new_position_count <= max_players, f"Max_{position_flag}"
-
-        self.problem.solve()
-
-        players_to_buy = available_players[
-            [buy_vars[i].value() > 0.5 for i in available_players.index]
-        ].copy()
+                self.problem += (
+                    current_position_count + new_position_count >= min_players,
+                    f"Min_{position_flag}"
+                )
+                self.problem += (
+                    current_position_count + new_position_count <= max_players,
+                    f"Max_{position_flag}"
+                )
         
-        players_to_sell = current_squad[
-            [sell_vars[i].value() > 0.5 for i in current_squad.index]
-        ].copy()
-
+        # Solve the optimization problem
+        self.problem.solve()
+        
+        # Extract results
+        players_to_buy = []
+        players_to_sell = []
+        
+        # Collect players to buy with their assigned positions
+        for i in available_players.index:
+            for pos in required_positions.keys():
+                if (i, pos) in buy_vars and buy_vars[(i, pos)].value() > 0.5:
+                    player_data = available_players.loc[i].copy()
+                    player_data['assigned_position'] = pos
+                    player_data['position_score'] = available_players_scores[i][pos]
+                    players_to_buy.append(player_data)
+        
+        # Collect players to sell with their positions
+        for i in current_squad.index:
+            for pos in required_positions.keys():
+                if (i, pos) in sell_vars and sell_vars[(i, pos)].value() > 0.5:
+                    player_data = current_squad.loc[i].copy()
+                    player_data['assigned_position'] = pos
+                    player_data['position_score'] = current_squad_scores[i][pos]
+                    players_to_sell.append(player_data)
+        
+        players_to_buy = pd.DataFrame(players_to_buy) if players_to_buy else pd.DataFrame()
+        players_to_sell = pd.DataFrame(players_to_sell) if players_to_sell else pd.DataFrame()
+        
         metrics = self._calculate_metrics(current_squad, players_to_buy, players_to_sell)
         return players_to_buy, players_to_sell, metrics
-
-    def _calculate_metrics(self, current_squad, players_to_buy, players_to_sell):
-        """Calculate improvement metrics after transfer decisions"""
-        metrics = {
-            'financial': {
-                'total_spend': players_to_buy['Avg Value'].sum(),
-                'total_income': players_to_sell['Avg Value'].sum(),
-                'net_spend': players_to_buy['Avg Value'].sum() - players_to_sell['Avg Value'].sum(),
-                'wage_change': players_to_buy['Wage'].sum() - players_to_sell['Wage'].sum()
-            },
-            'squad': {
-                'avg_age_change': (players_to_buy['Age'].mean() if not players_to_buy.empty else 0) -
-                                (players_to_sell['Age'].mean() if not players_to_sell.empty else 0),
-                'total_score_change': (players_to_buy['player_score'].sum() if not players_to_buy.empty else 0) -
-                                    (players_to_sell['player_score'].sum() if not players_to_sell.empty else 0)
-            },
-            'position_changes': {
-                pos: {
-                    'incoming': len(players_to_buy[players_to_buy['Position'] == pos]),
-                    'outgoing': len(players_to_sell[players_to_sell['Position'] == pos])
-                }
-                for pos in set(current_squad['Position'].unique())
-            }
-        }
-        return metrics
-    
+        
 required_positions = {
     'is_gk': (3, 3),
     'is_cb': (5, 6),
@@ -655,7 +807,7 @@ def print_squad_composition(squad_df, required_positions):
 print_squad_composition(df_palace_squad, required_positions)
 
 locked_players = ["Ismaïla Sarr", "Daichi Kamada", "Jefferson Lerma"] 
-banned_players = ["Ante Budimir", "Diego Moreno", "Nathan Ngoumou"]
+banned_players = ["Kun Temenuzhkov", "Max Finkgräfe", "David Čolina"]
 
 optimiser = FMTransferOptimizer(
     current_budget= 600000,
@@ -670,7 +822,6 @@ players_to_buy, players_to_sell, metrics = optimiser.optimise_transfers(
     locked_players=locked_players,
     banned_players=banned_players
 )
-
 
 
 
@@ -700,7 +851,7 @@ def print_transfer_results(players_to_buy, players_to_sell, metrics, current_squ
             'Position': player['Position'],
             'Value': format_currency(player['Avg Value']),
             'Wage': format_currency(player['Wage']),
-            'Score': f"{player['player_score']:.2f}"
+            'Score': f"{player['position_score']:.2f}"  # Updated to use position_score
         })
     if buy_data:
         print(pd.DataFrame(buy_data).to_string(index=False))
@@ -716,7 +867,7 @@ def print_transfer_results(players_to_buy, players_to_sell, metrics, current_squ
             'Position': player['Position'],
             'Value': format_currency(player['Avg Value']),
             'Wage': format_currency(player['Wage']),
-            'Score': f"{player['player_score']:.2f}"
+            'Score': f"{player['position_score']:.2f}"  # Updated to use position_score
         })
     if sell_data:
         print(pd.DataFrame(sell_data).to_string(index=False))
