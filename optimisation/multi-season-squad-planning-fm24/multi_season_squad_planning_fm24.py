@@ -778,7 +778,7 @@ required_positions = {
     'is_gk': (3, 3),
     'is_cb': (5, 6),
     'is_lfb': (2, 2),
-    'is_rfb': (2, 2),
+    'is_rfb': (3, 3),
     'is_cm': (3, 4),
     'is_am': (3, 4),
     'is_st': (2, 2)
@@ -806,19 +806,19 @@ def print_squad_composition(squad_df, required_positions):
 
 print_squad_composition(df_palace_squad, required_positions)
 
-locked_players = ["Ismaïla Sarr", "Daichi Kamada", "Jefferson Lerma"] 
-banned_players = ["Kun Temenuzhkov", "Max Finkgräfe", "David Čolina"]
+locked_players = [] 
+banned_players = ["Alfons Sampsted"]
 
 optimiser = FMTransferOptimizer(
-    current_budget= 600000,
-    wage_budget=16000
+    current_budget= 10000000,
+    wage_budget=100000
 )
 
 players_to_buy, players_to_sell, metrics = optimiser.optimise_transfers(
     current_squad=df_palace_squad,
     available_players=df_transfer_targets,
     required_positions=required_positions,
-    max_transfers=1,
+    max_transfers=3,
     locked_players=locked_players,
     banned_players=banned_players
 )
