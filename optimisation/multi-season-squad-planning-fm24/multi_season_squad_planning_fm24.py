@@ -287,8 +287,8 @@ def prepare_csv_data(file_path):
 
     return df
 
-df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets_jan24.html", is_my_squad=True)
-df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm24\palace_squad_jan24.csv")
+df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets_jun24.html")
+df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm24\palace_squad_jun24.csv")
 
 
 #df_palace_squad = df_palace_squad.drop(0)
@@ -778,10 +778,10 @@ required_positions = {
     'is_gk': (3, 3),
     'is_cb': (5, 6),
     'is_lfb': (2, 2),
-    'is_rfb': (3, 3),
+    'is_rfb': (2, 2),
     'is_cm': (3, 4),
-    'is_am': (3, 4),
-    'is_st': (2, 2)
+    'is_am': (3, 5),
+    'is_st': (2, 3)
 }
 
 def print_squad_composition(squad_df, required_positions):
@@ -807,18 +807,18 @@ def print_squad_composition(squad_df, required_positions):
 print_squad_composition(df_palace_squad, required_positions)
 
 locked_players = [] 
-banned_players = ["Alfons Sampsted"]
+banned_players = ["Konstantin Tyukavin", "Ignacio Miramón", "Lorenzo Pirola"]
 
 optimiser = FMTransferOptimizer(
-    current_budget= 10000000,
-    wage_budget=100000
+    current_budget= 22000000,
+    wage_budget=66000
 )
 
 players_to_buy, players_to_sell, metrics = optimiser.optimise_transfers(
     current_squad=df_palace_squad,
     available_players=df_transfer_targets,
     required_positions=required_positions,
-    max_transfers=3,
+    max_transfers=2,
     locked_players=locked_players,
     banned_players=banned_players
 )
