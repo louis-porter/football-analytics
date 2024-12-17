@@ -11,16 +11,12 @@ def convert_value_string(value_str):
     if pd.isna(value_str) or value_str == '' or value_str == 'Not for Sale':
         return np.nan
     
-    # Clean string and extract number
     cleaned = str(value_str).replace('£', '').replace(',', '').strip()
     
     try:
-        # Handle K/M suffix
         if 'M' in cleaned:
-            # Remove M and convert to millions
             number = float(cleaned.replace('M', '')) * 1_000_000
         elif 'K' in cleaned:
-            # Remove K and convert to thousands
             number = float(cleaned.replace('K', '')) * 1_000
         else:
             number = float(cleaned)
@@ -40,23 +36,18 @@ def prepare_html_data(file_path, is_my_squad=False):
     Returns:
     pandas.DataFrame: Preprocessed DataFrame with cleaned attributes and encoded positions
     """
-    # Read the HTML file
     with open(file_path, 'r', encoding='utf-8') as file:
         html_content = file.read()
     
-    # Read HTML content using pandas
     df = pd.read_html(StringIO(html_content))[0]
     
-    # Clean up column names and empty values
     df.columns = df.columns.str.strip()
     df = df.replace(r'^\s*$', pd.NA, regex=True)
     
-    # Convert wage column to numeric
     if 'Wage' in df.columns:
         df['Wage'] = df['Wage'].str.replace('£', '').str.replace(' p/w', '').str.replace(',', '')
         df['Wage'] = pd.to_numeric(df['Wage'], errors='coerce')
     
-    # Convert numeric attribute columns
     numeric_columns = ['Age', 'Com', 'Ecc', 'Pun', '1v1', 'Acc', 'Aer', 'Agg', 'Agi', 'Ant', 
                       'Bal', 'Bra', 'Cmd', 'Cnt', 'Cmp', 'Cro', 'Dec', 'Det', 'Dri', 'Fin',
                       'Fir', 'Fla', 'Han', 'Hea', 'Jum', 'Kic', 'Ldr', 'Lon', 'Mar', 'OtB',
@@ -67,7 +58,6 @@ def prepare_html_data(file_path, is_my_squad=False):
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors='coerce')
     
-    # Encode player positions
     position_features = {
         "is_gk": r"GK",
         "is_cb": r"D \((?:C|LC|RC|RLC)\)",
@@ -82,33 +72,28 @@ def prepare_html_data(file_path, is_my_squad=False):
     for feature, pattern in position_features.items():
         df[feature] = df["Position"].str.contains(pattern, regex=True).astype(int)
     
-    # Handle transfer values
     if 'Transfer Value' in df.columns:
         print("\nDebug Transfer Values:")
         print(df['Transfer Value'].head())
         
-        # First convert all values to numeric regardless of whether they're ranges
         df['Transfer Value'] = df['Transfer Value'].fillna('')
-        
-        # Identify which rows contain ranges
+    
         has_range = df['Transfer Value'].str.contains(' - ', na=False)
         
-        # Handle range values
         range_df = df[has_range].copy()
         if not range_df.empty:
             range_df[['Min Value', 'Max Value']] = range_df['Transfer Value'].str.split(' - ', expand=True)
             range_df['Min Value'] = range_df['Min Value'].apply(convert_value_string)
             range_df['Max Value'] = range_df['Max Value'].apply(convert_value_string)
+            # Use conservative upper range of value for incoming players
             range_df['Avg Value'] = range_df['Min Value'] + (range_df['Max Value'] - range_df['Min Value']) * 0.9
         
-        # Handle single values
         single_df = df[~has_range].copy()
         if not single_df.empty:
             single_df['Avg Value'] = single_df['Transfer Value'].apply(convert_value_string)
             single_df['Min Value'] = single_df['Avg Value']
             single_df['Max Value'] = single_df['Avg Value']
         
-        # Combine the results back
         if not range_df.empty:
             df.loc[range_df.index, ['Min Value', 'Max Value', 'Avg Value']] = range_df[['Min Value', 'Max Value', 'Avg Value']]
         if not single_df.empty:
@@ -117,7 +102,6 @@ def prepare_html_data(file_path, is_my_squad=False):
 
     # Handle missing values using regression for transfer targets
     if not is_my_squad and 'Avg Value' in df.columns and df['Avg Value'].isna().any():
-        # Prepare features for regression
         feature_cols = [col for col in numeric_columns if col in df.columns]
         if 'Wage' in df.columns:
             feature_cols.append('Wage')
@@ -132,7 +116,6 @@ def prepare_html_data(file_path, is_my_squad=False):
         mask = ~features_df.isna().any(axis=1) & ~df['Avg Value'].isna()
         
         if mask.sum() >= 5:  # Only use regression if we have enough complete samples
-            # Prepare data for regression
             X = features_df.loc[mask]
             y = df.loc[mask, 'Avg Value']
             
@@ -140,11 +123,8 @@ def prepare_html_data(file_path, is_my_squad=False):
             model = LinearRegression()
             model.fit(X, y)
             
-            # Print relationship stats
             r2_score = model.score(X, y)
-            print(f"Value estimation R² score: {r2_score:.3f}")
             
-            # Predict missing values
             missing_mask = df['Avg Value'].isna() & ~features_df.isna().any(axis=1)
             if missing_mask.any():
                 X_missing = features_df.loc[missing_mask]
@@ -152,7 +132,6 @@ def prepare_html_data(file_path, is_my_squad=False):
                 df.loc[missing_mask, 'Avg Value'] = predicted_values
                 print(f"Estimated {missing_mask.sum()} missing values using regression")
     
-    # Fill remaining missing values using position-based medians
     remaining_nans = df['Avg Value'].isna().sum()
     if remaining_nans > 0:
         print(f"Warning: {remaining_nans} rows still have NaN values for Avg Value")
@@ -160,10 +139,10 @@ def prepare_html_data(file_path, is_my_squad=False):
             pos_mask = (df[pos] == 1) & (df['Avg Value'].isna())
             if pos_mask.any():
                 median_value = df.loc[(df[pos] == 1) & (~df['Avg Value'].isna()), 'Avg Value'].median()
-                if pd.isna(median_value):  # If no median available for position
-                    median_value = df['Avg Value'].median()  # Use overall median
-                if pd.isna(median_value):  # If still no median available
-                    median_value = 1000000  # Default value
+                if pd.isna(median_value):  
+                    median_value = df['Avg Value'].median()  
+                if pd.isna(median_value):  
+                    median_value = 1000000  
                 df.loc[pos_mask, 'Avg Value'] = median_value
     
     # Ensure no NaN or negative values in final output
@@ -186,15 +165,12 @@ def prepare_csv_data(file_path):
     Returns:
     pandas.DataFrame: Preprocessed DataFrame with cleaned attributes and encoded positions
     """
-    # Read the CSV file
     df = pd.read_csv(file_path)
     
-    # Convert wage column to numeric if present
     if 'Wage' in df.columns:
         df['Wage'] = df['Wage'].str.replace('£', '').str.replace(' p/w', '').str.replace(',', '')
         df['Wage'] = pd.to_numeric(df['Wage'], errors='coerce')
     
-    # Convert numeric attribute columns
     numeric_columns = ['Age', 'Com', 'Ecc', 'Pun', '1v1', 'Acc', 'Aer', 'Agg', 'Agi', 'Ant', 
                       'Bal', 'Bra', 'Cmd', 'Cnt', 'Cmp', 'Cro', 'Dec', 'Det', 'Dri', 'Fin',
                       'Fir', 'Fla', 'Han', 'Hea', 'Jum', 'Kic', 'Ldr', 'Lon', 'Mar', 'OtB',
@@ -205,7 +181,6 @@ def prepare_csv_data(file_path):
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors='coerce')
     
-    # Map Act Pos to position flags
     df['is_gk'] = (df['Act Pos'] == 'GK').astype(int)
     df['is_cb'] = (df['Act Pos'] == 'DC').astype(int)
     df['is_lfb'] = (df['Act Pos'] == 'LB').astype(int)
@@ -226,18 +201,14 @@ def prepare_csv_data(file_path):
     }
     df['Position'] = df['Act Pos'].apply(lambda x: position_mapping.get(x, 'Unknown'))
     
-    # Handle Transfer Value
     if 'Transfer Value' in df.columns:
         print("\nDebug Transfer Values:")
         print(df['Transfer Value'].head())
         
-        # First convert all values to numeric regardless of whether they're ranges
         df['Transfer Value'] = df['Transfer Value'].fillna('')
         
-        # Identify which rows contain ranges
         has_range = df['Transfer Value'].str.contains(' - ', na=False)
         
-        # Handle range values
         range_df = df[has_range].copy()
         if not range_df.empty:
             range_df[['Min Value', 'Max Value']] = range_df['Transfer Value'].str.split(' - ', expand=True)
@@ -246,7 +217,6 @@ def prepare_csv_data(file_path):
             # Use conservative 5% weight for club's own players
             range_df['Avg Value'] = range_df['Min Value'] + (range_df['Max Value'] - range_df['Min Value']) * 0.05
         
-        # Handle single values
         single_df = df[~has_range].copy()
         if not single_df.empty:
             single_df['Avg Value'] = single_df['Transfer Value'].apply(convert_value_string)
@@ -254,20 +224,17 @@ def prepare_csv_data(file_path):
             single_df['Max Value'] = single_df['Avg Value']
 
         
-        # Combine the results back
         if not range_df.empty:
             df.loc[range_df.index, ['Min Value', 'Max Value', 'Avg Value']] = range_df[['Min Value', 'Max Value', 'Avg Value']]
         if not single_df.empty:
             df.loc[single_df.index, ['Min Value', 'Max Value', 'Avg Value']] = single_df[['Min Value', 'Max Value', 'Avg Value']]
     
     elif 'Value' in df.columns:
-        # If there's a single Value column, use the same improved logic
         df['Value'] = df['Value'].fillna('')
         df['Avg Value'] = df['Value'].apply(convert_value_string)
         df['Min Value'] = df['Avg Value']
         df['Max Value'] = df['Avg Value']
     
-    # Handle missing values
     if 'Avg Value' in df.columns:
         remaining_nans = df['Avg Value'].isna().sum()
         if remaining_nans > 0:
@@ -276,10 +243,10 @@ def prepare_csv_data(file_path):
                 pos_mask = (df[pos] == 1) & (df['Avg Value'].isna())
                 if pos_mask.any():
                     median_value = df.loc[(df[pos] == 1) & (~df['Avg Value'].isna()), 'Avg Value'].median()
-                    if pd.isna(median_value):  # If no median available for position
-                        median_value = df['Avg Value'].median()  # Use overall median
-                    if pd.isna(median_value):  # If still no median available
-                        median_value = 1000000  # Default value
+                    if pd.isna(median_value): 
+                        median_value = df['Avg Value'].median() 
+                    if pd.isna(median_value):  
+                        median_value = 1000000  
                     df.loc[pos_mask, 'Avg Value'] = median_value
     
     if 'Av Rat' in df.columns:
@@ -291,12 +258,9 @@ df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planni
 df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm24\palace_squad_jun24.csv")
 
 
-#df_palace_squad = df_palace_squad.drop(0)
-print(df_palace_squad[["Name", "Transfer Value", "Avg Value"]])
 
 df_transfer_targets = df_transfer_targets.drop(0)
 
-print(df_transfer_targets[df_transfer_targets['Name'] == 'Fran Pérez'][["Name", "Transfer Value"]])
 
 class PlayerAttributeWeights:
     """Define position-specific and DNA attribute weights"""
@@ -531,7 +495,6 @@ class FMTransferOptimizer:
             }
         }
         
-        # Calculate net spend
         metrics['financial']['net_spend'] = (metrics['financial']['total_spend'] - 
                                         metrics['financial']['total_income'])
         
@@ -554,7 +517,6 @@ class FMTransferOptimizer:
         locked_players = locked_players or []
         banned_players = banned_players or []
         
-        # Calculate position scores for all players
         current_squad_scores = current_squad.apply(self.calculate_position_scores, axis=1)
         available_players_scores = available_players.apply(self.calculate_position_scores, axis=1)
         
@@ -611,7 +573,6 @@ class FMTransferOptimizer:
         # Protect third-choice goalkeeper
         current_gks = current_squad[current_squad['is_gk'] == 1].copy()
         if len(current_gks) >= 3:
-            # Calculate scores for goalkeepers
             gk_scores = []
             for idx, gk in current_gks.iterrows():
                 gk_score = self.calculate_position_specific_score(
@@ -622,7 +583,6 @@ class FMTransferOptimizer:
                 )
                 gk_scores.append({'index': idx, 'score': gk_score})
             
-            # Convert to DataFrame and find worst goalkeeper
             gk_scores_df = pd.DataFrame(gk_scores)
             worst_gk_idx = gk_scores_df.nsmallest(1, 'score')['index'].iloc[0]
             
@@ -632,10 +592,10 @@ class FMTransferOptimizer:
         # Calculate total squad quality using position-specific scores
         base_score = 0
         for scores in current_squad_scores:
-            if scores:  # Check if the dictionary has any scores
+            if scores:  
                 base_score += max(scores.values())
             else:
-                base_score += 0  # Or some minimum value if a player has no positions
+                base_score += 0  
 
         score_from_sales = pulp.lpSum(
             -sell_vars.get((i, pos), 0) * current_squad_scores[i].get(pos, 0)
@@ -773,7 +733,8 @@ class FMTransferOptimizer:
         
         metrics = self._calculate_metrics(current_squad, players_to_buy, players_to_sell)
         return players_to_buy, players_to_sell, metrics
-        
+
+# Defining the players per positions required     
 required_positions = {
     'is_gk': (3, 3),
     'is_cb': (5, 6),
@@ -851,7 +812,7 @@ def print_transfer_results(players_to_buy, players_to_sell, metrics, current_squ
             'Position': player['Position'],
             'Value': format_currency(player['Avg Value']),
             'Wage': format_currency(player['Wage']),
-            'Score': f"{player['position_score']:.2f}"  # Updated to use position_score
+            'Score': f"{player['position_score']:.2f}" 
         })
     if buy_data:
         print(pd.DataFrame(buy_data).to_string(index=False))
@@ -867,7 +828,7 @@ def print_transfer_results(players_to_buy, players_to_sell, metrics, current_squ
             'Position': player['Position'],
             'Value': format_currency(player['Avg Value']),
             'Wage': format_currency(player['Wage']),
-            'Score': f"{player['position_score']:.2f}"  # Updated to use position_score
+            'Score': f"{player['position_score']:.2f}" 
         })
     if sell_data:
         print(pd.DataFrame(sell_data).to_string(index=False))
