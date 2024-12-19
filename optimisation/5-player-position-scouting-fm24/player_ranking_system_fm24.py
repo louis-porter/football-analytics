@@ -89,10 +89,7 @@ def prepare_html_data(file_path, is_my_squad=False):
     df['is_rcb'] = ((df["Position"].str.contains(r"D \((?:C|LC|RC|RLC)\)", regex=True)) & 
                     (df["Right Foot"].str.contains("Strong", case=False, na=False))).astype(int)
     
-    if 'Transfer Value' in df.columns:
-        print("\nDebug Transfer Values:")
-        print(df['Transfer Value'].head())
-        
+    if 'Transfer Value' in df.columns:       
         df['Transfer Value'] = df['Transfer Value'].fillna('')
     
         has_range = df['Transfer Value'].str.contains(' - ', na=False)
@@ -354,33 +351,84 @@ class PlayerRankingSystem:
                             for attr, weight in position_weights.items()) * 0.85
         
         dna_score = sum(player_data[attr] * weight 
-                       for attr, weight in dna_weights.items()) * 0.15
+                    for attr, weight in dna_weights.items()) * 0.15
         
         base_score = attribute_score + dna_score
         
-        # Age factor calculation
+        # Position-specific age multipliers based on our data analysis
+        age_multipliers = {
+            'gk': {
+                18: 1.15, 20: 1.11, 22: 1.08, 24: 1.06,
+                26: 1.04, 28: 1.02, 30: 1.01, 32: 1.0 
+            },
+            'ccb': {  
+                18: 1.11, 20: 1.08, 22: 1.06, 24: 1.04,
+                26: 0.98, 28: 0.97, 30: 0.96, 32: 0.95
+            },
+            'fb': {  
+                18: 1.13, 20: 1.09, 22: 1.06, 24: 1.03,
+                26: 0.99, 28: 0.95, 30: 0.93, 32: 0.86
+            },
+            'dm': {  
+                18: 1.12, 20: 1.09, 22: 1.07, 24: 1.05,
+                26: 0.97, 28: 0.95, 30: 0.94, 32: 0.9
+            },
+            'cm': {  
+                18: 1.11, 20: 1.08, 22: 1.05, 24: 1.03,
+                26: 0.99, 28: 0.98, 30: 0.96, 32: 0.91
+            },
+            'am': {  
+                18: 1.09, 20: 1.07, 22: 1.05, 24: 1.04,
+                26: 0.97, 28: 0.96, 30: 0.95, 32: 0.9
+            },
+            'wing': {  
+                18: 1.06, 20: 1.04, 22: 1.03, 24: 1.02,
+                26: 0.99, 28: 0.98, 30: 0.95, 32: 0.85
+            },
+            'st': { 
+                18: 1.14, 20: 1.12, 22: 1.1, 24: 1.05,
+                26: 0.99, 28: 0.98, 30: 0.97, 32: 0.96
+            }
+        }
+        
+        # Determine position type from the weights method name
         if is_goalkeeper:
-            age_factor = 1.1 if age < 25 else 0.9 if age > 33 else 1.0
+            pos_type = 'gk'
+        elif any(role in str(position_weights) for role in ['ccb', 'lcb', 'rcb']):
+            pos_type = 'ccb'
+        elif any(role in str(position_weights) for role in ['lb', 'rb']):
+            pos_type = 'fb'
+        elif 'dm' in str(position_weights):
+            pos_type = 'dm'
+        elif 'cm' in str(position_weights):
+            pos_type = 'cm'
+        elif 'am' in str(position_weights):
+            pos_type = 'am'
+        elif any(role in str(position_weights) for role in ['lw', 'rw', 'lif', 'rif']):
+            pos_type = 'wing'
         else:
-            if age > 32:
-                age_factor = 0.75
-            elif age >= 30:
-                age_factor = 0.87
-            elif age >= 27:
-                age_factor = 0.97
-            elif age <= 24:
-                age_factor = 1.05
-            elif age < 21:
-                age_factor = 1.07
-            else:
-                age_factor = 1.0
+            pos_type = 'st'
+        
+        # Get multiplier based on age
+        multipliers = age_multipliers[pos_type]
+        # Find the closest age bracket
+        ages = sorted(multipliers.keys())
+        if age <= ages[0]:
+            age_factor = multipliers[ages[0]]
+        elif age >= ages[-1]:
+            age_factor = multipliers[ages[-1]]
+        else:
+            # Linear interpolation between age brackets
+            for i in range(len(ages)-1):
+                if ages[i] <= age <= ages[i+1]:
+                    lower_age = ages[i]
+                    upper_age = ages[i+1]
+                    lower_mult = multipliers[lower_age]
+                    upper_mult = multipliers[upper_age]
+                    age_factor = lower_mult + (upper_mult - lower_mult) * (age - lower_age) / (upper_age - lower_age)
+                    break
         
         score = base_score * age_factor
-        
-        # if 'Av Rat' in player_data:
-        #     rating_multiplier = self.get_rating_multiplier(player_data['Av Rat'])
-        #     score *= rating_multiplier
-        
         return score
 
     def get_top_players_by_position(self, players_df, position_flag, top_n=5):
