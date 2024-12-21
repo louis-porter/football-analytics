@@ -26,16 +26,6 @@ def convert_value_string(value_str):
 
 
 def prepare_html_data(file_path, is_my_squad=False):
-    """
-    Read and preprocess Football Manager HTML data file into a pandas DataFrame
-    
-    Parameters:
-    file_path (str): Path to the HTML file
-    is_my_squad (bool): If True, uses more conservative valuation (closer to min value)
-    
-    Returns:
-    pandas.DataFrame: Preprocessed DataFrame with cleaned attributes and encoded positions
-    """
     with open(file_path, 'r', encoding='utf-8') as file:
         html_content = file.read()
     
@@ -156,15 +146,6 @@ def prepare_html_data(file_path, is_my_squad=False):
     return df
 
 def prepare_csv_data(file_path):
-    """
-    Read and preprocess Football Manager CSV data file into a pandas DataFrame
-    
-    Parameters:
-    file_path (str): Path to the CSV file
-    
-    Returns:
-    pandas.DataFrame: Preprocessed DataFrame with cleaned attributes and encoded positions
-    """
     df = pd.read_csv(file_path)
     
     if 'Wage' in df.columns:
@@ -503,17 +484,7 @@ class FMTransferOptimizer:
 
     def optimise_transfers(self, current_squad, available_players, required_positions, 
                         max_transfers=2, locked_players=None, banned_players=None):
-        """
-        Optimize transfer decisions based on player attributes and multiple positions
-        
-        Args:
-            current_squad (pd.DataFrame): Current squad data
-            available_players (pd.DataFrame): Available transfer targets
-            required_positions (dict): Position requirements {position: (min, max)}
-            max_transfers (int): Maximum number of transfers allowed
-            locked_players (list): List of player names that cannot be sold
-            banned_players (list): List of player names that cannot be bought
-        """
+
         locked_players = locked_players or []
         banned_players = banned_players or []
         
