@@ -235,5 +235,5 @@ df = df_retention.merge(
 cols_to_drop = [col for col in df.columns if '_x' in col or '_y' in col]
 df = df.drop(cols_to_drop, axis=1)
 
-print(df.columns)
+print(df.head())
 
