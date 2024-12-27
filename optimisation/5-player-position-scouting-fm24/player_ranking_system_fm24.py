@@ -307,9 +307,10 @@ class PlayerAttributeWeights:
     @staticmethod
     def dlf_weights():
         return {
-            'Fir': 0.121, 'OtB': 0.121, 'Tea': 0.121, 'Dec': 0.121,           
-            'Cmp': 0.121, 'Ant': 0.091, 'Fin': 0.091, 'Str': 0.091,          
-            'Bal': 0.061, 'Pas': 0.061, 'Tec': 0.061, 'Vis': 0.061          
+            'Fir': 0.097, 'OtB': 0.097, 'Tea': 0.097, 'Dec': 0.097,
+            'Cmp': 0.097, 'Ant': 0.073, 'Fin': 0.073, 'Str': 0.073,
+            'Bal': 0.049, 'Pas': 0.049, 'Tec': 0.049, 'Vis': 0.049,
+            'Jum': 0.097
         }
     
     @staticmethod
@@ -532,7 +533,7 @@ def format_rankings(rankings):
         return "\n".join(output)
 
 
-df_transfer_targets = prepare_html_data(r"C:\Users\Owner\dev\football-analytics\optimisation\5-player-position-scouting-fm24\jun23_players.html")
+df_transfer_targets = prepare_html_data(r"C:\Users\Owner\dev\football-analytics\optimisation\5-player-position-scouting-fm24\jan24_Players.html")
 
 
 # Initialize the ranking system
