@@ -15,14 +15,13 @@ gw_dict = {
     "GW16": "2024-12-10",
     "GW17": "2024-12-17",  # Boxing Day
     "GW18": "2024-12-23",  # Midweek
-    "GW19": "2025-12-28",  # New Year's Day
-    "GW20": "2025-01-02",
-    "GW21": "2025-01-07",
-    "GW22": "2025-01-17",  # After FA Cup break
-    "GW23": "2025-01-21",
-    "GW24": "2025-01-27",
-    "GW25": "2025-02-03",  # After international break
-    "GW26": "2025-02-19",
+    "GW19": "2024-12-28",
+    "GW20": "2025-01-07",
+    "GW21": "2025-01-17",  # After FA Cup break
+    "GW22": "2025-01-21",
+    "GW23": "2025-01-27",
+    "GW24": "2025-02-03",  # After international break
+    "GW25": "2025-02-19",
 }
 
 def get_current_gameweek(gw_dict):
