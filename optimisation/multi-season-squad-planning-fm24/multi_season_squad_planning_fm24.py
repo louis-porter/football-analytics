@@ -236,7 +236,7 @@ def prepare_csv_data(file_path):
     return df
 
 df_transfer_targets = prepare_html_data(r"optimisation\multi-season-squad-planning-fm24\transfer_targets_jun24.html")
-df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm24\palace_squad_jun24.csv")
+df_palace_squad = prepare_csv_data(r"optimisation\multi-season-squad-planning-fm24\brent_jun24.csv")
 
 
 
@@ -249,9 +249,7 @@ class PlayerAttributeWeights:
     @staticmethod
     def dna_weights():
         return {
-        'Ant': 0.15, 'Tea': 0.15, 'Wor': 0.15, 'Sta': 0.15,
-        'Mar': 0.05, 'Dec': 0.11, 'Det': 0.11, 'Acc': 0.08,
-        'Agg': 0.05
+        'Agg': 0.2, 'Bra': 0.2, 'Det': 0.2, 'Wor': 0.2, 'Tea': 0.2
     }
 
     @staticmethod
@@ -275,13 +273,23 @@ class PlayerAttributeWeights:
     @staticmethod
     def wingback_weights():
         return {
-            'Sta': 0.08, 'Wor': 0.08, 'Acc': 0.08, 'Cro': 0.07,
-            'Dri': 0.07, 'Tck': 0.07, 'Pos': 0.06, 'Tea': 0.06,
-            'Pac': 0.06, 'OtB': 0.06, 'Tec': 0.06, 'Ant': 0.06,
-            'Dec': 0.05, 'Agi': 0.05, 'Fir': 0.05, 'Pas': 0.05,
-            'Bal': 0.05
+            'Acc': 0.10, 'Cro': 0.10, 'Sta': 0.10, 'Wor': 0.09,
+            'Tea': 0.08, 'OtB': 0.07, 'Mar': 0.06, 'Tck': 0.06,
+            'Dri': 0.02, 'Agi': 0.06, 'Bal': 0.06, 'Fir': 0.06,
+            'Pas': 0.05, 'Ant': 0.05, 'Cnt': 0.02, 'Dec': 0.02,
+            'Pos': 0.06
         }
     
+    @staticmethod
+    def def_midfielder_weights():
+        return {
+            'Pos': 0.10, 'Tea': 0.10, 'Ant': 0.10, 'Tck': 0.09,
+            'Cnt': 0.08, 'Cmp': 0.07, 'Agg': 0.06, 'Dec': 0.06,
+            'Sta': 0.06, 'Str': 0.06, 'Fir': 0.06, 'Mar': 0.06,
+            'Pas': 0.05, 'Wor': 0.05, 'Jum': 0.02, 'Hea': 0.02,
+            'Bal': 0.02
+        }
+
     @staticmethod
     def midfielder_weights():
         return {
@@ -739,18 +747,18 @@ def print_squad_composition(squad_df, required_positions):
 print_squad_composition(df_palace_squad, required_positions)
 
 locked_players = [] 
-banned_players = ["Konstantin Tyukavin", "Ignacio Miramón", "Lorenzo Pirola"]
+banned_players = []
 
 optimiser = FMTransferOptimizer(
-    current_budget= 22000000,
-    wage_budget=66000
+    current_budget= 116000000,
+    wage_budget=175000
 )
 
 players_to_buy, players_to_sell, metrics = optimiser.optimise_transfers(
     current_squad=df_palace_squad,
     available_players=df_transfer_targets,
     required_positions=required_positions,
-    max_transfers=2,
+    max_transfers=5,
     locked_players=locked_players,
     banned_players=banned_players
 )

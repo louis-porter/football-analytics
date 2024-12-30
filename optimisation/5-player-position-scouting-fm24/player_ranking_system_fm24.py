@@ -533,7 +533,7 @@ def format_rankings(rankings):
         return "\n".join(output)
 
 
-df_transfer_targets = prepare_html_data(r"C:\Users\Owner\dev\football-analytics\optimisation\5-player-position-scouting-fm24\jan24_Players.html")
+df_transfer_targets = prepare_html_data(r"C:\Users\Owner\dev\football-analytics\optimisation\5-player-position-scouting-fm24\playerts.html")
 
 
 # Initialize the ranking system
