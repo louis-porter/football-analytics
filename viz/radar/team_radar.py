@@ -5,7 +5,7 @@ import matplotlib.image as mpimg
 logo_path = r"plots\logos\man-city.png"
 
 # Load the logo image
-logo_img = mpimg.imread(logo_path)
+#logo_img = mpimg.imread(logo_path)
 
 # creating the figure using the grid function from mplsoccer:
 fig, axs = grid(figheight=14, grid_height=0.915, title_height=0.06, endnote_height=0.025,
