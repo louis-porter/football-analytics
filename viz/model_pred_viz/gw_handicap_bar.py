@@ -6,7 +6,7 @@ from datetime import datetime
 gw_dict = {
     'GW21': '2025-01-13',
     'GW22': '2025-01-17',
-    'GW23': '2025-01-24'
+    'GW23': '2025-01-23'
 
 }
 def get_current_gameweek(gw_dict):
