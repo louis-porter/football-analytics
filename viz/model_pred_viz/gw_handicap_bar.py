@@ -4,11 +4,14 @@ from datetime import datetime
 
 # Gameweek dictionary
 gw_dict = {
-    'GW21': '2025-01-13',
-    'GW22': '2025-01-17',
-    'GW23': '2025-01-23'
-
+    'GW24': '2025-01-28',
+    'GW25': '2025-02-13',
+    'GW26': '2025-02-17',
+    'GW27': '2025-02-24',
+    'GW28': '2025-02-28',
 }
+
+
 def get_current_gameweek(gw_dict):
     """
     Determines the current gameweek based on the current date.
