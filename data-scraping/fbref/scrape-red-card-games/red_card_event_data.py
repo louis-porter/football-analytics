@@ -141,3 +141,5 @@ for url in red_card_matches_df["match_url"]:
 
 # Combine all DataFrames
 combined_df = pd.concat(all_matches_data, ignore_index=True)
+
+combined_df.to_csv(r"data-scraping\fbref\scrape-red-card-games\red_card_data_2024.csv", index=False)

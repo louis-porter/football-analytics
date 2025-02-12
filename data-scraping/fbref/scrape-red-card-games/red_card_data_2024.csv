@@ -1,0 +1,820 @@
+Minute,Team,xG,PSxG,Outcome,Event Type,match_url
+10,Southampton,0.15,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+14,Southampton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+22,Southampton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+24,Newcastle Utd,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+28,Newcastle United,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+41,Southampton,0.2,0.0,Off Target,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+45,Newcastle Utd,0.17,0.63,Goal,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+45,Newcastle Utd,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+50,Southampton,0.49,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+50,Southampton,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+51,Southampton,0.05,0.08,Saved,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+62,Southampton,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+62,Southampton,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+63,Southampton,0.11,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+63,Southampton,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+69,Southampton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+78,Southampton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+78,Southampton,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+86,Southampton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+87,Southampton,0.07,0.21,Saved,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+90,Southampton,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+90,Southampton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+90,Southampton,0.1,0.14,Saved,Shot,https://fbref.com/en/matches/34557647/Newcastle-United-Southampton-August-17-2024-Premier-League
+4,Everton,0.03,0.05,Saved,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+9,Brighton,0.03,0.0,Woodwork,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+12,Everton,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+14,Everton,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+15,Brighton,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+17,Brighton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+20,Everton,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+26,Brighton,0.81,0.96,Goal,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+28,Brighton,0.13,0.0,Off Target,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+29,Everton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+37,Everton,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+51,Everton,0.14,0.0,Blocked,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+56,Brighton,0.07,0.48,Goal,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+59,Everton,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+59,Everton,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+63,Brighton,0.1,0.39,Saved,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+66,Everton,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+67,Brighton,0.04,0.06,Saved,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+72,Brighton,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+87,Brighton,0.07,0.47,Goal,Shot,https://fbref.com/en/matches/71618ace/Everton-Brighton-and-Hove-Albion-August-17-2024-Premier-League
+2,Arsenal,0.06,0.23,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+8,Arsenal,0.11,0.1,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+11,Arsenal,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+14,Brighton,0.02,0.0,Saved off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+18,Arsenal,0.18,0.1,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+28,Brighton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+31,Brighton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+38,Arsenal,0.57,0.25,Goal,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+45,Arsenal,0.03,0.2,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+46,Arsenal,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+47,Arsenal,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+49,Arsenal,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+53,Brighton,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+53,Brighton,0.14,0.05,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+53,Brighton,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+58,Brighton,0.35,0.15,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+58,Brighton,0.26,0.24,Goal,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+60,Brighton,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+61,Brighton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+73,Brighton,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+75,Arsenal,0.25,0.64,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+75,Arsenal,0.21,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+76,Brighton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+76,Brighton,0.3,0.19,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+76,Brighton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+77,Arsenal,0.6,0.84,Saved,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+80,Brighton,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+82,Brighton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+88,Brighton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+89,Brighton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+89,Brighton,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+90,Brighton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+90,Brighton,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+90,Brighton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/a843d023/Arsenal-Brighton-and-Hove-Albion-August-31-2024-Premier-League
+7,Southampton,0.03,0.27,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+12,Southampton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+15,Manchester Utd,0.71,0.98,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+17,Manchester Utd,0.03,0.01,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+19,Manchester Utd,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+23,Southampton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+28,Southampton,0.21,0.0,Off Target,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+29,Manchester Utd,0.02,0.08,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+33,Southampton,0.79,0.66,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+33,Southampton,0.06,0.08,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+35,Manchester Utd,0.03,0.31,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+35,Manchester Utd,0.34,0.84,Goal,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+39,Manchester Utd,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+40,Manchester Utd,0.29,0.52,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+41,Manchester Utd,0.01,0.37,Goal,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+43,Manchester Utd,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+44,Manchester Utd,0.08,0.14,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+49,Manchester Utd,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+51,Manchester Utd,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+60,Manchester Utd,0.02,0.01,Saved,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+61,Manchester Utd,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+78,Manchester Utd,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+79,Southampton,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+88,Manchester Utd,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+90,Manchester Utd,0.4,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+90,Manchester Utd,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+90,Manchester Utd,0.3,0.79,Goal,Shot,https://fbref.com/en/matches/b96c3759/Southampton-Manchester-United-September-14-2024-Premier-League
+9,Brighton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+13,Nott'ham Forest,0.79,0.89,Goal,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+16,Brighton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+27,Nott'ham Forest,0.07,0.3,Saved,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+30,Brighton,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+38,Brighton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+42,Brighton,0.12,0.48,Goal,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+45,Brighton,0.06,0.27,Goal,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+47,Brighton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+47,Brighton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+50,Brighton,0.24,0.35,Saved,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+54,Brighton,0.15,0.0,Blocked,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+56,Brighton,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+58,Brighton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+63,Nott'ham Forest,0.11,0.0,Blocked,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+70,Nott'ham Forest,0.45,0.49,Goal,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+80,Brighton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+83,Nottingham Forest,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+89,Brighton,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/d701a1df/Brighton-and-Hove-Albion-Nottingham-Forest-September-22-2024-Premier-League
+7,Manchester City,0.17,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+9,Manchester City,0.51,0.52,Goal,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+15,Manchester City,0.05,0.0,Woodwork,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+22,Arsenal,0.02,0.28,Goal,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+30,Manchester City,0.02,0.1,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+35,Manchester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+38,Arsenal,0.18,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+42,Arsenal,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+45,Arsenal,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+45,Arsenal,0.32,0.97,Goal,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+48,Manchester City,0.09,0.32,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+49,Manchester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+53,Manchester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+55,Manchester City,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+57,Manchester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+57,Manchester City,0.03,0.04,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+59,Manchester City,0.1,0.16,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+59,Manchester City,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+61,Manchester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+62,Manchester City,0.05,0.03,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+68,Manchester City,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+69,Manchester City,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+69,Manchester City,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+72,Manchester City,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+75,Manchester City,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+76,Manchester City,0.04,0.02,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+76,Manchester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+77,Manchester City,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+78,Manchester City,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+79,Manchester City,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+85,Manchester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+87,Manchester City,0.03,0.16,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+89,Manchester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+89,Manchester City,0.13,0.36,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+90,Manchester City,0.18,0.43,Goal,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+90,Manchester City,0.05,0.07,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+90,Manchester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+90,Arsenal,0.07,0.22,Saved,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+90,Manchester City,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/d7538020/Manchester-City-Arsenal-September-22-2024-Premier-League
+3,Tottenham,0.91,0.97,Goal,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+11,Tottenham,0.34,0.31,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+12,Tottenham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+20,Tottenham,0.04,0.0,Woodwork,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+22,Manchester Utd,0.25,0.22,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+26,Manchester Utd,0.01,0.06,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+30,Tottenham,0.04,0.02,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+31,Tottenham,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+32,Tottenham,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+33,Tottenham,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+37,Manchester Utd,0.08,0.0,Woodwork,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+39,Tottenham,0.33,0.31,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+40,Tottenham,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+40,Tottenham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+41,Tottenham,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+42,Manchester United,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+47,Tottenham,0.39,0.33,Goal,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+53,Tottenham,0.12,0.08,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+56,Tottenham,0.28,0.18,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+56,Tottenham,0.11,0.13,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+60,Manchester Utd,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+60,Manchester Utd,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+63,Manchester Utd,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+69,Manchester Utd,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+72,Manchester Utd,0.18,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+72,Manchester Utd,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+75,Tottenham,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+76,Tottenham,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+77,Tottenham,0.87,0.85,Goal,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+77,Tottenham,0.18,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+87,Tottenham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+89,Manchester Utd,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+90,Tottenham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+90,Tottenham,0.3,0.28,Saved,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+90,Tottenham,0.29,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+90,Manchester Utd,0.17,0.0,Off Target,Shot,https://fbref.com/en/matches/c4b97377/Manchester-United-Tottenham-Hotspur-September-29-2024-Premier-League
+10,Chelsea,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+12,Nott'ham Forest,0.05,0.03,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+14,Chelsea,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+18,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+24,Chelsea,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+27,Chelsea,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+35,Nott'ham Forest,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+39,Nott'ham Forest,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+39,Nott'ham Forest,0.02,0.02,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+42,Chelsea,0.06,0.08,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+44,Chelsea,0.24,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+44,Chelsea,0.5,0.3,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+44,Nott'ham Forest,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+45,Nott'ham Forest,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+45,Chelsea,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+47,Chelsea,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+48,Nott'ham Forest,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+48,Nott'ham Forest,0.04,0.01,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+49,Nott'ham Forest,0.16,0.79,Goal,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+54,Nott'ham Forest,0.09,0.25,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+57,Chelsea,0.03,0.35,Goal,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+59,Chelsea,0.05,0.02,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+59,Chelsea,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+63,Chelsea,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+66,Chelsea,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+70,Nott'ham Forest,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+76,Nott'ham Forest,0.04,0.07,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+78,Nottingham Forest,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+87,Chelsea,0.09,0.12,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+87,Chelsea,0.3,0.24,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+88,Chelsea,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+90,Nott'ham Forest,0.06,0.18,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+90,Chelsea,0.2,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+90,Nott'ham Forest,0.12,0.26,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+90,Chelsea,0.51,0.85,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+90,Chelsea,0.02,0.03,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+90,Chelsea,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+90,Nott'ham Forest,0.03,0.01,Saved,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+90,Nott'ham Forest,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/b9e00aac/Chelsea-Nottingham-Forest-October-6-2024-Premier-League
+6,Tottenham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+11,West Ham,0.1,0.08,Saved,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+11,West Ham,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+14,Tottenham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+16,Tottenham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+18,West Ham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+19,West Ham,0.07,0.76,Goal,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+23,Tottenham,0.23,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+25,Tottenham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+26,Tottenham,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+28,Tottenham,0.56,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+29,Tottenham,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+34,Tottenham,0.03,0.04,Saved,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+36,Tottenham,0.1,0.15,Goal,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+40,Tottenham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+43,Tottenham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+45,West Ham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+48,West Ham,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+51,Tottenham,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+52,Tottenham,0.16,0.14,Goal,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+54,West Ham,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+55,Tottenham,0.04,0.03,Saved,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+60,Tottenham,0.1,0.2,Goal,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+61,Tottenham,0.22,0.0,Woodwork,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+62,West Ham,0.41,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+65,Tottenham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+66,West Ham,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+67,Tottenham,0.06,0.15,Saved,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+71,Tottenham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+72,West Ham,0.03,0.04,Saved,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+73,West Ham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+76,Tottenham,0.04,0.03,Saved,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+86,West Ham United,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+90,Tottenham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/923bfab0/Tottenham-Hotspur-West-Ham-United-October-19-2024-Premier-League
+5,Southampton,0.04,0.17,Saved,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+5,Southampton,0.38,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+8,Southampton,0.43,0.96,Goal,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+11,Leicester City,0.44,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+13,Leicester City,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+19,Leicester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+20,Leicester City,0.22,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+28,Southampton,0.58,0.97,Goal,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+29,Leicester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+32,Southampton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+32,Southampton,0.2,0.24,Saved,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+34,Leicester City,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+42,Leicester City,0.05,0.0,Woodwork,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+45,Southampton,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+52,Southampton,0.02,0.03,Saved,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+57,Leicester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+57,Leicester City,0.18,0.0,Blocked,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+63,Southampton,0.14,0.2,Saved,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+63,Southampton,0.04,0.05,Saved,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+64,Leicester City,0.95,0.99,Goal,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+66,Southampton,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+67,Southampton,0.15,0.0,Blocked,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+69,Southampton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+71,Leicester City,0.02,0.0,Woodwork,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+72,Leicester City,0.16,0.3,Saved,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+73,Southampton,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+74,Leicester City,0.79,0.96,Goal,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+74,Leicester City,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+77,Leicester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+83,Leicester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+89,Leicester City,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+90,Southampton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+90,Leicester City,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+90,Leicester City,0.1,0.29,Goal,Shot,https://fbref.com/en/matches/03d28c48/Southampton-Leicester-City-October-19-2024-Premier-League
+2,Fulham,0.13,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+3,Fulham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+5,Fulham,0.06,0.38,Goal,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+9,Aston Villa,0.04,0.33,Goal,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+11,Fulham,0.26,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+13,Aston Villa,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+18,Aston Villa,0.33,0.5,Saved,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+22,Aston Villa,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+27,Fulham,0.79,0.76,Saved,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+42,Aston Villa,0.52,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+45,Fulham,0.26,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+58,Aston Villa,0.08,0.12,Saved,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+59,Aston Villa,0.08,0.19,Goal,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+59,Aston Villa,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+63,Fulham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+64,Fulham,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+66,Aston Villa,0.13,0.0,Blocked,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+66,Aston Villa,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+67,Aston Villa,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+76,Aston Villa,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+82,Fulham,0.03,0.02,Saved,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+86,Fulham,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+90,Aston Villa,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+90,Aston Villa,0.04,0.04,Saved,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+90,Fulham,0.15,0.28,Saved,Shot,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+90,Aston Villa,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/615d637e/Fulham-Aston-Villa-October-19-2024-Premier-League
+11,Arsenal,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+17,Bournemouth,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+30,Arsenal,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+33,Bournemouth,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+35,Arsenal,0.15,0.0,Off Target,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+36,Bournemouth,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+36,Bournemouth,0.04,0.13,Saved,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+37,Bournemouth,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+41,Bournemouth,0.16,0.25,Saved,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+41,Bournemouth,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+45,Arsenal,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+47,Bournemouth,0.37,0.0,Off Target,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+51,Arsenal,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+52,Bournemouth,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+60,Bournemouth,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+69,Arsenal,0.36,0.32,Saved,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+69,Arsenal,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+70,Bournemouth,0.11,0.46,Goal,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+76,Bournemouth,0.13,0.0,Off Target,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+79,Bournemouth,0.79,0.8,Goal,Shot,https://fbref.com/en/matches/01e63a1f/Bournemouth-Arsenal-October-19-2024-Premier-League
+4,Ipswich Town,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+7,Brentford,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+7,Brentford,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+25,Brentford,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+28,Ipswich Town,0.19,0.25,Goal,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+31,Ipswich Town,0.27,0.69,Goal,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+38,Ipswich Town,0.02,0.11,Saved,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+39,Ipswich Town,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+39,Ipswich Town,0.41,0.38,Saved,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+40,Ipswich Town,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+44,Brentford,0.22,0.27,Goal,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+45,Brentford,0.6,0.56,Goal,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+48,Ipswich Town,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+51,Brentford,0.79,0.98,Goal,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+53,Ipswich Town,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+56,Brentford,0.14,0.54,Saved,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+60,Brentford,0.03,0.02,Saved,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+61,Brentford,0.3,0.0,Blocked,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+64,Brentford,0.27,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+65,Brentford,0.24,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+69,Brentford,0.53,0.36,Saved,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+69,Ipswich Town,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+72,Brentford,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+76,Brentford,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+76,Brentford,0.24,0.29,Saved,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+84,Brentford,0.14,0.0,Blocked,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+85,Brentford,0.02,0.01,Saved,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+86,Ipswich Town,0.14,0.6,Goal,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+90,Brentford,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+90,Brentford,0.21,0.0,Off Target,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+90,Brentford,0.02,0.31,Goal,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+90,Ipswich Town,0.02,0.0,Woodwork,Shot,https://fbref.com/en/matches/1fb2dcde/Brentford-Ipswich-Town-October-26-2024-Premier-League
+3,Nott'ham Forest,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+10,Nott'ham Forest,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+20,Nott'ham Forest,0.16,0.0,Blocked,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+20,Nott'ham Forest,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+25,Nott'ham Forest,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+27,Nott'ham Forest,0.76,0.88,Goal,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+30,Nott'ham Forest,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+36,Nott'ham Forest,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+36,Nott'ham Forest,0.11,0.04,Saved,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+45,Nott'ham Forest,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+45,West Ham United,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+45,West Ham,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+47,West Ham,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+53,Nott'ham Forest,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+65,Nott'ham Forest,0.01,0.22,Goal,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+67,Nott'ham Forest,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+70,West Ham,0.03,0.03,Saved,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+74,Nott'ham Forest,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+75,West Ham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+78,Nott'ham Forest,0.07,0.48,Goal,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+82,Nott'ham Forest,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+87,Nott'ham Forest,0.36,0.47,Saved,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+88,Nott'ham Forest,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+90,Nott'ham Forest,0.03,0.77,Saved,Shot,https://fbref.com/en/matches/c2505640/Nottingham-Forest-West-Ham-United-November-2-2024-Premier-League
+3,Leicester City,0.2,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+8,Leicester City,0.01,0.21,Saved,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+9,Ipswich Town,0.3,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+11,Ipswich Town,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+15,Leicester City,0.07,0.27,Saved,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+16,Leicester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+19,Leicester City,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+21,Ipswich Town,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+21,Ipswich Town,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+23,Ipswich Town,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+31,Ipswich Town,0.15,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+34,Ipswich Town,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+34,Ipswich Town,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+39,Ipswich Town,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+43,Ipswich Town,0.04,0.45,Saved,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+45,Ipswich Town,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+46,Ipswich Town,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+55,Ipswich Town,0.09,0.14,Goal,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+64,Leicester City,0.04,0.16,Saved,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+64,Leicester City,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+70,Ipswich Town,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+77,Ipswich Town,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+86,Leicester City,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+87,Leicester City,0.29,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+88,Leicester City,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.05,0.07,Saved,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.31,0.41,Goal,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+90,Leicester City,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/ed8f93a0/Ipswich-Town-Leicester-City-November-2-2024-Premier-League
+6,Fulham,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+10,Crystal Palace,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+14,Fulham,0.14,0.13,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+16,Fulham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+23,Fulham,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+23,Fulham,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+27,Crystal Palace,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+28,Crystal Palace,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+31,Fulham,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+33,Crystal Palace,0.19,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+37,Fulham,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+40,Crystal Palace,0.11,0.0,Blocked,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+42,Fulham,0.04,0.15,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+44,Crystal Palace,0.41,0.0,Blocked,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+45,Fulham,0.15,0.26,Goal,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+46,Fulham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+49,Crystal Palace,0.49,0.26,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+49,Crystal Palace,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+57,Fulham,0.48,0.3,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+58,Fulham,0.04,0.01,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+59,Fulham,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+65,Crystal Palace,0.03,0.3,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+69,Fulham,0.03,0.05,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+69,Crystal Palace,0.02,0.28,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+70,Fulham,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+71,Fulham,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+74,Crystal Palace,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+76,Crystal Palace,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+83,Fulham,0.45,0.27,Goal,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+85,Crystal Palace,0.02,0.3,Saved,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+90,Crystal Palace,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/d5015ba4/Crystal-Palace-Fulham-November-9-2024-Premier-League
+2,Bournemouth,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+4,Brighton,0.02,0.04,Saved,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+4,Brighton,0.29,0.59,Goal,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+12,Bournemouth,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+18,Bournemouth,0.02,0.38,Saved,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+20,Bournemouth,0.11,0.18,Saved,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+21,Bournemouth,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+29,Bournemouth,0.18,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+33,Brighton,0.01,0.05,Saved,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+45,Brighton,0.17,0.0,Blocked,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+49,Brighton,0.42,0.91,Goal,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+51,Bournemouth,0.17,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+59,Brighton & Hove Albion,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+62,Bournemouth,0.04,0.17,Saved,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+64,Bournemouth,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+78,Bournemouth,0.12,0.27,Saved,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+80,Bournemouth,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+81,Bournemouth,0.22,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+84,Brighton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+85,Bournemouth,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+88,Bournemouth,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+88,Bournemouth,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+89,Bournemouth,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+90,Bournemouth,0.08,0.4,Goal,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+90,Bournemouth,0.21,0.0,Blocked,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+90,Bournemouth,0.03,0.0,Woodwork,Shot,https://fbref.com/en/matches/4708a5bf/Bournemouth-Brighton-and-Hove-Albion-November-23-2024-Premier-League
+4,Everton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+4,Everton,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+4,Everton,0.07,0.11,Saved,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+5,Everton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+6,Everton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+7,Brentford,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+8,Everton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+13,Brentford,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+20,Everton,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+26,Everton,0.03,0.15,Saved,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+31,Everton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+33,Everton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+34,Brentford,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+36,Brentford,0.42,0.36,Saved,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+39,Brentford,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+39,Brentford,0.39,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+41,Brentford,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+45,Everton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+45,Everton,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+45,Everton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+47,Brentford,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+48,Everton,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+50,Everton,0.02,0.27,Saved,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+57,Everton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+61,Everton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+62,Everton,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+63,Brentford,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+63,Brentford,0.02,0.02,Saved,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+66,Everton,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+77,Everton,0.07,0.03,Saved,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+79,Everton,0.21,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+83,Everton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+84,Everton,0.03,0.2,Saved,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+86,Everton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+90,Everton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+90,Everton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+90,Everton,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/dd7675a7/Everton-Brentford-November-23-2024-Premier-League
+1,Tottenham,0.18,0.28,Saved,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+12,Fulham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+21,Fulham,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+21,Fulham,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+24,Tottenham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+25,Tottenham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+36,Fulham,0.32,0.28,Saved,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+37,Fulham,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+38,Tottenham,0.01,0.01,Saved,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+42,Fulham,0.07,0.15,Saved,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+44,Fulham,0.13,0.0,Blocked,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+44,Fulham,0.19,0.0,Blocked,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+45,Tottenham,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+50,Fulham,0.21,0.68,Saved,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+50,Fulham,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+52,Fulham,0.21,0.15,Saved,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+53,Fulham,0.13,0.06,Saved,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+54,Tottenham,0.29,0.76,Goal,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+63,Fulham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+67,Fulham,0.03,0.34,Goal,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+77,Tottenham,0.14,0.0,Blocked,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+83,Fulham,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+89,Tottenham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/9aaa6ed5/Tottenham-Hotspur-Fulham-December-1-2024-Premier-League
+2,Southampton,0.23,0.34,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+7,Chelsea,0.25,0.83,Goal,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+11,Southampton,0.71,0.95,Goal,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+17,Chelsea,0.64,0.99,Goal,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+21,Chelsea,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+21,Chelsea,0.34,0.41,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+21,Chelsea,0.03,0.18,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+22,Chelsea,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+24,Chelsea,0.45,0.57,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+25,Chelsea,0.14,0.0,Woodwork,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+30,Chelsea,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+32,Southampton,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+34,Chelsea,0.1,0.46,Goal,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+36,Chelsea,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+37,Southampton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+39,Southampton,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+40,Southampton,0.19,0.36,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+45,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+45,Chelsea,0.5,0.0,Off Target,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+45,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+46,Chelsea,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+53,Chelsea,0.03,0.0,Woodwork,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+53,Chelsea,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+54,Chelsea,0.26,0.22,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+54,Chelsea,0.28,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+58,Southampton,0.33,0.19,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+59,Chelsea,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+65,Chelsea,0.14,0.15,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+69,Chelsea,0.25,0.29,Saved,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+76,Chelsea,0.18,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+77,Chelsea,0.96,0.99,Goal,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+85,Chelsea,0.19,0.0,Blocked,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+87,Chelsea,0.13,0.35,Goal,Shot,https://fbref.com/en/matches/e4480630/Southampton-Chelsea-December-4-2024-Premier-League
+4,Crystal Palace,0.14,0.16,Goal,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+7,Manchester City,0.41,0.25,Saved,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+12,Manchester City,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+13,Manchester City,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+20,Crystal Palace,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+23,Manchester City,0.03,0.0,Woodwork,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+23,Manchester City,0.17,0.0,Off Target,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+25,Crystal Palace,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+29,Crystal Palace,0.18,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+30,Manchester City,0.14,0.79,Goal,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+42,Manchester City,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+45,Crystal Palace,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+52,Crystal Palace,0.14,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+55,Manchester City,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+56,Crystal Palace,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+56,Crystal Palace,0.52,0.95,Goal,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+66,Crystal Palace,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+68,Manchester City,0.15,0.77,Goal,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+73,Manchester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+75,Manchester City,0.07,0.49,Saved,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+75,Manchester City,0.14,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+84,Manchester City,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+87,Crystal Palace,0.02,0.15,Saved,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+90,Crystal Palace,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+90,Crystal Palace,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/6b7fbda1/Crystal-Palace-Manchester-City-December-7-2024-Premier-League
+12,Ipswich Town,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+15,Ipswich Town,0.36,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+15,Ipswich Town,0.16,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+19,Wolves,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+24,Wolves,0.13,0.0,Off Target,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+33,Wolves,0.21,0.47,Saved,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+36,Wolves,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+37,Wolves,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+39,Ipswich Town,0.02,0.03,Saved,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+48,Ipswich Town,0.03,0.03,Saved,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+59,Ipswich Town,0.33,0.0,Off Target,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+66,Ipswich Town,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+68,Wolves,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+72,Wolves,0.05,0.44,Goal,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+76,Wolves,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+76,Wolves,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+78,Wolves,0.04,0.28,Saved,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+82,Wolves,0.02,0.04,Saved,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+83,Wolves,0.21,0.0,Off Target,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+85,Wolves,0.23,0.21,Saved,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+85,Wolves,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+86,Wolves,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+87,Wolves,0.05,0.01,Saved,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+90,Ipswich Town,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+90,Ipswich Town,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+90,Ipswich Town,0.11,0.89,Goal,Shot,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+90,Wolverhampton Wanderers,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/46d52e33/Wolverhampton-Wanderers-Ipswich-Town-December-14-2024-Premier-League
+8,Liverpool,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+11,Fulham,0.11,0.76,Goal,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+16,Liverpool,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+21,Fulham,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+22,Fulham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+31,Fulham,0.17,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+38,Fulham,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+39,Liverpool,0.02,0.03,Saved,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+41,Liverpool,0.4,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+45,Liverpool,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+45,Fulham,0.17,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+47,Liverpool,0.52,0.98,Goal,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+50,Liverpool,0.04,0.12,Saved,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+56,Liverpool,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+60,Fulham,0.22,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+65,Fulham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+66,Liverpool,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+67,Fulham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+67,Fulham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+71,Liverpool,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+76,Fulham,0.28,0.97,Goal,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+82,Liverpool,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+83,Liverpool,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+86,Liverpool,0.29,0.32,Goal,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+90,Liverpool,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+90,Liverpool,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+90,Liverpool,0.24,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+90,Liverpool,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+90,Fulham,0.06,0.08,Saved,Shot,https://fbref.com/en/matches/a436996c/Liverpool-Fulham-December-14-2024-Premier-League
+3,Chelsea,0.19,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+11,Chelsea,0.02,0.07,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+13,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+14,Chelsea,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+14,Chelsea,0.1,0.23,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+14,Chelsea,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+20,Chelsea,0.03,0.06,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+27,Chelsea,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+28,Chelsea,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+29,Brentford,0.15,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+32,Chelsea,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+32,Chelsea,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+39,Chelsea,0.15,0.49,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+43,Chelsea,0.12,0.35,Goal,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+45,Chelsea,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+45,Chelsea,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+48,Chelsea,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+59,Chelsea,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+60,Chelsea,0.73,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+63,Brentford,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+66,Chelsea,0.03,0.02,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+68,Chelsea,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+73,Brentford,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+73,Brentford,0.24,0.6,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+75,Chelsea,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+76,Brentford,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+76,Brentford,0.48,0.0,Woodwork,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+78,Brentford,0.03,0.52,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+80,Chelsea,0.05,0.39,Goal,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+85,Brentford,0.32,0.31,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+87,Chelsea,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+87,Chelsea,0.01,0.04,Saved,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+87,Chelsea,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+90,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+90,Brentford,0.23,0.34,Goal,Shot,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+90,Chelsea,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/5f0803f7/Chelsea-Brentford-December-15-2024-Premier-League
+2,Newcastle Utd,0.05,0.51,Goal,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+4,Newcastle Utd,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+5,Newcastle Utd,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+11,Aston Villa,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+12,Newcastle Utd,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+21,Aston Villa,0.05,0.18,Saved,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+22,Aston Villa,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+25,Newcastle Utd,0.02,0.03,Saved,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+31,Newcastle Utd,0.05,0.06,Saved,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+32,Aston Villa,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+36,Newcastle Utd,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+41,Newcastle Utd,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+44,Newcastle Utd,0.37,0.6,Saved,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+50,Newcastle Utd,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+52,Newcastle Utd,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+54,Newcastle Utd,0.12,0.29,Saved,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+59,Newcastle Utd,0.72,0.98,Goal,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+63,Newcastle Utd,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+64,Newcastle Utd,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+65,Newcastle Utd,0.51,0.0,Woodwork,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+65,Newcastle Utd,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+65,Newcastle Utd,0.13,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+79,Aston Villa,0.19,0.0,Off Target,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+81,Newcastle Utd,0.13,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+83,Newcastle Utd,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+90,Newcastle Utd,0.08,0.83,Goal,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+90,Newcastle Utd,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/9985f304/Newcastle-United-Aston-Villa-December-26-2024-Premier-League
+5,Tottenham,0.12,0.05,Saved,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+11,Nott'ham Forest,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+13,Nott'ham Forest,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+26,Tottenham,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+26,Tottenham,0.06,0.53,Saved,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+26,Nott'ham Forest,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+29,Nott'ham Forest,0.2,0.87,Goal,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+32,Tottenham,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+39,Tottenham,0.09,0.08,Saved,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+40,Tottenham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+45,Tottenham,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+47,Tottenham,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+53,Nott'ham Forest,0.15,0.15,Saved,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+57,Tottenham,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+57,Tottenham,0.24,0.26,Saved,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+61,Nott'ham Forest,0.11,0.34,Saved,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+63,Nott'ham Forest,0.2,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+67,Tottenham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+68,Nott'ham Forest,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+68,Nott'ham Forest,0.24,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+76,Tottenham,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+88,Nott'ham Forest,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+90,Tottenham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+90,Tottenham Hotspur,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/eb738106/Nottingham-Forest-Tottenham-Hotspur-December-26-2024-Premier-League
+7,Manchester Utd,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+19,Wolves,0.04,0.14,Saved,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+20,Manchester Utd,0.02,0.44,Saved,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+23,Wolves,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+26,Wolves,0.15,0.71,Saved,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+28,Manchester Utd,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+30,Manchester Utd,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+34,Manchester Utd,0.05,0.42,Saved,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+39,Wolves,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+41,Manchester Utd,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+47,Manchester United,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+55,Wolves,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+58,Wolves,0.01,0.07,Goal,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+68,Manchester Utd,0.01,0.08,Saved,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+69,Manchester Utd,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+82,Manchester Utd,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+87,Manchester Utd,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+90,Manchester Utd,0.08,0.12,Saved,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+90,Wolves,0.55,0.73,Goal,Shot,https://fbref.com/en/matches/77bcad49/Wolverhampton-Wanderers-Manchester-United-December-26-2024-Premier-League
+3,Crystal Palace,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+8,West Ham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+12,Crystal Palace,0.02,0.05,Saved,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+20,West Ham,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+25,Crystal Palace,0.03,0.05,Saved,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+29,Crystal Palace,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+43,Crystal Palace,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+45,West Ham,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+48,Crystal Palace,0.12,0.25,Goal,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+55,Crystal Palace,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+61,Crystal Palace,0.11,0.28,Saved,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+70,West Ham,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+70,West Ham,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+79,Crystal Palace,0.06,0.11,Saved,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+79,Crystal Palace,0.01,0.08,Saved,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+80,West Ham United,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+85,West Ham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+85,West Ham,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+89,Crystal Palace,0.79,0.81,Goal,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+90,Crystal Palace,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/03ac4a9c/West-Ham-United-Crystal-Palace-January-18-2025-Premier-League
+10,Wolves,0.42,0.0,Off Target,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+19,Arsenal,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+24,Arsenal,0.17,0.05,Saved,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+26,Arsenal,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+40,Arsenal,0.17,0.0,Blocked,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+40,Arsenal,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+43,Arsenal,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+45,Wolves,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+45,Wolves,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+50,Arsenal,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+53,Arsenal,0.04,0.06,Saved,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+60,Wolves,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+60,Wolves,0.02,0.2,Saved,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+62,Arsenal,0.27,0.0,Off Target,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+63,Wolves,0.02,0.26,Saved,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+64,Wolves,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+70,Wolverhampton Wanderers,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+74,Arsenal,0.1,0.61,Goal,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+84,Wolves,0.08,0.24,Saved,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
+86,Wolves,0.02,0.04,Saved,Shot,https://fbref.com/en/matches/0b39252e/Wolverhampton-Wanderers-Arsenal-January-25-2025-Premier-League
