@@ -78,7 +78,7 @@ try:
     matches_with_reds = []
     
     # Navigate to the FBref Premier League fixtures page
-    url = "https://fbref.com/en/comps/9/2023-2024/schedule/2023-2024-Premier-League-Scores-and-Fixtures"
+    url = "https://fbref.com/en/comps/9/2022-2023/schedule/2022-2023-Premier-League-Scores-and-Fixtures"
     driver.get(url)
     time.sleep(2)
     
@@ -86,7 +86,7 @@ try:
     handle_cookie_popup()
     time.sleep(2)
     
-    year = "2023-2024"
+    year = "2022-2023"
 
     # Wait for the table to load
     table = wait_for_element(By.ID, f"sched_{year}_9_1")
@@ -134,7 +134,7 @@ try:
     # Create DataFrame and save results
     if matches_with_reds:
         df = pd.DataFrame(matches_with_reds)
-        df.to_csv(r'C:\Users\Owner\dev\football-analytics\data-scraping\fbref\scrape-red-card-games\matches_with_red_cards_2023.csv', index=False)
+        df.to_csv(r'C:\Users\Owner\dev\football-analytics\data-scraping\fbref\scrape-red-card-games\matches_with_red_cards_2022.csv', index=False)
         print("\nResults saved to matches_with_red_cards.csv")
         print("\nMatches with red cards:")
         print(df)

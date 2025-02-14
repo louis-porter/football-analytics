@@ -1,0 +1,726 @@
+Minute,Team,xG,PSxG,Outcome,Event Type,match_url
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+1,Liverpool,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+5,Liverpool,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+9,Liverpool,0.18,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+9,Liverpool,0.24,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+17,Liverpool,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+17,Liverpool,0.14,0.22,Saved,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+22,Liverpool,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+23,Liverpool,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+24,Liverpool,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+27,Liverpool,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+30,Liverpool,0.16,0.45,Saved,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+32,Crystal Palace,0.15,0.9,Goal,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+35,Liverpool,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+36,Liverpool,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+36,Liverpool,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+37,Crystal Palace,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+38,Crystal Palace,0.04,0.03,Saved,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+40,Crystal Palace,0.26,0.1,Saved,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+43,Liverpool,0.08,0.14,Saved,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+45,Liverpool,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+45,Liverpool,0.07,0.0,Woodwork,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+49,Liverpool,0.25,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+57,Liverpool,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+57,Liverpool,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+61,Liverpool,0.04,0.42,Goal,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+71,Liverpool,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+78,Crystal Palace,0.23,0.0,Woodwork,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+86,Liverpool,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+87,Liverpool,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+90,Crystal Palace,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+90,Liverpool,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+90,Crystal Palace,0.26,0.0,Off Target,Shot,https://fbref.com/en/matches/b3c6f709/Liverpool-Crystal-Palace-August-15-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+1,Chelsea,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+4,Leeds United,0.05,0.08,Saved,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+4,Leeds United,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+5,Chelsea,0.17,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+20,Leeds United,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+22,Chelsea,0.1,0.26,Saved,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+29,Leeds United,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+32,Leeds United,0.06,0.17,Saved,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+33,Leeds United,0.97,0.99,Goal,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+37,Leeds United,0.07,0.36,Goal,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+39,Chelsea,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+40,Chelsea,0.13,0.0,Off Target,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+45,Leeds United,0.04,0.07,Saved,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+48,Chelsea,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+49,Leeds United,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+50,Chelsea,0.14,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+51,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+57,Leeds United,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+57,Chelsea,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+65,Chelsea,0.03,0.28,Saved,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+65,Chelsea,0.02,0.07,Saved,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+69,Leeds United,0.34,0.0,Off Target,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+69,Leeds United,0.49,0.92,Goal,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+75,Chelsea,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+79,Chelsea,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+82,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+84,Chelsea,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/a5632124/Leeds-United-Chelsea-August-21-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+6,Chelsea,0.41,0.54,Saved,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+28,Chelsea,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+40,Leicester City,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+41,Chelsea,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+43,Chelsea,0.05,0.0,Woodwork,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+44,Leicester City,0.26,0.0,Off Target,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+45,Leicester City,0.26,0.39,Saved,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+47,Chelsea,0.03,0.27,Goal,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+51,Chelsea,0.32,0.56,Saved,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+52,Leicester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+52,Leicester City,0.18,0.0,Off Target,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+57,Leicester City,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+58,Leicester City,0.07,0.02,Saved,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+61,Leicester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+63,Chelsea,0.82,0.98,Goal,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+66,Leicester City,0.13,0.15,Goal,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+69,Leicester City,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+70,Leicester City,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+72,Chelsea,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+72,Leicester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+73,Leicester City,0.05,0.27,Saved,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+73,Leicester City,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+78,Leicester City,0.31,0.42,Saved,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+83,Leicester City,0.58,0.0,Off Target,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+87,Leicester City,0.24,0.0,Woodwork,Shot,https://fbref.com/en/matches/b737a3a7/Chelsea-Leicester-City-August-27-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+1,Manchester City,0.33,0.95,Goal,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+4,Wolves,0.09,0.1,Saved,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+6,Manchester City,0.01,0.03,Saved,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+14,Wolves,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+16,Manchester City,0.06,0.28,Goal,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+20,Manchester City,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+20,Manchester City,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+23,Manchester City,0.02,0.05,Saved,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+23,Wolves,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+26,Wolves,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+28,Manchester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+33,Wolverhampton Wanderers,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+39,Wolves,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+44,Manchester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+45,Manchester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+59,Wolves,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+62,Manchester City,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+67,Manchester City,0.06,0.15,Saved,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+67,Manchester City,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+69,Manchester City,0.14,0.37,Goal,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+78,Manchester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+84,Manchester City,0.05,0.41,Saved,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+90,Manchester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/96b5cc15/Wolverhampton-Wanderers-Manchester-City-September-17-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+3,Arsenal,0.06,0.14,Saved,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+4,Arsenal,0.17,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+13,Tottenham,0.45,0.12,Saved,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+14,Arsenal,0.02,0.06,Saved,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+16,Arsenal,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+17,Arsenal,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+20,Arsenal,0.04,0.36,Goal,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+28,Tottenham,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+31,Tottenham,0.79,0.91,Goal,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+38,Tottenham,0.11,0.08,Saved,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+39,Arsenal,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+43,Arsenal,0.14,0.1,Saved,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+45,Arsenal,0.15,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+47,Arsenal,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+48,Arsenal,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+49,Arsenal,0.08,0.14,Saved,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+49,Arsenal,0.95,0.99,Goal,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+51,Tottenham,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+53,Arsenal,0.21,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+59,Tottenham,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+60,Arsenal,0.12,0.02,Saved,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+62,Tottenham Hotspur,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+65,Arsenal,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+66,Arsenal,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+67,Arsenal,0.14,0.07,Goal,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+72,Arsenal,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+78,Tottenham,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+90,Arsenal,0.02,0.17,Saved,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+90,Arsenal,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+90,Arsenal,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/aefe3b90/North-London-Derby-Arsenal-Tottenham-Hotspur-October-1-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+8,Leeds United,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+12,Leeds United,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+15,Aston Villa,0.09,0.03,Saved,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+15,Aston Villa,0.31,0.8,Saved,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+18,Leeds United,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+18,Aston Villa,0.05,0.11,Saved,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+23,Leeds United,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+29,Aston Villa,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+36,Aston Villa,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+41,Aston Villa,0.22,0.0,Blocked,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+45,Aston Villa,0.08,0.02,Saved,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+48,Leeds United,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+50,Aston Villa,0.07,0.0,Woodwork,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+50,Aston Villa,0.51,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+60,Aston Villa,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+72,Aston Villa,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+73,Aston Villa,0.36,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+74,Aston Villa,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+76,Aston Villa,0.04,0.03,Saved,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+77,Aston Villa,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+78,Leeds United,0.1,0.04,Saved,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+85,Aston Villa,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+89,Aston Villa,0.25,0.33,Saved,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+90,Aston Villa,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+90,Aston Villa,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+90,Leeds United,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/627d2279/Leeds-United-Aston-Villa-October-2-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+4,Fulham,0.12,0.22,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+11,Fulham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+13,Aston Villa,0.09,0.14,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+16,Fulham,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+17,Fulham,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+17,Fulham,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+21,Fulham,0.04,0.37,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+22,Fulham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+24,Fulham,0.04,0.04,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+26,Aston Villa,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+31,Aston Villa,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+31,Aston Villa,0.03,0.06,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+33,Fulham,0.05,0.43,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+36,Fulham,0.09,0.35,Goal,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+37,Aston Villa,0.15,0.45,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+38,Fulham,0.21,0.0,Off Target,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+38,Fulham,0.15,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+38,Fulham,0.13,0.17,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+43,Aston Villa,0.01,0.04,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+43,Aston Villa,0.29,0.24,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+45,Aston Villa,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+48,Fulham,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+51,Aston Villa,0.17,0.13,Saved,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+53,Aston Villa,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+54,Fulham,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+54,Fulham,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+62,Aston Villa,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+66,Fulham,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+68,Fulham,0.79,0.88,Goal,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+68,Fulham,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+81,Aston Villa,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+90,Aston Villa,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/e6102606/Fulham-Aston-Villa-October-20-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+13,Wolves,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+15,Brentford,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+17,Brentford,0.13,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+18,Wolves,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+20,Brentford,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+40,Wolves,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+42,Wolves,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+43,Wolves,0.0,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+45,Wolves,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+47,Brentford,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+47,Brentford,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+47,Brentford,0.34,0.2,Saved,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+49,Brentford,0.05,0.17,Saved,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+50,Brentford,0.12,0.09,Goal,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+52,Wolves,0.04,0.34,Goal,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+55,Wolves,0.08,0.2,Saved,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+55,Wolves,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+57,Wolves,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+63,Wolves,0.04,0.08,Saved,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+74,Brentford,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+76,Wolves,0.13,0.08,Saved,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+82,Brentford,0.43,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+82,Brentford,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+85,Brentford,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+90,Wolves,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+90,Wolverhampton Wanderers,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/41e403d3/Brentford-Wolverhampton-Wanderers-October-29-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+3,Manchester City,0.31,0.0,Off Target,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+9,Manchester City,0.03,0.15,Saved,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+13,Manchester City,0.05,0.33,Saved,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+14,Manchester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+16,Manchester City,0.1,0.24,Goal,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+26,Manchester City,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+28,Fulham,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+28,Fulham,0.79,0.99,Goal,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+37,Manchester City,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+42,Manchester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+45,Manchester City,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+45,Manchester City,0.14,0.06,Saved,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+45,Manchester City,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+62,Fulham,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+64,Manchester City,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+66,Fulham,0.03,0.32,Saved,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+67,Manchester City,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+69,Manchester City,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+84,Manchester City,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+89,Manchester City,0.11,0.0,Blocked,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+90,Manchester City,0.79,0.99,Goal,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+90,Fulham,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/6ef27b3c/Manchester-City-Fulham-November-5-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+5,Brighton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+9,Brighton,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+9,Brighton,0.19,0.0,Blocked,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+10,Brighton,0.25,0.87,Goal,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+12,Wolves,0.17,0.55,Goal,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+23,Brighton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+35,Wolves,0.79,0.98,Goal,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+40,Brighton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+44,Brighton,0.11,0.16,Goal,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+45,Wolverhampton Wanderers,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+45,Brighton,0.05,0.03,Saved,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+48,Brighton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+49,Brighton,0.05,0.08,Saved,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+50,Brighton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+57,Brighton,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+59,Wolves,0.04,0.3,Saved,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+60,Wolves,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+62,Brighton,0.13,0.0,Off Target,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+67,Brighton,0.06,0.42,Saved,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+69,Wolves,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+72,Brighton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+77,Brighton,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+80,Wolves,0.07,0.3,Saved,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+83,Brighton,0.17,0.35,Goal,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+87,Brighton,0.09,0.12,Saved,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+90,Wolves,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+90,Wolves,0.05,0.08,Saved,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+90,Brighton,0.03,0.04,Saved,Shot,https://fbref.com/en/matches/982d16a2/Wolverhampton-Wanderers-Brighton-and-Hove-Albion-November-5-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+10,Leeds United,0.19,0.76,Goal,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+13,Tottenham,0.13,0.22,Saved,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+14,Tottenham,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+18,Tottenham,0.47,0.0,Off Target,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+20,Leeds United,0.23,0.45,Saved,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+25,Tottenham,0.25,0.59,Goal,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+27,Tottenham,0.02,0.03,Saved,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+32,Tottenham,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+40,Leeds United,0.11,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+40,Leeds United,0.03,0.02,Saved,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+43,Leeds United,0.1,0.27,Goal,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+45,Tottenham,0.06,0.3,Saved,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+51,Tottenham,0.08,0.05,Goal,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+51,Tottenham,0.13,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+54,Leeds United,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+54,Leeds United,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+60,Leeds United,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+61,Leeds United,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+62,Leeds United,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+63,Tottenham,0.15,0.0,Off Target,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+74,Leeds United,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+76,Leeds United,0.13,0.91,Goal,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+78,Tottenham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+81,Tottenham,0.11,0.06,Goal,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+83,Tottenham,0.24,0.6,Goal,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+85,Tottenham,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+87,Leeds United,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/0030e686/Tottenham-Hotspur-Leeds-United-November-12-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+3,Fulham,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+3,Fulham,0.19,0.0,Blocked,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+8,Fulham,0.04,0.27,Saved,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+26,Crystal Palace,0.08,0.0,Woodwork,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+31,Fulham,0.36,0.74,Goal,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+34,Crystal Palace,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+42,Fulham,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+44,Crystal Palace,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+53,Fulham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+57,Crystal Palace,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+60,Fulham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+60,Fulham,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+61,Fulham,0.22,0.0,Woodwork,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+64,Fulham,0.04,0.23,Saved,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+64,Fulham,0.03,0.44,Saved,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+67,Fulham,0.05,0.02,Saved,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+69,Crystal Palace,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+71,Fulham,0.1,0.35,Goal,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+71,Fulham,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+77,Fulham,0.27,0.46,Saved,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+78,Fulham,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+78,Fulham,0.05,0.1,Saved,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+80,Fulham,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+80,Fulham,0.45,0.94,Goal,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+87,Fulham,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+88,Fulham,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+90,Fulham,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+90,Crystal Palace,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+90,Fulham,0.05,0.05,Saved,Shot,https://fbref.com/en/matches/bbb301a6/Crystal-Palace-Fulham-December-26-2022-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+2,Chelsea,0.18,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+2,Chelsea,0.23,0.47,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+8,Fulham,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+10,Chelsea,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+10,Chelsea,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+10,Chelsea,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+17,Chelsea,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+17,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+17,Chelsea,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+21,Fulham,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+23,Fulham,0.09,0.0,Woodwork,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+23,Fulham,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+25,Fulham,0.06,0.56,Goal,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+28,Chelsea,0.07,0.21,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+33,Chelsea,0.56,0.58,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+34,Chelsea,0.07,0.13,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+35,Chelsea,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+38,Chelsea,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+40,Chelsea,0.07,0.09,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+44,Fulham,0.11,0.58,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+47,Chelsea,0.04,0.06,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+47,Chelsea,0.38,0.94,Goal,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+50,Chelsea,0.03,0.02,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+53,Fulham,0.04,0.0,Saved off Target,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+58,Chelsea,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+64,Chelsea,0.09,0.03,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+73,Fulham,0.51,0.32,Goal,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+82,Chelsea,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+90,Chelsea,0.05,0.17,Saved,Shot,https://fbref.com/en/matches/2902a42d/Fulham-Chelsea-January-12-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+7,Manchester Utd,0.79,0.98,Goal,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+13,Manchester Utd,0.11,0.41,Saved,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+13,Manchester Utd,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+13,Manchester Utd,0.16,0.0,Blocked,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+13,Manchester Utd,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+27,Manchester Utd,0.06,0.15,Saved,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+28,Manchester Utd,0.03,0.33,Saved,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+31,Manchester Utd,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+33,Manchester Utd,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+33,Manchester Utd,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+36,Manchester Utd,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+39,Crystal Palace,0.53,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+42,Manchester Utd,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+42,Crystal Palace,0.03,0.34,Saved,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+56,Manchester Utd,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+62,Manchester Utd,0.5,0.68,Goal,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+70,Manchester United,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+75,Crystal Palace,0.11,0.12,Saved,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+76,Crystal Palace,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+76,Crystal Palace,0.26,0.21,Goal,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+80,Crystal Palace,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+80,Crystal Palace,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+87,Crystal Palace,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+87,Crystal Palace,0.14,0.0,Off Target,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+90,Crystal Palace,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/dca5ea6c/Manchester-United-Crystal-Palace-February-4-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+5,Manchester City,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+5,Manchester City,0.17,0.07,Saved,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+6,Manchester City,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+15,Tottenham,0.35,0.63,Goal,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+19,Manchester City,0.04,0.07,Saved,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+30,Tottenham,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+41,Manchester City,0.1,0.39,Saved,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+42,Manchester City,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+44,Tottenham,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+44,Tottenham,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+44,Tottenham,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+44,Tottenham,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+45,Manchester City,0.12,0.0,Woodwork,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+47,Tottenham,0.27,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+56,Tottenham,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+64,Manchester City,0.14,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+65,Manchester City,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+65,Manchester City,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+68,Manchester City,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+69,Tottenham,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+70,Tottenham,0.31,0.2,Saved,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+73,Manchester City,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+76,Manchester City,0.01,0.04,Saved,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+77,Tottenham,0.02,0.21,Saved,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+77,Tottenham,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+87,Tottenham Hotspur,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+89,Manchester City,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+90,Manchester City,0.3,0.31,Saved,Shot,https://fbref.com/en/matches/8a923619/Tottenham-Hotspur-Manchester-City-February-5-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+1,Wolves,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+2,Southampton,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+3,Southampton,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+13,Southampton,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+21,Southampton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+24,Southampton,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+24,Southampton,0.06,0.04,Goal,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+27,Wolverhampton Wanderers,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+29,Southampton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+29,Southampton,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+33,Wolves,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+40,Southampton,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+41,Southampton,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+41,Southampton,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+45,Southampton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+49,Wolves,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+58,Southampton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+65,Southampton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+67,Wolves,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+70,Wolves,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+72,Wolves,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+72,Wolves,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+72,Wolves,0.16,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+72,Wolves,0.19,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+86,Southampton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+87,Wolves,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+87,Wolves,0.14,0.31,Goal,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+90,Southampton,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+90,Southampton,0.26,0.08,Saved,Shot,https://fbref.com/en/matches/8c7913ed/Southampton-Wolverhampton-Wanderers-February-11-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+4,Newcastle Utd,0.22,0.3,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+5,Newcastle Utd,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+7,Liverpool,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+10,Liverpool,0.57,0.72,Goal,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+17,Liverpool,0.31,0.76,Goal,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+22,Newcastle United,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+25,Liverpool,0.14,0.08,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+31,Newcastle Utd,0.08,0.25,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+32,Newcastle Utd,0.13,0.0,Blocked,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+32,Newcastle Utd,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+33,Newcastle Utd,0.06,0.07,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+37,Newcastle Utd,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+39,Liverpool,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+39,Liverpool,0.01,0.02,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+41,Newcastle Utd,0.17,0.0,Woodwork,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+45,Newcastle Utd,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+52,Newcastle Utd,0.31,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+55,Newcastle Utd,0.29,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+57,Liverpool,0.08,0.5,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+61,Newcastle Utd,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+63,Liverpool,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+65,Newcastle Utd,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+68,Liverpool,0.02,0.44,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+81,Liverpool,0.13,0.02,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+82,Newcastle Utd,0.45,0.75,Saved,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+88,Liverpool,0.22,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+90,Liverpool,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+90,Liverpool,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/2f909763/Newcastle-United-Liverpool-February-18-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+3,Aston Villa,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+14,Aston Villa,0.13,0.0,Off Target,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+40,Crystal Palace,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+44,Aston Villa,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+45,Aston Villa,0.66,0.0,Woodwork,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+62,Crystal Palace,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+68,Crystal Palace,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+73,Aston Villa,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+74,Aston Villa,0.13,0.07,Saved,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+84,Aston Villa,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+88,Crystal Palace,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+90,Aston Villa,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/433a4487/Aston-Villa-Crystal-Palace-March-4-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+1,Leicester City,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+9,Leicester City,0.02,0.03,Saved,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+11,Chelsea,0.01,0.18,Goal,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+14,Leicester City,0.96,0.0,Off Target,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+20,Chelsea,0.1,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+24,Chelsea,0.49,0.0,Woodwork,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+26,Leicester City,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+39,Leicester City,0.02,0.18,Goal,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+41,Leicester City,0.07,0.03,Saved,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+42,Leicester City,0.06,0.03,Saved,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+42,Leicester City,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+44,Leicester City,0.12,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+45,Chelsea,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+45,Chelsea,0.52,0.92,Goal,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+46,Chelsea,0.06,0.23,Saved,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+63,Chelsea,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+65,Leicester City,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+65,Leicester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+65,Leicester City,0.4,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+67,Leicester City,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+67,Chelsea,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+68,Chelsea,0.07,0.09,Saved,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+70,Chelsea,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+71,Chelsea,0.04,0.22,Saved,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+72,Leicester City,0.33,0.9,Saved,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+74,Leicester City,0.04,0.05,Saved,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+77,Leicester City,0.2,0.0,Off Target,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+78,Chelsea,0.08,0.07,Goal,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+84,Leicester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+87,Leicester City,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/bd5571a1/Leicester-City-Chelsea-March-11-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+9,Southampton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+11,Southampton,0.03,0.13,Saved,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+16,Manchester Utd,0.18,0.03,Saved,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+24,Southampton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+24,Southampton,0.19,0.09,Saved,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+27,Manchester Utd,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+28,Southampton,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+31,Manchester Utd,0.09,0.03,Saved,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+34,Manchester United,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+36,Southampton,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+39,Manchester Utd,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+39,Manchester Utd,0.25,0.21,Saved,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+54,Southampton,0.07,0.0,Woodwork,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+63,Manchester Utd,0.13,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+64,Southampton,0.33,0.38,Saved,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+65,Southampton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+66,Southampton,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+66,Southampton,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+66,Southampton,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+66,Southampton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+68,Manchester Utd,0.02,0.21,Saved,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+68,Manchester Utd,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+69,Southampton,0.03,0.0,Woodwork,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+72,Southampton,0.06,0.11,Saved,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+73,Manchester Utd,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+73,Southampton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+76,Southampton,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+83,Manchester Utd,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/9cd3ca2c/Manchester-United-Southampton-March-12-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+2,Leeds United,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+6,Leeds United,0.09,0.16,Goal,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+11,Wolves,0.11,0.04,Saved,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+11,Wolves,0.17,0.0,Blocked,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+15,Wolves,0.19,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+20,Wolves,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+25,Wolves,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+27,Wolves,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+27,Wolves,0.15,0.0,Blocked,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+32,Wolves,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+37,Leeds United,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+41,Leeds United,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+44,Leeds United,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+45,Leeds United,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+47,Wolves,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+49,Leeds United,0.62,0.11,Goal,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+53,Wolves,0.04,0.08,Saved,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+54,Wolves,0.1,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+55,Wolves,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+58,Wolves,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+59,Leeds United,0.23,0.0,Blocked,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+59,Leeds United,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+62,Leeds United,0.05,0.03,Goal,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+65,Wolves,0.05,0.05,Goal,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+70,Wolves,0.58,0.75,Saved,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+70,Wolves,0.6,0.46,Saved,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+71,Wolves,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+73,Wolves,0.04,0.15,Goal,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+77,Wolves,0.08,0.17,Saved,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+77,Wolves,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+84,Wolverhampton Wanderers,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+90,Wolves,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+90,Wolves,0.02,0.05,Saved,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+90,Leeds United,0.34,0.44,Goal,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+90,Wolves,0.17,0.0,Off Target,Shot,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+90,Wolverhampton Wanderers,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/3cb714a4/Wolverhampton-Wanderers-Leeds-United-March-18-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+2,Brentford,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+5,Brentford,0.16,0.0,Off Target,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+9,Brentford,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+12,Brentford,0.13,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+14,Brentford,0.02,0.06,Saved,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+15,Leicester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+17,Leicester City,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+25,Leicester City,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+25,Leicester City,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+25,Leicester City,0.19,0.0,Off Target,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+27,Brentford,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+31,Brentford,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+32,Brentford,0.05,0.15,Goal,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+36,Brentford,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+44,Leicester City,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+45,Leicester City,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+50,Brentford,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+53,Leicester City,0.54,0.79,Goal,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+63,Leicester City,0.16,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+63,Leicester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+78,Leicester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+79,Leicester City,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+81,Brentford,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+87,Leicester City,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+90,Leicester City,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+90,Brentford,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/7647948e/Brentford-Leicester-City-March-18-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+2,Everton,0.05,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+7,Tottenham,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+9,Tottenham,0.28,0.0,Blocked,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+10,Everton,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+16,Tottenham,0.2,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+17,Everton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+24,Everton,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+31,Everton,0.16,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+38,Everton,0.02,0.46,Saved,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+47,Everton,0.09,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+50,Tottenham,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+52,Everton,0.04,0.33,Saved,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+58,Everton,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+64,Everton,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+68,Tottenham,0.79,0.99,Goal,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+73,Everton,0.05,0.06,Saved,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+74,Tottenham,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+75,Everton,0.06,0.08,Saved,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+76,Everton,0.09,0.08,Saved,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+80,Everton,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+88,Tottenham Hotspur,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+90,Everton,0.02,0.46,Goal,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+90,Tottenham,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+90,Everton,0.08,0.0,Blocked,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+90,Tottenham,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/c00d9a22/Everton-Tottenham-Hotspur-April-3-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+9,Leicester City,0.02,0.02,Saved,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+17,Leicester City,0.11,0.0,Blocked,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+19,Leicester City,0.11,0.0,Woodwork,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+24,Aston Villa,0.36,0.82,Goal,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+27,Leicester City,0.04,0.22,Saved,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+31,Aston Villa,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+31,Aston Villa,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+32,Aston Villa,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+32,Aston Villa,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+35,Leicester City,0.07,0.85,Goal,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+40,Aston Villa,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+41,Leicester City,0.02,0.05,Saved,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+46,Leicester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+48,Aston Villa,0.04,0.05,Saved,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+62,Leicester City,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+68,Aston Villa,0.07,0.0,Woodwork,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+70,Leicester City,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+74,Aston Villa,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+76,Aston Villa,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+79,Leicester City,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+81,Aston Villa,0.08,0.05,Saved,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+82,Aston Villa,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+82,Aston Villa,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+87,Aston Villa,0.04,0.52,Goal,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+90,Aston Villa,0.04,0.05,Saved,Shot,https://fbref.com/en/matches/f213214b/Leicester-City-Aston-Villa-April-4-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+4,Everton,0.05,0.06,Saved,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+7,Everton,0.09,0.39,Saved,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+9,Crystal Palace,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+23,Crystal Palace,0.02,0.02,Saved,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+26,Crystal Palace,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+32,Everton,0.02,0.35,Saved,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+32,Everton,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+35,Everton,0.02,0.0,Blocked,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+39,Everton,0.02,0.2,Saved,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+41,Crystal Palace,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+41,Everton,0.02,0.05,Saved,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+62,Everton,0.08,0.0,Off Target,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+65,Everton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+66,Everton,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+76,Crystal Palace,0.06,0.34,Saved,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+77,Crystal Palace,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+78,Crystal Palace,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+80,Everton,0.0,0.0,Red Card,Second Yellow Card,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+82,Crystal Palace,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+84,Crystal Palace,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+85,Crystal Palace,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+85,Crystal Palace,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+90,Crystal Palace,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/25f6dcd1/Crystal-Palace-Everton-April-22-2023-Premier-League
+0,0,0.0,0.0,0,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+3,Newcastle Utd,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+7,Leeds United,0.16,0.16,Saved,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+7,Leeds United,0.87,0.98,Goal,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+11,Newcastle Utd,0.04,0.13,Saved,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+15,Newcastle Utd,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+21,Newcastle Utd,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+28,Leeds United,0.79,0.99,Saved,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+31,Newcastle Utd,0.79,0.99,Goal,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+34,Newcastle Utd,0.02,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+38,Newcastle Utd,0.12,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+44,Leeds United,0.07,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+45,Newcastle Utd,0.04,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+48,Newcastle Utd,0.01,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+51,Newcastle Utd,0.04,0.0,Blocked,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+52,Newcastle Utd,0.06,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+56,Newcastle Utd,0.07,0.0,Blocked,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+56,Newcastle Utd,0.05,0.0,Blocked,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+56,Leeds United,0.03,0.0,Blocked,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+63,Leeds United,0.11,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+69,Newcastle Utd,0.79,0.94,Goal,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+71,Newcastle Utd,0.01,0.0,Blocked,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+79,Leeds United,0.06,0.0,Blocked,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+79,Leeds United,0.03,0.06,Goal,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+81,Leeds United,0.03,0.0,Off Target,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+86,Newcastle Utd,0.03,0.02,Saved,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+90,Newcastle Utd,0.09,0.0,Blocked,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+90,Newcastle Utd,0.03,0.01,Saved,Shot,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League
+90,Leeds United,0.0,0.0,Red Card,Red Card,https://fbref.com/en/matches/d63581e0/Leeds-United-Newcastle-United-May-13-2023-Premier-League

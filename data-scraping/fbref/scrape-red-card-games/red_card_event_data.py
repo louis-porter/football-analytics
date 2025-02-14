@@ -20,18 +20,25 @@ def get_match_data(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'lxml')
     
-    # Get shots data
-    tables = soup.find_all('table')
-    shots_table = tables[17]  # Shots table index
+    # Get shots data - using ID instead of index
+    shots_table = soup.find('table', id='shots_all')
+    if not shots_table:
+        raise ValueError("Could not find shots table")
     
-    # Extract headers from second row (first row has merged columns)
+    # Rest of your code remains the same
     headers = [th.get_text(strip=True) for th in shots_table.find_all('tr')[1].find_all('th')]
     
-    # Extract shot data rows
+    # Extract shot data rows with blank value handling
     rows_data = []
     for tr in shots_table.find_all('tbody')[0].find_all('tr'):
         cols = tr.find_all(['th', 'td'])
-        row_data = [col.get_text(strip=True) for col in cols]
+        row_data = []
+        for col in cols:
+            value = col.get_text(strip=True)
+            # Convert blank to "0" for numeric columns
+            if value == '':
+                value = "0"
+            row_data.append(value)
         rows_data.append(row_data)
     
     # Create shots DataFrame
@@ -119,7 +126,7 @@ def get_match_data(url):
     return df
 
 # Example usage:
-red_card_matches_df = pd.read_csv(r"data-scraping\fbref\scrape-red-card-games\matches_with_red_cards.csv")
+red_card_matches_df = pd.read_csv(r"data-scraping\fbref\scrape-red-card-games\matches_with_red_cards_2022.csv")
 
 all_matches_data = []
 
@@ -142,4 +149,4 @@ for url in red_card_matches_df["match_url"]:
 # Combine all DataFrames
 combined_df = pd.concat(all_matches_data, ignore_index=True)
 
-combined_df.to_csv(r"data-scraping\fbref\scrape-red-card-games\red_card_data_2024.csv", index=False)
+combined_df.to_csv(r"data-scraping\fbref\scrape-red-card-games\red_card_data_2022.csv", index=False)
