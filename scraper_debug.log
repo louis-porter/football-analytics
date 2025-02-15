@@ -1,0 +1,46 @@
+2025-02-15 06:46:49,056 - INFO - Initializing scraper for year: 2021-2022
+2025-02-15 06:46:49,056 - INFO - Starting scrape process...
+2025-02-15 06:46:49,057 - ERROR - An error occurred during scraping: 'FBrefScraper' object has no attribute 'create_driver'
+2025-02-15 06:46:49,057 - INFO - Script completed
+2025-02-15 06:46:49,057 - ERROR - Script failed with error: 'FBrefScraper' object has no attribute 'create_driver'
+2025-02-15 06:47:04,985 - INFO - Initializing scraper for year: 2021-2022
+2025-02-15 06:47:04,986 - INFO - Starting scrape process...
+2025-02-15 06:47:04,986 - ERROR - An error occurred during scraping: 'FBrefScraper' object has no attribute 'create_driver'
+2025-02-15 06:47:04,986 - INFO - Script completed
+2025-02-15 06:47:04,986 - ERROR - Script failed with error: 'FBrefScraper' object has no attribute 'create_driver'
+2025-02-15 06:48:18,116 - INFO - Initializing scraper for year: 2021-2022
+2025-02-15 06:48:18,116 - INFO - Starting scrape process...
+2025-02-15 06:48:18,116 - INFO - ====== WebDriver manager ======
+2025-02-15 06:48:18,661 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-15 06:48:18,950 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-15 06:48:19,197 - INFO - Driver [C:\Users\Owner\.wdm\drivers\chromedriver\win64\133.0.6943.98\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-15 06:48:20,214 - INFO - Accessing main page: https://fbref.com/en/comps/9/2021-2022/schedule/2021-2022-Premier-League-Scores-and-Fixtures
+2025-02-15 06:48:32,509 - ERROR - Error waiting for element sched_2021-2022_9_1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x012202D3+25139]
+	(No symbol) [0x011AB284]
+	(No symbol) [0x010804A3]
+	(No symbol) [0x010C8338]
+	(No symbol) [0x010C868B]
+	(No symbol) [0x01110F62]
+	(No symbol) [0x010ECF84]
+	(No symbol) [0x0110E6E1]
+	(No symbol) [0x010ECD36]
+	(No symbol) [0x010BBD29]
+	(No symbol) [0x010BD064]
+	GetHandleVerifier [0x0152B193+3215603]
+	GetHandleVerifier [0x0154230A+3310186]
+	GetHandleVerifier [0x0153C522+3286146]
+	GetHandleVerifier [0x012B9CD0+654384]
+	(No symbol) [0x011B460D]
+	(No symbol) [0x011B14F8]
+	(No symbol) [0x011B1697]
+	(No symbol) [0x011A3D70]
+	BaseThreadInitThunk [0x75E77BA9+25]
+	RtlInitializeExceptionChain [0x7715C0CB+107]
+	RtlClearBits [0x7715C04F+191]
+
+2025-02-15 06:48:32,511 - INFO - Found 0 match URLs
+2025-02-15 06:48:32,511 - INFO - Scraping completed. Found 0 matches with red cards
+2025-02-15 06:48:32,511 - WARNING - No matches with red cards found, no CSV file will be created
+2025-02-15 06:48:34,582 - INFO - Script completed
