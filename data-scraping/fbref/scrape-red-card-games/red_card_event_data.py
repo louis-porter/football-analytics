@@ -126,7 +126,7 @@ def get_match_data(url):
     return df
 
 # Example usage:
-red_card_matches_df = pd.read_csv(r"data-scraping\fbref\scrape-red-card-games\matches_with_red_cards_2022.csv")
+red_card_matches_df = pd.read_csv(r"data-scraping\fbref\scrape-red-card-games\matches_with_red_cards_2021.csv")
 
 all_matches_data = []
 
@@ -149,4 +149,4 @@ for url in red_card_matches_df["match_url"]:
 # Combine all DataFrames
 combined_df = pd.concat(all_matches_data, ignore_index=True)
 
-combined_df.to_csv(r"data-scraping\fbref\scrape-red-card-games\red_card_data_2022.csv", index=False)
+combined_df.to_csv(r"data-scraping\fbref\scrape-red-card-games\red_card_data_2021.csv", index=False)
