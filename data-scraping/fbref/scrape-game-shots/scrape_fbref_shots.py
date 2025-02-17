@@ -296,6 +296,6 @@ class MatchDataScraper:
             print("\nScript completed")
 
 if __name__ == "__main__":
-    season = "2023-2024"
+    season = "2024-2025"
     scraper = MatchDataScraper(season, headless=True)
     scraper.run()
