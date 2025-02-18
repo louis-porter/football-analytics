@@ -16,7 +16,7 @@ import re
 class MatchDataScraper:
     def __init__(self, season, headless=True):
         self.season = season
-        self.base_url = f"https://fbref.com/en/comps/9/{season}/schedule/{season}-Premier-League-Scores-and-Fixtures"
+        self.base_url = f"https://fbref.com/en/comps/10/{season}/schedule/{season}-Championship-Scores-and-Fixtures"
         self.match_data = []
         self.setup_driver(headless)
         
@@ -296,6 +296,6 @@ class MatchDataScraper:
             print("\nScript completed")
 
 if __name__ == "__main__":
-    season = "2024-2025"
+    season = "2023-2024"
     scraper = MatchDataScraper(season, headless=True)
     scraper.run()
