@@ -42,6 +42,25 @@ class MatchDataScraper:
             response = requests.get(url)
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'lxml')
+
+            # Extract match date
+            venue_time = soup.find('span', class_='venuetime')
+            match_date = venue_time['data-venue-date'] if venue_time else None
+            
+            # Extract teams
+            team_stats = soup.find('div', id='team_stats_extra')
+            if team_stats:
+                teams = team_stats.find_all('div', class_='th')
+                teams = [t.text.strip() for t in teams if t.text.strip() != '']
+                teams = list(dict.fromkeys(teams))  # Remove duplicates while preserving order
+                home_team = teams[0] if len(teams) > 0 else None
+                away_team = teams[1] if len(teams) > 1 else None
+            else:
+                home_team, away_team = None, None
+                
+            # Extract division
+            division_link = soup.find('a', href=lambda x: x and '/comps/' in x and '-Stats' in x)
+            division = division_link.text.strip() if division_link else None
             
             # Get shots data
             shots_table = soup.find('table', id='shots_all')
@@ -181,8 +200,12 @@ class MatchDataScraper:
             df.fillna(0.00, inplace=True)
             df.sort_values(by=["Minute"], inplace=True)
             
-            # Add match URL and reset index
+            # Add match metadata
             df["match_url"] = url
+            df["match_date"] = match_date
+            df["home_team"] = home_team
+            df["away_team"] = away_team
+            df["division"] = division
             df = df.reset_index(drop=True)
             
             return df
@@ -234,7 +257,8 @@ class MatchDataScraper:
             
             print(f"\nFound {total_matches} matches to process")
             
-            for index, row in enumerate(rows[1:], 1):
+            test_rows = rows[1:6]
+            for index, row in enumerate(rows[1:], 1): #rows[1:]
                 try:
                     match_report = row.find_element(By.XPATH, ".//td/a[text()='Match Report']")
                     
