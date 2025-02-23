@@ -4500,7 +4500,7 @@ Minute,Team,Player,Event Type,Outcome,xG,PSxG,match_url,match_date,home_team,awa
 30,Swansea City,Charlie Patino,Second Yellow Card,Red Card,0.0,0.0,https://fbref.com/en/matches/02e9a08c/Swansea-City-Sunderland-November-4-2023-Championship,2023-11-04,Swansea City,Sunderland,EFL Championship
 37,Sunderland,Patrick Roberts,Shot,Saved,0.07,0.46,https://fbref.com/en/matches/02e9a08c/Swansea-City-Sunderland-November-4-2023-Championship,2023-11-04,Swansea City,Sunderland,EFL Championship
 38,Sunderland,Dan Neil,Shot,Blocked,0.06,0.0,https://fbref.com/en/matches/02e9a08c/Swansea-City-Sunderland-November-4-2023-Championship,2023-11-04,Swansea City,Sunderland,EFL Championship
-45,Swansea City,Jamal Lowe,Second Yellow Card,Red Card,0.0,0.0,https://fbref.com/en/matches/02e9a08c/Swansea-City-Sunderland-November-4-2023-Championship,2023-11-04,Swansea City,Sunderland,EFL Championship
+45,Swansea City,Jamal Lowe,Second Yellow Card,,0.0,0.0,https://fbref.com/en/matches/02e9a08c/Swansea-City-Sunderland-November-4-2023-Championship,2023-11-04,Swansea City,Sunderland,EFL Championship
 45,Swansea City,Jamie Paterson,Shot,Blocked,0.01,0.0,https://fbref.com/en/matches/02e9a08c/Swansea-City-Sunderland-November-4-2023-Championship,2023-11-04,Swansea City,Sunderland,EFL Championship
 45,Sunderland,Jack Clarke,Shot,Woodwork,0.03,0.0,https://fbref.com/en/matches/02e9a08c/Swansea-City-Sunderland-November-4-2023-Championship,2023-11-04,Swansea City,Sunderland,EFL Championship
 45,Swansea City,Jamal Lowe(pen),Penalty,Saved,0.79,0.96,https://fbref.com/en/matches/02e9a08c/Swansea-City-Sunderland-November-4-2023-Championship,2023-11-04,Swansea City,Sunderland,EFL Championship
