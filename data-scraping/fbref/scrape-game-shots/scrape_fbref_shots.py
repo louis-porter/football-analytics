@@ -320,6 +320,6 @@ class MatchDataScraper:
             print("\nScript completed")
 
 if __name__ == "__main__":
-    season = "2024-2025"
+    season = "2022-2023"
     scraper = MatchDataScraper(season, headless=True)
     scraper.run()
